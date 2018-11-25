@@ -1,21 +1,11 @@
 ---
+layout: post
 asset-type: post
-name: My first steps as an embedded software craftswoman
 title: 'My first steps as an embedded software craftswoman'
-date: 2017-08-20 12:00:00 +00:00
-author: Raquel M Carmena
 image:
-  src: /assets/custom/img/blog/2017-08-20-my-first-steps-as-an-embedded-sw-craftswoman.jpg
-tags:
-- software craftsmanship
-- team
-- lunch & learn
-- apprenticeship 
-- learning
-- sharing
-- life-at-codurance
-
+  src: /img/cards/posts/embedded-sw-craftswoman/cover.jpg
 ---
+
 I participated in consultancy projects a few years ago, but they were the typical ones. We would visit a company for a few hours over several days, they gave us the information they thought was useful for us, we asked questions and more details and then we created a plan to help them by:
 
 * Giving guides to solve what we knew about their problems
@@ -80,6 +70,4 @@ I like to make things funny and I chose that name to represent an informal and s
 
 Finally, I would like to thank my new team for the warm welcome. They are very good people and it’s been a pleasant and fruitful experience for me. Thank you!
 
-[1]:https://codurance.com/2017/07/09/P3-Quality/
-[2]:https://dev.to/schreiber_chris
-[3]:https://dev.to/schreiber_chris/the-benefits-of-having-a-craftsman-in-your-team
+<a href="https://codurance.com/2017/08/20/my-first-steps-as-an-embedded-sw-craftswoman" target="_blank">I published this article at Codurance website</a>.

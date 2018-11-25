@@ -150,4 +150,4 @@ Thanks:
 
 This event allowed me to meet awesome people. I would like to mention **<a href="https://twitter.com/nyan_dev" target="_blank">Meritxell Calvo</a>** and **<a href="https://twitter.com/dcarral" target="_blank">Daniel Carral</a>**, who I admire for their active involvement in the community. I hope to devirtualize them very soon!
 
-<a href="https://codurance.com/2018/01/06/living-a-coderetreat-as-a-facilitator/" target="_blank">I published this article at Codurance website</a>.
+<a href="https://codurance.com/2018/01/06/living-a-coderetreat-as-a-facilitator" target="_blank">I published this article at Codurance website</a>.

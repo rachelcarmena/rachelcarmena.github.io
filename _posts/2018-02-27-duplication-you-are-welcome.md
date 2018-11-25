@@ -55,7 +55,7 @@ To sum up, some recommendations:
 
 Thanks:
 
-* my colleague <a href="https://codurance.com/publications/author/jorge-gueorguiev-garcia/">Jorge Gueorguiev</a> for his inputs when I talked about this subject.
+* my colleague <a href="https://codurance.com/publications/author/jorge-gueorguiev-garcia">Jorge Gueorguiev</a> for his inputs when I talked about this subject.
 * my friend <a href="https://twitter.com/dcarral" target="_blank">Daniel Carral</a> for his dojo _What is good code? Evaluating code quality_.
 
-<a href="https://codurance.com/2018/02/27/duplication-you-are-welcome/" target="_blank">I published this article at Codurance website</a>.
+<a href="https://codurance.com/2018/02/27/duplication-you-are-welcome" target="_blank">I published this article at Codurance website</a>.
