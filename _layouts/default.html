@@ -15,8 +15,7 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <!--h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2-->
+            {% include header.html %}
         </header>
     </div>
 
@@ -30,7 +29,7 @@
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+        {% include footer.html %}
       </footer>
     </div>
 

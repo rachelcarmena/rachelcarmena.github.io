@@ -1,0 +1,138 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header, footer {
+    text-align: center;
+}
+
+#header_wrap, #main_content_wrap {
+    background: white;
+}
+
+#main_content_wrap {
+    border-top: none;
+}
+
+#header_wrap .inner {
+    padding: 1em 0 0 0;
+}
+
+#footer_wrap {
+    background: #212121;
+}
+
+img {
+    border: 0;
+    box-shadow: 0;
+    -webkit-box-shadow: none;
+    margin: 1.2em 0 0 0;
+    padding: 0;
+}
+
+/* Header content ---------------- */
+
+#header_title {
+    margin-top: 0.1em;
+    font-size: 1.2em;
+}
+
+/* Cards ------------------------- */
+
+#main_content {
+    max-width: 60em;
+}
+
+#cards { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    grid-gap: 0.5em;
+    margin-bottom: 2em;
+}
+
+.card {
+    border: 2px solid #333;
+    border-radius: 10px;
+    position: relative;
+    margin: 0.5em;
+}
+
+.card a {
+    display: block;
+    padding: 1.8em;
+    text-decoration: none;
+}
+
+.card:hover, .card a:focus {
+    background-color: #333;
+}
+
+.card_symbol_default {
+    display: inherit;
+}
+
+.card_symbol_hover {
+    display: none;
+}
+
+.card:hover .card_symbol_default, .card a:focus .card_symbol_default {
+    display: none;
+}
+
+.card:hover .card_symbol_hover, .card a:focus .card_symbol_hover {
+    display: inherit;
+}
+
+.card_cover {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card a h2 {
+    background: white;
+    line-height: 1.4em !important;
+    min-height: 2.8em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Posts ------------------------- */
+
+#post_content {
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 40em;
+}
+
+#post_content img {
+    max-width: 100%;
+}
+
+#post_image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 25%;
+}
+
+.btn_link {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none !important;
+    text-align: center;
+    display: block;
+}
+
+.btn_link:hover {
+    background: #333;
+    color: white;
+}
+
+.btn_box {
+    border: 1px solid #333; 
+    margin-top: 2em;
+    margin-bottom: 1em;
+    padding: 0.2em;
+}
