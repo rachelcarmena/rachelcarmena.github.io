@@ -25,9 +25,9 @@ header, footer {
 
 img {
     border: 0;
-    box-shadow: 0;
+    box-shadow: none;
     -webkit-box-shadow: none;
-    margin: 1.2em 0 0 0;
+    margin: 0;
     padding: 0;
 }
 
@@ -47,15 +47,14 @@ img {
 #cards { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-    grid-gap: 0.5em;
-    margin-bottom: 2em;
+    grid-gap: 2.4em;
+    margin: 1em 0 2em 0;
 }
 
 .card {
-    border: 2px solid #333;
+    border: 1px solid #333;
     border-radius: 10px;
     position: relative;
-    margin: 0.5em;
 }
 
 .card a {
@@ -85,18 +84,20 @@ img {
 }
 
 .card_cover {
-    height: 200px;
+    height: 140px;
     width: 100%;
     object-fit: cover;
+    margin-top: 0.8em;
 }
 
 .card a h2 {
     background: white;
     line-height: 1.4em !important;
-    min-height: 3em;
+    min-height: 4.2em;
     font-size: 1.4em;
     color: #333;
     padding: 0.2em;
+    margin: 0;
 }
 
 /* Posts ------------------------- */
