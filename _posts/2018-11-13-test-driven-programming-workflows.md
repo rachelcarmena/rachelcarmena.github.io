@@ -43,7 +43,7 @@ Or <a href="https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/prog
 And I recorded this short video to explain the diagram, because it's invisible for some people with disabilities:
 
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uHyHZzyhxAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/uHyHZzyhxAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 The video doesn't have one detail between writing the test code and writing just enough code to pass the test, which is included in the last version of the diagram. With TDD without constraints and Taking Baby Steps constraint, the following check is done after writing the test code:
