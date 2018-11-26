@@ -48,14 +48,15 @@ img {
 #cards { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-    grid-gap: 1.4em;
-    margin: 1em 0 2em 0;
+    grid-gap: 0.4em;
+    margin-bottom: 1em;
 }
 
 .card {
-    border: 1px solid #333;
+    border: 2px solid #333;
     border-radius: 10px;
     position: relative;
+    margin: 0.5em;
 }
 
 .card a {
@@ -84,21 +85,28 @@ img {
     display: inherit;
 }
 
+.card_content {
+    min-height: 268px;
+    background: white;
+    margin-top: 0.8em;
+    position: relative;
+    border-bottom: 1px solid #bbb;
+}
+
 .card_cover {
     height: 140px;
     width: 100%;
     object-fit: cover;
-    margin-top: 0.8em;
 }
 
-.card a h2 {
+.card_content h2 {
     background: white;
     line-height: 1.4em !important;
-    min-height: 4.2em;
-    font-size: 1.4em;
+    font-size: 1.6em;
     color: #333;
     padding: 0.2em;
     margin: 0;
+    text-align: right;
 }
 
 /* Posts ------------------------- */
