@@ -33,8 +33,10 @@ After a few minutes:
 The last version of the diagram includes a comparison between:
 
 * Test-driven development (TDD) without constraints
-* Using `test && commit || revert` (TCR)
-* Using 'Taking Baby Steps' by Adrian Bolboaca
+* Using <a href="https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864" target="_blank">'test && commit || revert (TCR)' by Kent Beck</a>
+* Using <a href="https://github.com/FaustXVI/demo-tcr/blob/master/tcrdd.sh" target="_blank">'RED or revert, GREEN or revert, REFACTOR (also green or revert)' by Xavier Detant</a>
+* Using <a href="https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert" target="_blank">'(Test && Commit) || TestCodeOnly || Revert' by Jeff Grigg</a>
+* Using <a href="http://blog.adrianbolboaca.ro/2013/03/taking-baby-steps" target="_blank">'Taking Baby Steps' by Adrian Bolboaca</a>
 
 <a href="/img/cards/posts/test-driven-programming-workflows/workflows.png">You can find the last version of the test-driven programming workflows here</a>.
 
@@ -56,4 +58,4 @@ However, the result of running tests is not checked with TCR, between writing th
 
 ## Acknowledgments
 
-Thanks **Software Crafters Community** for all the received feedback: <a href="https://twitter.com/DaveSchinkel" target="_blank">Dave Schinkel</a>, <a href="https://twitter.com/fran_reyes" target="_blank">Fran Reyes</a>, <a href="https://twitter.com/sanlaville" target="_blank">Rémy Sanlaville</a>, ...
+Thanks **Software Crafters Community** for all the received feedback. Special thanks to <a href="https://twitter.com/DaveSchinkel" target="_blank">Dave Schinkel</a>, <a href="https://twitter.com/fran_reyes" target="_blank">Fran Reyes</a>, <a href="https://twitter.com/sanlaville" target="_blank">Rémy Sanlaville</a>, <a href="https://twitter.com/XDetant" target="_blank">Xavier Detant</a> and <a href="http://wiki.c2.com/?JeffGrigg" target="_blank">Jeff Grigg</a>.
