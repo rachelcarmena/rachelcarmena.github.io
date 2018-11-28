@@ -38,6 +38,8 @@ The last version of the diagram includes a comparison between:
 * Using <a href="https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert" target="_blank">'(Test && Commit) || TestCodeOnly || Revert' by Jeff Grigg</a>
 * Using <a href="http://blog.adrianbolboaca.ro/2013/03/taking-baby-steps" target="_blank">'Taking Baby Steps' by Adrian Bolboaca</a>
 
+## The diagram
+
 <a href="/img/cards/posts/test-driven-programming-workflows/workflows.png">You can find the last version of the test-driven programming workflows here</a>.
 
 Or <a href="https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows.svg">you can download the diagram as a SVG file</a>.
