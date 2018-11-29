@@ -45,9 +45,9 @@ Recently I added 3 further workflows. They come from the idea of TCR, but trying
 
 ## The diagram
 
-<a href="/img/cards/posts/test-driven-programming-workflows/workflows.png">You can find the last version of the test-driven programming workflows here</a>.
+You can find <a href="/img/cards/posts/test-driven-programming-workflows/workflows.png">the last version of the test-driven programming workflows here</a>.
 
-Or <a href="https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows.svg">you can download the diagram as a SVG file</a>.
+Or you can download <a href="https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows.svg">the diagram as a SVG file</a>.
 
 And I recorded this short video to explain the diagram, because it's invisible for some people with disabilities:
 
