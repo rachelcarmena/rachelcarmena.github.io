@@ -28,7 +28,7 @@ After a few minutes:
 
 > I think it would be a good idea to have these workflows in a digital format
 
-## The comparison
+## The goal
 
 The goal is to see the differences between test-driven programming workflows clearly:
 
@@ -43,11 +43,13 @@ Recently I added 3 further workflows. They come from the idea of TCR, but trying
 * TDD with TCR constraint and test fails first by <a href="https://twitter.com/DaveSchinkel" target="_blank">Dave Schinkel</a>
 * <a href="https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert" target="_blank">(Test && Commit) || TestCodeOnly || Revert</a> by Jeff Grigg
 
-## The diagram
+## The result
 
-You can find <a href="/img/cards/posts/test-driven-programming-workflows/workflows.png">the last version of the test-driven programming workflows here</a>.
-
-Or you can download <a href="https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows.svg">the diagram as a SVG file</a>.
+The diagrams to see the differences between them:
+* <a href="/img/cards/posts/test-driven-programming-workflows/workflows.png">Test-driven programming workflows (PNG)</a>
+* <a href="https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows.svg">Test-driven programming workflows (SVG)</a>
+* <a href="/img/cards/posts/test-driven-programming-workflows/workflows-with-TCR-variants.png">Test-driven programming workflows with TCR variants (PNG)</a>
+* <a href="https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows-with-TCR-variants.svg">Test-driven programming workflows with TCR variants (SVG)</a>
 
 And I recorded this short video to explain the diagram, because it's invisible for some people with disabilities:
 
@@ -55,16 +57,15 @@ And I recorded this short video to explain the diagram, because it's invisible f
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/uHyHZzyhxAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
-The video doesn't have one detail between writing the test code and writing just enough code to pass the test, which is included in the last version of the diagram. With TDD without constraints and Taking Baby Steps constraint, the following check is done after writing the test code:
+The video doesn't have one detail between writing the test code and writing just enough code to pass the test, which is included in the last version of the diagram. With TDD without constraints and Taking Baby Steps constraint, we check the result of running tests after writing the test code:
 
-- Result of running tests? 
-    - RED: Go to the next step, writing just enough code to pass the test
-    - GREEN: Rethink the test
+- RED: go to the next step, writing just enough code to pass the test
+- GREEN: rethink the test
 
 However, the result of running tests is not checked with TCR, between writing the test code and writing just enough code to pass the test.
 
 ## Further reading
-* <a href="https://twitter.com/deniffel">Thomas Deniffel</a> wrote this <a href="https://medium.com/@tdeniffel/tcr-variants-test-commit-revert-bf6bd84b17d3" target="_blank">awesome post with a lot of TCR Variants</a>.
+<a href="https://twitter.com/deniffel">Thomas Deniffel</a> wrote this <a href="https://medium.com/@tdeniffel/tcr-variants-test-commit-revert-bf6bd84b17d3" target="_blank">awesome post with a lot of TCR Variants</a>.
 
 ## Acknowledgments
 
