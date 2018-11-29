@@ -30,13 +30,18 @@ After a few minutes:
 
 ## The comparison
 
-The last version of the diagram includes a comparison between:
+The goal is to see the differences between test-driven programming workflows clearly:
 
-* Test-driven development (TDD) without constraints
-* Using <a href="https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864" target="_blank">'test && commit || revert (TCR)' by Kent Beck</a>
-* Using <a href="https://github.com/FaustXVI/demo-tcr/blob/master/tcrdd.sh" target="_blank">'RED or revert, GREEN or revert, REFACTOR (also green or revert)' by Xavier Detant</a>
-* Using <a href="https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert" target="_blank">'(Test && Commit) || TestCodeOnly || Revert' by Jeff Grigg</a>
-* Using <a href="http://blog.adrianbolboaca.ro/2013/03/taking-baby-steps" target="_blank">'Taking Baby Steps' by Adrian Bolboaca</a>
+* 'Test-driven development (TDD)' by Kent Beck
+* Using constraints to force yourself to do small steps:
+    * <a href="https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864" target="_blank">'test && commit || revert (TCR)' by Kent Beck</a>
+    * <a href="http://blog.adrianbolboaca.ro/2013/03/taking-baby-steps" target="_blank">'Taking Baby Steps' by Adrian Bolboaca</a>
+
+Recently I added 2 further workflows. They come from the idea of TCR, but trying not to miss the red step:
+
+* <a href="https://github.com/FaustXVI/demo-tcr/blob/master/tcrdd.sh" target="_blank">'RED or revert, GREEN or revert, REFACTOR (also green or revert)' by Xavier Detant</a>
+* <a href="https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert" target="_blank">'(Test && Commit) || TestCodeOnly || Revert' by Jeff Grigg</a>
+
 
 ## The diagram
 
