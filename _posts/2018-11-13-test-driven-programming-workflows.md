@@ -42,7 +42,6 @@ Recently I added 2 further workflows. They come from the idea of TCR, but trying
 * <a href="https://github.com/FaustXVI/demo-tcr/blob/master/tcrdd.sh" target="_blank">'RED or revert, GREEN or revert, REFACTOR (also green or revert)' by Xavier Detant</a>
 * <a href="https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert" target="_blank">'(Test && Commit) || TestCodeOnly || Revert' by Jeff Grigg</a>
 
-
 ## The diagram
 
 <a href="/img/cards/posts/test-driven-programming-workflows/workflows.png">You can find the last version of the test-driven programming workflows here</a>.
@@ -62,6 +61,9 @@ The video doesn't have one detail between writing the test code and writing just
     - GREEN: Rethink the test
 
 However, the result of running tests is not checked with TCR, between writing the test code and writing just enough code to pass the test.
+
+## Further reading
+* <a href="https://twitter.com/deniffel">Thomas Deniffel</a> wrote this <a href="https://medium.com/@tdeniffel/tcr-variants-test-commit-revert-bf6bd84b17d3" target="_blank">awesome post with a lot of TCR Variants</a>.
 
 ## Acknowledgments
 
