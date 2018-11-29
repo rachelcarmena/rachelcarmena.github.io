@@ -65,7 +65,7 @@ The video doesn't have one detail between writing the test code and writing just
 However, the result of running tests is not checked with TCR, between writing the test code and writing just enough code to pass the test.
 
 ## Further reading
-<a href="https://twitter.com/deniffel">Thomas Deniffel</a> wrote this <a href="https://medium.com/@tdeniffel/tcr-variants-test-commit-revert-bf6bd84b17d3" target="_blank">awesome post with a lot of TCR Variants</a>.
+<a href="https://twitter.com/deniffel">Thomas Deniffel</a> wrote an awesome <a href="https://medium.com/@tdeniffel/tcr-variants-test-commit-revert-bf6bd84b17d3" target="_blank">post with a lot of TCR Variants</a>.
 
 ## Acknowledgments
 
