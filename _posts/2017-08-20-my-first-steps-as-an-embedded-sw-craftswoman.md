@@ -2,6 +2,7 @@
 layout: post
 asset-type: post
 title: 'My first steps as an embedded software craftswoman'
+cover-title: 'An embedded software craftswoman'
 image:
   src: /img/cards/posts/embedded-sw-craftswoman/cover.jpg
 ---

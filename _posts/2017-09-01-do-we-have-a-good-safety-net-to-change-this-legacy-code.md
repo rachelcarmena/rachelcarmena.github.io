@@ -2,6 +2,7 @@
 layout: post
 asset-type: post
 title: '99% code coverage - Do we have a good safety net to change this legacy code?'
+cover-title: '99% code coverage'
 image:
   src: /img/cards/posts/mutation-testing/cover.jpg
 ---
