@@ -2,6 +2,7 @@
 layout: post
 asset-type: post
 title: Rereading The Mythical Man-Month
+description: Discovering a new book after 20 years
 image:
    src: /img/cards/posts/the-mythical-man-month/cover.png
 ---

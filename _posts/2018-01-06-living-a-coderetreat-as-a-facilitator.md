@@ -2,6 +2,7 @@
 layout: post
 asset-type: post
 title: Living a Coderetreat as a facilitator
+description: Lessons learnt after an awesome event
 image:
    src: /img/cards/posts/coderetreat/cover.svg
 ---

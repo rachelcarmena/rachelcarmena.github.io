@@ -2,6 +2,7 @@
 layout: post
 asset-type: post
 title: Duplication, you're welcome
+description: Thoughts and misunderstandings about duplication
 image:
    src: /img/cards/posts/duplication/cover.jpg
 ---
