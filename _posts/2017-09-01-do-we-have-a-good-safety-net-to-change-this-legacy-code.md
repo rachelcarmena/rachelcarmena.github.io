@@ -31,13 +31,13 @@ So, we should aim at killing every mutation with tests.
 When I heard about it I thought about that game I played when I was just a teenager: _Super Pang_.
 
 <center>
-<img src="/img/cards/posts/mutation-testing/super-pang-game.jpg" alt="Super Pang Game">
+<img src="/img/cards/posts/mutation-testing/super-pang-game.jpg" alt="">
 </center>
 
-And I imagined a situation such as this:
+And I imagined the following situation: balls are mutations of our production code and the child tries to break those balls with tests rays. Tests must be good enough to detect the mutations.
 
 <center>
-<img src="/img/cards/posts/mutation-testing//super-pang-mutation-testing.jpg" alt="Super Pang Game like Mutation Testing">
+<img src="/img/cards/posts/mutation-testing//super-pang-mutation-testing.jpg" alt="">
 </center>
 
 It’s called **mutation testing** and it's a good way to make sure that you have a good safety net with your current tests to refactor production code or to add new features. It is as if you test your tests in order to get more information about their suitability.
