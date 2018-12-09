@@ -134,11 +134,11 @@ img {
     text-decoration: none !important;
     text-align: center;
     display: block;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
 .btn_link:hover {
-    background: #333;
-    color: white;
+    background: #eaeaea;
 }
 
 .btn_box {
