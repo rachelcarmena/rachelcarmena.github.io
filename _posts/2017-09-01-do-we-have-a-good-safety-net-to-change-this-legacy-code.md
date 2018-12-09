@@ -17,7 +17,7 @@ Code coverage only gives us information about the percentage of code lines which
 
 Let’s see a way to verify that our current tests provide us with a safety net when we make changes to production code.
 
-If we change the production code - replacing `<` with `>=`, swapping `+` with `-` or we return a different value in a given method - test battery should detect that change. In order words, tests should fail.
+If we change the production code (for example, replacing `<` with `>=`, swapping `+` with `-` or returning a different value in a given method) test battery should detect that change. In order words, tests should fail.
 
 There are tools to make changes in production code automatically and to run tests in order to check if those changes are detected. It is usually referred to as follow:
 
@@ -28,13 +28,13 @@ There are tools to make changes in production code automatically and to run test
 
 So, we should aim at killing every mutation with tests. 
 
-When I heard about it I thought about that game I played when I was just a teenager: _Super Pang_.
+When I heard about it, I thought about that game I played when I was just a teenager: _Super Pang_.
 
 <center>
 <img src="/img/cards/posts/mutation-testing/super-pang-game.jpg" alt="">
 </center>
 
-And I imagined the following situation: balls are mutations of our production code and the child tries to break those balls with tests rays. Tests must be good enough to detect the mutations.
+And I imagined the following situation: balls are mutations of our production code and the child tries to break those balls with tests rays. Tests must be good enough to detect the balls and to break them.
 
 <center>
 <img src="/img/cards/posts/mutation-testing//super-pang-mutation-testing.jpg" alt="">
@@ -54,15 +54,17 @@ status arg3 = ((from.getParam1() < from.getParam2())? BLACK: WHITE);
 
 If we don’t have a test which considers the same value for `param1` and `param2`, a mutation will survive when applying <a href="http://pitest.org/quickstart/mutators/#CONDITIONALS_BOUNDARY" target="_blank">_Conditional Boundary Mutator_</a>:
 
-<center>
-<img src="/img/cards/posts/mutation-testing/survived-mutation.png" alt="Survived mutation">
-</center>
+<script src="https://gist.github.com/rachelcarmena/99b8ee9125859ae9730b1ad2e9519152.js?file=alive-mutation.log"></script>
 
-PIT report shows the affected line:
+PIT report shows the affected line.
 
 <center>
-<img src="/img/cards/posts/mutation-testing/pit-report-boundaries.jpg" alt="PIT Report">
+<img src="/img/cards/posts/mutation-testing/pit-report-boundaries.jpg" alt="">
 </center>
+
+When adding a test which considers the same value for `param1` and `param2`, the previous mutation will be killed:
+
+<script src="https://gist.github.com/rachelcarmena/99b8ee9125859ae9730b1ad2e9519152.js?file=killed-mutation.log"></script>
 
 ## Example: equals and hashCode methods
 
@@ -72,9 +74,7 @@ It’s common to find `equals` and `hashCode` methods in Java which are only use
 
 For example, a property is added to a class without updating `equals` and `hashCode` methods, so PIT statistics results in:
 
-<center>
-<img src="/img/cards/posts/mutation-testing/pit-statistics.png" alt="PIT Statistics">
-</center>
+<script src="https://gist.github.com/rachelcarmena/99b8ee9125859ae9730b1ad2e9519152.js?file=bad-statistics.log"></script>
 
 And PIT report alerts on `equals` and `hashCode` methods.
 
@@ -86,9 +86,7 @@ assertTrue(reflectionEquals(actualObject, expectedObject));
 
 In that case, we can succeed in killing every mutation:
 
-<center>
-<img src="/img/cards/posts/mutation-testing/new-pit-statistics.png" alt="PIT Statistics">
-</center>
+<script src="https://gist.github.com/rachelcarmena/99b8ee9125859ae9730b1ad2e9519152.js?file=good-statistics.log"></script>
 
 Another option could be to use <a href="http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#field-by-field-comparison" target="_blank">field by field comparisons</a> from <a href="http://joel-costigliola.github.io/assertj/index.html" target="_blank">AssertJ</a>. It's useful if the object under comparison has other custom objects as properties, so comparators for types can be added by <a href="http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#field-by-field-recursive" target="_blank">`usingComparatorForType`</a>. 
 
