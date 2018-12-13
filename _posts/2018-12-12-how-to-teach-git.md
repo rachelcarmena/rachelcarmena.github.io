@@ -49,7 +49,7 @@ At that time, you can explain the benefits of a distributed version control syst
 <img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/clone.png" alt="">
 </center>
 
-When cloning a repository, the data from the remote repository travels to 2 areas:
+When cloning a repository, the data from the remote repository travel to 2 areas:
 * Working directory
 * Local repository
 
@@ -96,7 +96,7 @@ Furthermore, you can explain:
 <img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/fetch.png" alt="">
 </center>
 
-When executing `git fetch`, the data from **remote repository** only travels to the **local repository**.
+When executing `git fetch`, the data from **remote repository** only travel to the **local repository**.
 
 ### Pulling
 
@@ -104,7 +104,7 @@ When executing `git fetch`, the data from **remote repository** only travels to 
 <img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/pull.png" alt="">
 </center>
 
-When executing `git pull`, the data from **remote repository** travels to 2 areas:
+When executing `git pull`, the data from **remote repository** travel to 2 areas:
 * Working directory (`merge`)
 * Local repository (`fetch`)
 
