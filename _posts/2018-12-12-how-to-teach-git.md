@@ -105,8 +105,16 @@ When executing `git fetch`, the data from **remote repository** only travel to t
 </center>
 
 When executing `git pull`, the data from **remote repository** travel to 2 areas:
-* Working directory (`merge`)
-* Local repository (`fetch`)
+* To **local repository**: `fetch`
+* To **working directory**: `merge`
+
+If you take care the commit history, consider the use of `git pull --rebase`. 
+Instead of `fetch + merge`, it consists of `fetch + rebase`. 
+Your local commits will be replayed and you won't see the known _diamond shape_ in commit history. 
+
+<center>
+<img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/pull-rebase.png" alt="">
+</center>
 
 ## Next steps
 
