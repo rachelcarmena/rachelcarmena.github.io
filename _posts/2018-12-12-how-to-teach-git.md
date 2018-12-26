@@ -126,6 +126,10 @@ If people internalize these concepts, it will be easier for you to go a step fur
 
 I've worked with other version control systems (Visual SourceSafe, TFS and Subversion) and, in my humble experience, a lack of knowledge can be harmful with both an old tool and a new one. Don't only focus on choosing a tool, but also on mastering it.
 
+## Further reading
+
+* [Pro Git book](https://git-scm.com/book/en)
+
 ## Received feedback
 
 * My friend <a href="https://twitter.com/marcvege" target="_blank">Marc Villagrasa</a> reminds me that he found it very useful to solve [Git challenges](https://www.slideshare.net/raquelmorenocarmena/git-challenges) and to share the solutions among colleagues.
