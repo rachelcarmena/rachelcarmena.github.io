@@ -1,4 +1,6 @@
 theme: jekyll-theme-slate
 title: "Rachel M. Carmena"
+paginate: 12
 plugins:
   - jekyll-feed
+  - jekyll-paginate

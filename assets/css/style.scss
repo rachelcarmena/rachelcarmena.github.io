@@ -42,55 +42,42 @@ img {
 
 #main_content {
     max-width: 54em;
-    padding-top: 20px;
+    padding: 1.2em;
 }
 
 #cards { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-    grid-gap: 0.4em;
-    margin-bottom: 1em;
+    grid-gap: 1.4em;
+    margin-top: 0.6em;
+    margin-bottom: 3em;
 }
 
 .card {
     border: 2px solid #333;
     border-radius: 10px;
     position: relative;
-    margin: 0.5em;
 }
 
 .card a {
     display: block;
-    padding: 1.8em;
+    padding: 0.8em;
     text-decoration: none;
 }
 
-.card:hover, .card a:focus {
+.card:hover, .card:focus, .card a:focus {
     background-color: #333;
-}
-
-.card_symbol_default {
-    display: inherit;
-}
-
-.card_symbol_hover {
-    display: none;
-}
-
-.card:hover .card_symbol_default, .card a:focus .card_symbol_default {
-    display: none;
-}
-
-.card:hover .card_symbol_hover, .card a:focus .card_symbol_hover {
-    display: inherit;
+    transition: background-color 0.8s;
 }
 
 .card_content {
-    min-height: 268px;
     background: white;
-    margin-top: 0.8em;
     position: relative;
-    border-bottom: 1px solid #bbb;
+    padding: 1.4em;
+}
+
+.card_symbol {
+    margin-bottom: 0.8em;
 }
 
 .card_cover {
@@ -104,9 +91,8 @@ img {
     line-height: 1.4em !important;
     font-size: 1.6em;
     color: #333;
-    padding: 0.2em;
-    margin: 0;
     text-align: right;
+    min-height: 4.2em;
 }
 
 /* Posts ------------------------- */
@@ -114,6 +100,7 @@ img {
 #post_content {
     margin-left: auto; 
     margin-right: auto; 
+    margin-bottom: 3em;
     max-width: 40em;
 }
 
@@ -128,26 +115,36 @@ img {
     object-position: 0 25%;
 }
 
-.btn_link {
-    font-size: 1.2em;
-    color: #333;
-    text-decoration: none !important;
-    text-align: center;
-    display: block;
-    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-}
-
-.btn_link:hover {
-    background: #eaeaea;
-}
-
-.btn_box {
-    border: 1px solid #333; 
-    margin-top: 2em;
-    margin-bottom: 1em;
-    padding: 0.2em;
-}
-
 .js-line-number {
     border: 0 !important;
+}
+
+.pagination {
+    font-size: 14px;
+    display: block;
+    width: auto;
+    overflow: hidden;
+    margin-top: 1em;
+}
+
+.pagination .previous_post, .pagination .next_post {
+    width: 50%;
+    float: left;
+}
+
+.pagination .previous_page, .pagination .pages, .pagination .next_page {
+    width: 33%;
+    float: left;
+}
+
+.pagination .pages {
+    text-align: center;
+}
+
+.pagination .next_post, .pagination .next_page {
+    text-align: right;
+}
+
+.info {
+    color: #bbb;
 }
