@@ -38,7 +38,7 @@ Another day:
 
 Another day:
 
-> **Me**: Mum! Please, I cannot sleep. Can we play a game? I ask you for water, but you don't come. So, I will fall asleep as it happened the other day.
+> **Me**: Mum! Please, I cannot fall asleep. Can we play a game? I ask you for water, but you don't come. So, I will fall asleep as it happened the other day.
 
 > **My mother**: What?
 
