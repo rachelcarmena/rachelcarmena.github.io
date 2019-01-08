@@ -1,19 +1,19 @@
 ---
 layout: post
 asset-type: post
-title: Having discussions
-description: Discussions are powerful and an ideas to have useful discussions
+title: Having conversations
+description: "Two views: conversations are powerful and an idea to have useful conversations"
 image:
-   src: /img/cards/posts/having-discussions/cover.jpg
+   src: /img/cards/posts/having-conversations/cover.jpg
 ---
 
-This post has 2 different parts. Firstly, I talk about the power of the discussions. Secondly, I give an idea to have useful discussions.
+This post has 2 different parts. Firstly, I talk about the power of the conversations. Secondly, I give an idea to have useful conversations.
 
-## The power of the discussions
+## The power of the conversations
 
 I've participated in meetings to estimate tasks following Planning Poker. Sometimes, using the original cards. Other times, using other type of cards (for example, T-Shirt sizes).
 
-I hardly saw an accurate estimation. However, I had very interesting discussions during those meetings:
+I hardly saw an accurate estimation. However, I had very interesting conversations during those meetings:
 
 * To understand the needs or the problem
 * To divide, order or change the tasks
@@ -42,11 +42,11 @@ Another day:
 
 > **My mother**: What?
 
-So, can we play a game? Can you ask us for an estimation? But you don't really want that estimation. You only want us to have a discussion to get valuable information.
+So, can we play a game? Can you ask us for an estimation? But you don't really want that estimation. You only want us to have a conversation to get valuable information.
 
-## An idea to have useful discussions
+## An idea to have useful conversations
 
-A discussion can be a mess when each person has a different thing in mind. We cannot read the mind, so it's very useful to draw the ideas on a paper or a board.
+A conversation can be a mess when each person has a different thing in mind. We cannot read the mind, so it's very useful to draw the ideas on a paper or a board.
 
 > I don't know how to draw my idea
 
