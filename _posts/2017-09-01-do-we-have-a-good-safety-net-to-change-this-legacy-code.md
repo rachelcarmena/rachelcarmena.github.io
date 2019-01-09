@@ -5,6 +5,7 @@ title: '99% code coverage'
 description: 'Do we have a good safety net to change this legacy code?'
 image:
   src: /img/cards/posts/mutation-testing/cover.jpg
+  thumbnail: /img/cards/posts/mutation-testing/thumb.cover.jpg
 ---
 
 ## Do we have a good safety net to change this legacy code?

@@ -5,6 +5,7 @@ title: Test-driven programming workflows
 description: TDD, TCR, Taking Baby Steps, ...
 image:
    src: /img/cards/posts/test-driven-programming-workflows/cover.jpg
+   thumbnail: /img/cards/posts/test-driven-programming-workflows/thumb.cover.jpg
 ---
 
 ## Once upon a time ...

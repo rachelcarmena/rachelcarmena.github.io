@@ -5,6 +5,7 @@ title: Duplication, you're welcome
 description: Thoughts and misunderstandings about duplication
 image:
    src: /img/cards/posts/duplication/cover.jpg
+   thumbnail: /img/cards/posts/duplication/thumb.cover.jpg
 ---
 
 There are models to describe the process of learning as <a href="http://wiki.c2.com/?DreyfusModel">Dreyfus model</a> or <a href="http://wiki.c2.com/?ShuHaRi" target="_blank">Shuhari</a>, but I'd like to explain another process when learning a new technical skill. It is composed of 2 phases: 

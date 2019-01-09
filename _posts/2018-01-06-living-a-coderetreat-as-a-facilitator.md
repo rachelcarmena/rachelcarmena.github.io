@@ -5,6 +5,7 @@ title: Living a Coderetreat as a facilitator
 description: Lessons learnt after an awesome event
 image:
    src: /img/cards/posts/coderetreat/cover.svg
+   thumbnail: /img/cards/posts/coderetreat/cover.svg
 ---
 
 Last 18th of November, I lived my first experience facilitating a Coderetreat. We celebrated the <a href="http://coderetreat.org" target="_blank">Global Day of Coderetreat</a>, an annual event in which Coderetreats take place simultaneously around all the world.
