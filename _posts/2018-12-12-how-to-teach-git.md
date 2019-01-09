@@ -5,6 +5,7 @@ title: How to teach Git
 description: An alternative way to teach Git
 image:
    src: /img/cards/posts/how-to-teach-Git/cover.jpg
+   thumbnail: /img/cards/posts/how-to-teach-Git/thumb.cover.jpg
 ---
 
 ## The problem I found
