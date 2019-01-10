@@ -3,7 +3,7 @@ layout: post
 asset-type: post
 title: "Open Space session: Supporters/Detractors game"
 cover-title: "Game for an Open Space session"
-description: Advocate an idea and the opposite one
+description: An idea from debate competitions
 image:
    src: /img/cards/posts/supporters-detractors-game/cover.jpg
    thumbnail: /img/cards/posts/supporters-detractors-game/thumb.cover.jpg
