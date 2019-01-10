@@ -1,7 +1,7 @@
 ---
 layout: post
 asset-type: post
-title: "Open Space session: Supporters/Detractors"
+title: "Open Space session: Supporters/Detractors game"
 cover-title: "Game for an Open Space session"
 description: Advocate an idea and the opposite one
 image:
