@@ -1,11 +1,12 @@
 ---
 layout: post
 asset-type: post
-title: "Open Space session: Black and White"
+title: "Open Space session: Supporters/Detractors"
+cover-title: "Game for an Open Space session"
 description: Advocate an idea and the opposite one
 image:
-   src: /img/cards/posts/black-and-white/cover.jpg
-   thumbnail: /img/cards/posts/black-and-white/thumb.cover.jpg
+   src: /img/cards/posts/supporters-detractors-game/cover.jpg
+   thumbnail: /img/cards/posts/supporters-detractors-game/thumb.cover.jpg
 ---
 
 I would like to propose this session in the next Open Space I participate.
@@ -26,16 +27,16 @@ Furthermore, debating lessons are not only useful to speak in public, but also r
 
 On the other hand, I gave [a talk about being open-minded](/2018/07/05/be-open-minded-my-friend.html) a few months ago, because we tend to have strong views about subjects like TDD, pull requests, pair programming or branching, among others. 
 
-We consider them good or bad with no shades of gray, because of the cognitive distortion "Black and White" Thinking. At that time, I proposed a _journey_ with different perspectives about each subject in order to be open-minded. Now, I'm proposing this _game_ based on debate competition rules with a different format.
+We consider them good or bad with no shades of gray, because of the cognitive distortion Polarized Thinking. At that time, I proposed a _journey_ with different perspectives about each subject in order to be open-minded. Now, I'm proposing this _game_ based on debate competition rules with a different format.
 
-## Black and White session rules
+## Supporters/Detractors game rules
 
 ### The subject
 
 There are two options:
 
-* The subject is part of the session proposal. For example: "Black and White session about pull requests".
-* The subject is decided by attendees of the session. In that case, the session proposal will be: "Black and White session".
+* The subject is part of the session proposal. For example: "Supporters/Detractors game about pull requests".
+* The subject is decided by attendees of the session. In that case, the session proposal will be: "Supporters/Detractors game".
 
 ### Participants
 
