@@ -32,7 +32,7 @@ If an image is decorative, it must be marked with an empty alternative text (`al
 
 If an image can briefly be described, we can write that description in the `alt` attribute.
 
-It an image needs an extended description, we could think about options which have the lowest impact on the visual layout:
+If an image needs an extended description, we could think about options which have the lowest impact on the visual layout:
 * **Near the image**: an HTML Details Element, which content is only visible when it's toggled into an "open" state. In this case, it's important to check if the scrolling view or the paginated view behaves correctly when expanded.
 * **In another place**: it's necessary to provide a way to take the user back to the same location.
 
