@@ -23,7 +23,7 @@ Furthermore, debating lessons are not only useful to speak in public, but also r
 
 * Ability to argue.
 * Being informed about different subjects and news.
-* Being open-minded, because she didn't always argue in line with her opinions. She found it very difficult at the beginning and she asked for arguments against or in support of different subjects in family Whatsapp group ;) However, she learnt very quickly and it made her mature.
+* Being open-minded, because she didn't always argue in line with her opinions. She found it very difficult at the beginning and she asked for arguments against or in support of different subjects in family WhatsApp group ;) However, she learnt very quickly and it made her mature.
 
 On the other hand, I gave [a talk about being open-minded](/2018/07/05/be-open-minded-my-friend.html) a few months ago, because we tend to have strong views about subjects like TDD, pull requests, pair programming or branching, among others. 
 
