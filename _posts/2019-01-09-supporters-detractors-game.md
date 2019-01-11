@@ -1,8 +1,8 @@
 ---
 layout: post
 asset-type: post
-title: "Open Space session: Supporters/Detractors game"
-cover-title: "Game for an Open Space session"
+title: "Open Space session: Supporters and Detractors game"
+cover-title: "Supporters and Detractors game"
 description: An idea from debate competitions
 image:
    src: /img/cards/posts/supporters-detractors-game/cover.jpg
@@ -29,14 +29,14 @@ On the other hand, I gave [a talk about being open-minded](/2018/07/05/be-open-m
 
 We consider them good or bad with no shades of gray, because of the cognitive distortion Polarized Thinking. At that time, I proposed a _journey_ with different perspectives about each subject in order to be open-minded. Now, I'm proposing this _game_ based on debate competition rules with a different format.
 
-## Supporters/Detractors game rules
+## Supporters and Detractors game rules
 
 ### The subject
 
 There are two options:
 
-* The subject is part of the session proposal. For example: "Supporters/Detractors game about pull requests".
-* The subject is decided by attendees of the session. In that case, the session proposal will be: "Supporters/Detractors game".
+* The subject is part of the session proposal. For example: "Supporters and Detractors game about pull requests".
+* The subject is decided by attendees of the session. In that case, the session proposal will be: "Supporters and Detractors game".
 
 ### Participants
 
