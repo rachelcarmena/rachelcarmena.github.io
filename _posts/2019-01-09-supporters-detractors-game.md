@@ -85,7 +85,7 @@ I think this game can be useful for:
 
 * Being open-minded.
 * Critical thinking.
-* Empathy.
+* Developing empathy.
 * Learning new perspectives and experiences.
 * Realizing about pros and cons.
 * Having a fun time.
