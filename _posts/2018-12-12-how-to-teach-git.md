@@ -133,4 +133,5 @@ I've worked with other version control systems (Visual SourceSafe, TFS and Subve
 
 ## Received feedback
 
-* My friend <a href="https://twitter.com/marcvege" target="_blank">Marc Villagrasa</a> reminds me that he found it very useful to solve [Git challenges](https://www.slideshare.net/raquelmorenocarmena/git-challenges) and to share the solutions among colleagues.
+* My friend [Marc Villagrasa](https://twitter.com/marcvege) reminds me that he found it very useful to solve [Git challenges](https://www.slideshare.net/raquelmorenocarmena/git-challenges) and to share the solutions among colleagues.
+

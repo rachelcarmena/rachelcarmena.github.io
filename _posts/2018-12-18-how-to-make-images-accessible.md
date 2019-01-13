@@ -58,7 +58,7 @@ If text organized with HTML is accessible, could an image in SVG format be acces
 * [MDN web docs - The Details disclosure element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details)
 * [MDN web docs - SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
 * [WAI Tutorial - Images Concepts](https://www.w3.org/WAI/tutorials/images)
-* [EPUBTEST 0340 - Extended Descriptions Accessibility Tests](http://epubtest.org/epubs/epub30-test-0340-20180821.epub)
+* [EPUBTEST 0340 - Extended Descriptions Accessibility Tests](http://epubtest.org/testsuite)
 * [Accessibility Features of SVG](https://www.w3.org/TR/SVG-access)
 * [Thread in WAI IG Discussion list](https://lists.w3.org/Archives/Public/w3c-wai-ig/2018OctDec/0128.html)
 * [Contributions to warn about the use of images with source code](https://github.com/dawnlabs/carbon/commits?author=rachelcarmena)
@@ -70,3 +70,4 @@ If text organized with HTML is accessible, could an image in SVG format be acces
 * [Jonathan Avila](https://www.levelaccess.com/leaders/jonathanavila/)
 * [George Kerscher](http://kerscher.montana.com)
 * [The working group on accessibility of EPUB](http://epubtest.org)
+

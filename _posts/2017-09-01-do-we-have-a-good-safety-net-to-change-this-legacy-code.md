@@ -43,7 +43,7 @@ And I imagined the following situation: balls are mutations of our production co
 
 It’s called **mutation testing** and it's a good way to make sure that you have a good safety net with your current tests to refactor production code or to add new features. It is as if you test your tests in order to get more information about their suitability.
 
-Let’s see some examples with <a href="http://pitest.org" target="_blank">PIT</a> and a simple <a href="https://github.com/rachelcarmena/problematic-code" target="_blank">Java project</a> with problematic code.
+Let’s see some examples with [PIT](http://pitest.org) and a simple [Java project](https://github.com/rachelcarmena/problematic-code) with problematic code.
 
 ## Example: boundaries
 
@@ -53,7 +53,7 @@ A boundary value could be forgotten when writing tests (even following TDD). For
 status arg3 = ((from.getParam1() < from.getParam2())? BLACK: WHITE);
 ```
 
-If we don’t have a test which considers the same value for `param1` and `param2`, a mutation will survive when applying <a href="http://pitest.org/quickstart/mutators/#CONDITIONALS_BOUNDARY" target="_blank">_Conditional Boundary Mutator_</a>:
+If we don’t have a test which considers the same value for `param1` and `param2`, a mutation will survive when applying [_Conditional Boundary Mutator_](http://pitest.org/quickstart/mutators/#CONDITIONALS_BOUNDARY):
 
 <script src="https://gist.github.com/rachelcarmena/99b8ee9125859ae9730b1ad2e9519152.js?file=alive-mutation.log"></script>
 
@@ -79,7 +79,7 @@ For example, a property is added to a class without updating `equals` and `hashC
 
 And PIT report alerts on `equals` and `hashCode` methods.
 
-If these methods are only used from test code, we can replace them with <a href="https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/builder/EqualsBuilder.html#reflectionEquals-java.lang.Object-java.lang.Object-boolean-" target="_blank">`EqualsBuilder.reflectionEquals`</a> from _Apache Commons Lang_:
+If these methods are only used from test code, we can replace them with [`EqualsBuilder.reflectionEquals`](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/builder/EqualsBuilder.html#reflectionEquals-java.lang.Object-java.lang.Object-boolean-) from _Apache Commons Lang_:
 
 ```
 assertTrue(reflectionEquals(actualObject, expectedObject));
@@ -89,18 +89,19 @@ In that case, we can succeed in killing every mutation:
 
 <script src="https://gist.github.com/rachelcarmena/99b8ee9125859ae9730b1ad2e9519152.js?file=good-statistics.log"></script>
 
-Another option could be to use <a href="http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#field-by-field-comparison" target="_blank">field by field comparisons</a> from <a href="http://joel-costigliola.github.io/assertj/index.html" target="_blank">AssertJ</a>. It's useful if the object under comparison has other custom objects as properties, so comparators for types can be added by <a href="http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#field-by-field-recursive" target="_blank">`usingComparatorForType`</a>. 
+Another option could be to use [field by field comparisons](http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#field-by-field-comparison) from [AssertJ](http://joel-costigliola.github.io/assertj/index.html). It's useful if the object under comparison has other custom objects as properties, so comparators for types can be added by [`usingComparatorForType`](http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#field-by-field-recursive). 
 
-Others prefer <a href="https://projectlombok.org/features/EqualsAndHashCode" target="_blank">Lombok</a> to make `equals` and `hashCode` methods available, but maybe it's not necessary if you only need to compare objects.
+Others prefer [Lombok](https://projectlombok.org/features/EqualsAndHashCode) to make `equals` and `hashCode` methods available, but maybe it's not necessary if you only need to compare objects.
 
-Regarding _verification_, <a href="https://static.javadoc.io/org.mockito/mockito-core/2.8.47/org/mockito/ArgumentMatchers.html#refEq(T,%20java.lang.String...)">`refEq`</a> is available from <a href="http://site.mockito.org" target="_blank">Mockito</a>.
+Regarding _verification_, [`refEq`](https://static.javadoc.io/org.mockito/mockito-core/2.8.47/org/mockito/ArgumentMatchers.html#refEq(T,%20java.lang.String...)) is available from [Mockito](http://site.mockito.org).
 
 ## Further reading 
 
-Take a look at <a href="https://codurance.com/2014/12/14/quality-cannot-be-measured">_Code quality cannot be measured_</a> by <a href="https://codurance.com/publications/author/sandro-mancuso">**Sandro Mancuso**</a>.
+Take a look at [_Code quality cannot be measured_](https://codurance.com/2014/12/14/quality-cannot-be-measured) by [**Sandro Mancuso**](https://codurance.com/publications/author/sandro-mancuso).
 
 ## Acknowledgments
 
-My special thanks go to <a href="https://codurance.com/publications/author/halima-koundi">**Halima Koundi**</a>, my very good colleague, for her help in this post.
+My special thanks go to [**Halima Koundi**](https://codurance.com/publications/author/halima-koundi), my very good colleague, for her help in this post.
 
-<a href="https://codurance.com/2017/09/01/do-we-have-a-good-safety-net-to-change-this-legacy-code/" target="_blank">I published this article at Codurance website</a>.
+[I published this article at Codurance website](https://codurance.com/2017/09/01/do-we-have-a-good-safety-net-to-change-this-legacy-code/).
+

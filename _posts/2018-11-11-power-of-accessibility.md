@@ -31,5 +31,6 @@ Thanks to Steve Faulkner, George Kerscher, Katie Haritos-Shea, Phill Jenkins, Mi
 ## Acknowledgments
 
 Thanks to:
-* <a href="https://twitter.com/carlosble" target="_blank">Carlos Ble</a> for his trust to participate as a speaker at <a href="https://jsdaycanarias.com" target="_blank">JS Day Canarias 2018</a>.
-* the awesome organizers of the event, <a href="https://twitter.com/dDiaLar" target="_blank">Dailos R. Díaz Lara</a> and <a href="https://twitter.com/Ivanbtrujillo" target="_blank">Iván Bacallado Trujillo</a>, for all the facilities to be there.
+* [Carlos Ble](https://twitter.com/carlosble) for his trust to participate as a speaker at [JS Day Canarias 2018](https://jsdaycanarias.com).
+* the awesome organizers of the event, [Dailos R. Díaz Lara](https://twitter.com/dDiaLar) and [Iván Bacallado Trujillo](https://twitter.com/Ivanbtrujillo), for all the facilities to be there.
+
