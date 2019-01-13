@@ -8,7 +8,7 @@ image:
    thumbnail: /img/cards/posts/duplication/thumb.cover.jpg
 ---
 
-There are models to describe the process of learning as <a href="http://wiki.c2.com/?DreyfusModel">Dreyfus model</a> or <a href="http://wiki.c2.com/?ShuHaRi" target="_blank">Shuhari</a>, but I'd like to explain another process when learning a new technical skill. It is composed of 2 phases: 
+There are models to describe the process of learning as [Dreyfus model](http://wiki.c2.com/?DreyfusModel) or [Shuhari](http://wiki.c2.com/?ShuHaRi), but I'd like to explain another process when learning a new technical skill. It is composed of 2 phases: 
 
 1. **Fascination**. This is when we learn a new concept that sounds really good to solve our problems, and we apply it in any place we have an opportunity. We are so convinced about its advantages that it seems we have a radar to detect a place in which we can apply it. It's like the first stage at Shuhari, but we are absolutely fascinated and we don't believe in _another world_.
 
@@ -37,7 +37,7 @@ We tend to associate this metric with **D.R.Y. Principle (Don't Repeat Yourself)
 
 This principle is talking about **knowledge**, not duplicated lines. Two pieces of code could be apparently similar, but have completely different reasons to change, because they represent different pieces of knowledge. Therefore, removing that duplication can muddle the logic and make any future change worse.
 
-That's the reason why I usually highlight **knowledge** when explaining the third rule of <a href="http://wiki.c2.com/?XpSimplicityRules" target="_blank">simple design</a>:
+That's the reason why I usually highlight **knowledge** when explaining the third rule of [simple design](http://wiki.c2.com/?XpSimplicityRules):
 > No **knowledge** duplication
 
 To sum up, some recommendations:
@@ -48,7 +48,7 @@ To sum up, some recommendations:
 
 ## Further reading
 
-* Demystifying another code metric: <a href="/2017/09/01/do-we-have-a-good-safety-net-to-change-this-legacy-code/">_99% code coverage - Do we have a good safety net to change this legacy code?_</a>
+* Demystifying another code metric: [_99% code coverage - Do we have a good safety net to change this legacy code?_](/2017/09/01/do-we-have-a-good-safety-net-to-change-this-legacy-code/)
 * _The Pragmatic Programmer: From Journeyman to Master_, by David Thomas and Andrew Hunt
 * _99 Bottles of OOP. A practical guide to Object-Oriented Design_, by Sandi Metz and Katrina Owen, where we can find this sentence:
 > DRY makes sense when it reduces the cost of change more than it increases the cost of understanding the code.
@@ -57,7 +57,8 @@ To sum up, some recommendations:
 
 Thanks:
 
-* my colleague <a href="https://codurance.com/publications/author/jorge-gueorguiev-garcia">Jorge Gueorguiev</a> for his inputs when I talked about this subject.
-* my friend <a href="https://twitter.com/dcarral" target="_blank">Daniel Carral</a> for his dojo _What is good code? Evaluating code quality_.
+* my colleague [Jorge Gueorguiev](https://codurance.com/publications/author/jorge-gueorguiev-garcia) for his inputs when I talked about this subject.
+* my friend [Daniel Carral](https://twitter.com/dcarral) for his dojo _What is good code? Evaluating code quality_.
 
-<a href="https://codurance.com/2018/02/27/duplication-you-are-welcome" target="_blank">I published this article at Codurance website</a>.
+[I published this article at Codurance website](https://codurance.com/2018/02/27/duplication-you-are-welcome).
+

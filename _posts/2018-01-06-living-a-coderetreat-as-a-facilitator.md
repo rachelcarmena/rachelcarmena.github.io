@@ -8,13 +8,13 @@ image:
    thumbnail: /img/cards/posts/coderetreat/cover.svg
 ---
 
-Last 18th of November, I lived my first experience facilitating a Coderetreat. We celebrated the <a href="http://coderetreat.org" target="_blank">Global Day of Coderetreat</a>, an annual event in which Coderetreats take place simultaneously around all the world.
+Last 18th of November, I lived my first experience facilitating a Coderetreat. We celebrated the [Global Day of Coderetreat](http://coderetreat.org), an annual event in which Coderetreats take place simultaneously around all the world.
 
 For those people who never attended a Coderetreat, it's a full day event where the same problem is faced with different constraints. It's a way to practice and improve our craft, experimenting, sharing and learning new things. Coderetreats started at 2009 and the current format came out at 2010.
 
 ## Before the event
 
-Global Day of Coderetreat organization provides a lot of resources to prepare yourself as a facilitator: videos, blogs, online hangouts to solve doubts, ... In my case, I was lucky, because I also had the help of my awesome colleague **<a href="https://codurance.com/publications/author/robert-firek" target="_blank">Robert Firek</a>**, who accumulates a lot of experience facilitating Coderetreats and he gave me a lot of advice and ideas.
+Global Day of Coderetreat organization provides a lot of resources to prepare yourself as a facilitator: videos, blogs, online hangouts to solve doubts, ... In my case, I was lucky, because I also had the help of my awesome colleague **[Robert Firek](https://codurance.com/publications/author/robert-firek)**, who accumulates a lot of experience facilitating Coderetreats and he gave me a lot of advice and ideas.
 
 On the other hand, I like this kind of events, because it helps to create community among us. For example, I had the opportunity to meet people from Wallapop, who also organized the event in Barcelona. We had an interesting meeting in which we reviewed all the items for the event, filling a table with cards about:
 
@@ -47,7 +47,7 @@ There were common rules for all the sessions:
 
 ### The challenge
 
-The problem to solve in a Global Day of Coderetreat is <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">Conway's Game of Life</a>. It's a game which starts with an initial generation of living cells on a board and it evolves automatically to next generations with these rules:
+The problem to solve in a Global Day of Coderetreat is [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). It's a game which starts with an initial generation of living cells on a board and it evolves automatically to next generations with these rules:
 
 <center>
 <img src="/img/cards/posts/coderetreat/rules.png" alt="Game Rules" class="img img-responsive"/>
@@ -57,13 +57,13 @@ Maybe you ask yourself: the same problem all the years? It seems a simple proble
 
 I helped pairs in order to realise about certain issues, for example:
 
-- Modelling state with 0 or 1 and having conditionals with these values. This choice violates <a href="http://wiki.c2.com/?OpenClosedPrinciple" target="_blank">OCP Principle</a>. _'What if must we consider zombie cells?'_
-- <a href="http://wiki.c2.com/?DataClumps" target="_blank">Data Clump</a> with cell coordinates. It causes duplication of knowledge about the topology of the board. _'What if I asked you about having another dimension? How many places would you have to change?'_
+- Modelling state with 0 or 1 and having conditionals with these values. This choice violates [OCP Principle](http://wiki.c2.com/?OpenClosedPrinciple). _'What if must we consider zombie cells?'_
+- [Data Clump](http://wiki.c2.com/?DataClumps) with cell coordinates. It causes duplication of knowledge about the topology of the board. _'What if I asked you about having another dimension? How many places would you have to change?'_
 - _'What are you saving in this variable?'_ My questions showed that naming wasn't clear.
 - Lack of encapsulation, revealing internal details in test code.
 - Using test names not corresponding with the content of the tests. 
-- _'Why are you saving the state in each cell if you have the living cells in a specific list?'_ Last two points violate <a href="http://wiki.c2.com/?PrincipleOfLeastAstonishment" target="_blank">P.O.L.A.</a>
-- Focus on testing the state of the board without thinking about testing the behaviour firstly. When starting with the expected behaviour, tests about state of the board will come out. The book <a href="https://leanpub.com/4rulesofsimpledesign" target="_blank">Understanding the 4 Rules of Simple Design</a> by **Corey Haines** has a detailed chapter about it.
+- _'Why are you saving the state in each cell if you have the living cells in a specific list?'_ Last two points violate [P.O.L.A.](http://wiki.c2.com/?PrincipleOfLeastAstonishment)
+- Focus on testing the state of the board without thinking about testing the behaviour firstly. When starting with the expected behaviour, tests about state of the board will come out. The book [Understanding the 4 Rules of Simple Design](https://leanpub.com/4rulesofsimpledesign) by **Corey Haines** has a detailed chapter about it.
 
 My favorite session was the last one: swapping stations. Source code is not deleted at the end of the previous session and pairs write what they do and don't like about their code. Secondly, pairs move to the following station and then, they work on another pair's code trying to improve it. Among other things, they liked:
 
@@ -128,9 +128,9 @@ After the feedback received and my experience, I took this notes for the next ev
 * Giving advice for testing new languages only when the other member of the pair knows that language, because some of them spent a lot of time preparing their environment to try other languages.
 * _The cobbler should stick to his last_. Attendees had drinks and food during the whole day, but I would have had to buy more food for lunch time.
 * Organizing all retrospectives in circle, not only the final one. We commented the sessions standing but next to the tables, so it wasn't easy to see all the faces and a circle would have encouraged more the participation.
-* Starting with a session about thinking the problem on paper, as our old colleague <a href="/blog/author/samir-talwar" target="_blank">Samir Talwar</a>:
+* Starting with a session about thinking the problem on paper, as our old colleague [Samir Talwar](https://codurance.com/blog/author/samir-talwar):
 <center>
-<blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">First session: no computers! <a href="https://twitter.com/hashtag/GDCR17?src=hash&amp;ref_src=twsrc%5Etfw">#GDCR17</a> <a href="https://t.co/76EkvwJUIN">pic.twitter.com/76EkvwJUIN</a></p>&mdash; ✈️ flight risk ✈️ (@SamirTalwar) <a href="https://twitter.com/SamirTalwar/status/931822781490237440?ref_src=twsrc%5Etfw">18 de noviembre de 2017</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">First session: no computers! [#GDCR17](https://twitter.com/hashtag/GDCR17?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/76EkvwJUIN](https://t.co/76EkvwJUIN)</p>&mdash; ✈️ flight risk ✈️ (@SamirTalwar) [18 de noviembre de 2017](https://twitter.com/SamirTalwar/status/931822781490237440?ref_src=twsrc%5Etfw)</blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </center>
 
@@ -140,7 +140,7 @@ Thanks:
 
 * **Codurance**, for this opportunity.
 * **Global Day of Coderetreat** organization, for their kindness and keeping this event alive year after year.
-* <a href="https://www.meetup.com/es-ES/Barcelona-Software-Craftsmanship" target="_blank">Barcelona Software Craftsmanship Community</a>, for promoting the event.
+* [Barcelona Software Craftsmanship Community](https://www.meetup.com/es-ES/Barcelona-Software-Craftsmanship), for promoting the event.
 * my colleague **Robert Firek**, for his ideas, advice and support.
 * my colleagues **Erik Torres** and **Nacho García**, for their support, before, during and after the event. It would have been impossible without their great help.
 * my colleagues **Iván Badia** and **Daniel Pérez**, for attending the event and sharing time together.
@@ -150,6 +150,7 @@ Thanks:
 * **Lambda World Conference 2017**, for Cádiz Carnaval mirliton, which I used to announce the final of each session ;)
 * and last but not least, attendees, without whom this event wouldn't have made sense. Special thanks for your feedback, because it's very valuable.
 
-This event allowed me to meet awesome people. I would like to mention **<a href="https://twitter.com/nyan_dev" target="_blank">Meritxell Calvo</a>** and **<a href="https://twitter.com/dcarral" target="_blank">Daniel Carral</a>**, who I admire for their active involvement in the community. I hope to devirtualize them very soon!
+This event allowed me to meet awesome people. I would like to mention **[Meritxell Calvo](https://twitter.com/nyan_dev)** and **[Daniel Carral](https://twitter.com/dcarral)**, who I admire for their active involvement in the community. I hope to devirtualize them very soon!
 
-<a href="https://codurance.com/2018/01/06/living-a-coderetreat-as-a-facilitator" target="_blank">I published this article at Codurance website</a>.
+[I published this article at Codurance website](https://codurance.com/2018/01/06/living-a-coderetreat-as-a-facilitator).
+

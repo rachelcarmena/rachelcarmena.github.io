@@ -10,7 +10,7 @@ image:
 
 One of my best childhood memories is listening to the stories that my maternal grandfather, a very curious man, told me. However, not only do we lose a lot of details over time, but also we age and the same story can provide us different information after years. Last summer I reread _Robinson Crusoe_ by _Daniel Defoe_ after more than 20 years and I discovered an absolutely different book. 
 
-Now I've had the same experience with <a href="http://wiki.c2.com/?MythicalManMonth" target="_blank">The Mythical Man-Month</a> by <a href="http://wiki.c2.com/?FredBrooks" target="_blank">Fred Brooks</a>, the father of the IBM System/360. This book was published in **1975** and it was reissued on its 20th Anniversary with four new chapters. On the one hand, it contains problems which still happen nowadays and it's worthwhile reading, because:
+Now I've had the same experience with [The Mythical Man-Month](http://wiki.c2.com/?MythicalManMonth) by [Fred Brooks](http://wiki.c2.com/?FredBrooks), the father of the IBM System/360. This book was published in **1975** and it was reissued on its 20th Anniversary with four new chapters. On the one hand, it contains problems which still happen nowadays and it's worthwhile reading, because:
 
 > Those who cannot remember the past are condemned to repeat it. -- Jorge Santayana
 
@@ -151,7 +151,7 @@ Rebuilding the development system every night and running the test cases were re
 
 ## Information hiding
 
-In **1971** and **1972**, <a href="http://wiki.c2.com/?DavidParnas">David Parnas</a> wrote several articles about **information-hiding** concept. 
+In **1971** and **1972**, [David Parnas](http://wiki.c2.com/?DavidParnas) wrote several articles about **information-hiding** concept. 
 
 In the Operating System/360 project, it was decided that all programmers should see all the material. That view contrasted with David Parnas's _teaching that modules of code should be encapsulated with well-defined interfaces_. Brooks recognized:
 
@@ -165,33 +165,34 @@ Brooks's experience with IBM Operating System/360 convinced him that:
 
 > (...) the quality of the people on a project, and their organization and management, are much more important factors in success than are the tools they use or the technical approaches they take.
 
-In **1987**, <a href="http://wiki.c2.com/?TomDeMarco" target="_blank">Tom DeMarco</a> and <a href="http://wiki.c2.com/?TimLister" target="_blank">Tim Lister</a> published <a href="http://wiki.c2.com/?PeopleWare" target="_blank">Peopleware: Productive Projects and Teams</a> where they provide data about their _Coding War Games_ and concluding things like:
+In **1987**, [Tom DeMarco](http://wiki.c2.com/?TomDeMarco) and [Tim Lister](http://wiki.c2.com/?TimLister) published [Peopleware: Productive Projects and Teams](http://wiki.c2.com/?PeopleWare) where they provide data about their _Coding War Games_ and concluding things like:
 
 > The manager's function is not to make people work, it is to make it possible for people to work.
 
-It reminds me of a post I wrote about my own concept of software quality, <a href="/2017/07/09/P3-Quality">P3 Quality</a>, in which **People** is the key factor.
+It reminds me of a post I wrote about my own concept of software quality, [P3 Quality](/2017/07/09/P3-Quality), in which **People** is the key factor.
 
 ## Start-up firms
 
-In **1973**, **E. F. Schumacher** published <a href="https://www.goodreads.com/book/show/1117634.Small_Is_Beautiful" target="_blank">Small is Beautiful: Economics as if People Mattered</a> proposing a theory of organizing enterprises with _many semi-autonomous units_, called **quasi-firms**, with _a large amount of freedom, to give the greatest possible chance to creativity and entrepreneurship_.
+In **1973**, **E. F. Schumacher** published [Small is Beautiful: Economics as if People Mattered](https://www.goodreads.com/book/show/1117634.Small_Is_Beautiful) proposing a theory of organizing enterprises with _many semi-autonomous units_, called **quasi-firms**, with _a large amount of freedom, to give the greatest possible chance to creativity and entrepreneurship_.
 
 Brooks includes several examples of good results putting such organizational ideas into practice and how **microcomputer revolution** created hundreds of small **start-up firms**, marked by **enthusiasm**, **freedom**, and **creativity**.
 
 ## Conway's Law
 
-In **1968**, <a href="https://twitter.com/conways_law" target="_blank">Melvin E. Conway</a> published <a href="http://www.melconway.com/Home/pdf/committees.pdf" target="_blank">How do committees invent?</a> where he related the organization chart with the first software design:
+In **1968**, [Melvin E. Conway](https://twitter.com/conways_law) published [How do committees invent?](http://www.melconway.com/Home/pdf/committees.pdf) where he related the organization chart with the first software design:
 
 > Organizations which design systems are constrained to produce systems which are copies of the communication structures of these organizations.
 
 And _if the system design is to be free to change, the organization must be prepared to change._
 
-A few days ago, I saw this tweet by <a href="https://practicingdeveloper.com/" target="_blank">Gregory Brown</a>:
+A few days ago, I saw this tweet by [Gregory Brown](https://practicingdeveloper.com/):
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Protip?src=hash&amp;ref_src=twsrc%5Etfw">#Protip</a>: If you want to make an observation or share a theory about Conway&#39;s Law... Mel is still around and actively doing his research.<br><br>Tag <a href="https://twitter.com/conways_law?ref_src=twsrc%5Etfw">@conways_law</a> and there&#39;s a chance he&#39;ll look at your stuff and comment. 😀<br><br>Also follow him. He&#39;s an incredibly insightful thinker.</p>&mdash; Practicing Developer (@practicingdev) <a href="https://twitter.com/practicingdev/status/974704392640389121?ref_src=twsrc%5Etfw">March 16, 2018</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">[#Protip](https://twitter.com/hashtag/Protip?src=hash&ref_src=twsrc%5Etfw): If you want to make an observation or share a theory about Conway&#39;s Law... Mel is still around and actively doing his research.<br><br>Tag [@conways_law](https://twitter.com/conways_law?ref_src=twsrc%5Etfw) and there&#39;s a chance he&#39;ll look at your stuff and comment. 😀<br><br>Also follow him. He&#39;s an incredibly insightful thinker.</p>&mdash; Practicing Developer (@practicingdev) [March 16, 2018](https://twitter.com/practicingdev/status/974704392640389121?ref_src=twsrc%5Etfw)</blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Acknowledgments
 
-Thanks to my friends <a href="https://twitter.com/marcvege" target="_blank">Marc Villagrasa</a> and <a href="https://twitter.com/MikeGonYe" target="_blank">Mike González</a>, good and kind people, because I reread this book because of them. I hope I have been able to make it more enjoyable.
+Thanks to my friends [Marc Villagrasa](https://twitter.com/marcvege) and [Mike González](https://twitter.com/MikeGonYe), good and kind people, because I reread this book because of them. I hope I have been able to make it more enjoyable.
 
-<a href="https://codurance.com/2018/03/31/rereading-the-mythical-man-month" target="_blank">I published this article at Codurance website</a>.
+[I published this article at Codurance website](https://codurance.com/2018/03/31/rereading-the-mythical-man-month).
+

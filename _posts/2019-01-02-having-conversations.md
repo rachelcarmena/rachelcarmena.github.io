@@ -53,10 +53,11 @@ A conversation can be a mess when each person has a different thing in mind. We 
 
 In order to face that situation, I find it very useful to know some notation or language to get graphical representations. I like to use BPMN or UML depending on the goal. Yes, UML. UML is not dead. 
 
-A few days ago, <a href="https://twitter.com/ivarjacobson" target="_blank">Ivar Jacobson</a>, one of the creators of UML, wrote an article about it: <a href="https://www.linkedin.com/pulse/rumors-death-uml-all-false-ivar-jacobson/">Rumors of the death of UML are all false</a>. I love these sentences:
+A few days ago, [Ivar Jacobson](https://twitter.com/ivarjacobson), one of the creators of UML, wrote an article about it: [Rumors of the death of UML are all false](https://www.linkedin.com/pulse/rumors-death-uml-all-false-ivar-jacobson/). I love these sentences:
 
 > No doubt that UML contains many very useful diagrams when discussing software architecture.
 
 Sequence Diagrams are one of my favourites.
 
 > (...) if UML is used in a smart way it really helps the teams to understand where they are heading.
+

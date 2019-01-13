@@ -32,7 +32,7 @@ After a few minutes:
 
 A few days later:
 
-> Oh! We read too quickly. TCR was formulated by <a href="https://twitter.com/jraregris" target="_blank">Oddmund Strømme</a>...
+> Oh! We read too quickly. TCR was formulated by [Oddmund Strømme](https://twitter.com/jraregris)...
 
 > It comes from the idea of "test && commit" by Kent Beck
 
@@ -42,22 +42,22 @@ The goal is to see the differences between test-driven programming workflows cle
 
 * Test-driven development (TDD) by **Kent Beck**
 * Using constraints to force yourself to do small steps:
-    * <a href="https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864" target="_blank">test && commit || revert (TCR)</a> by **Oddmund Strømme**
-    * <a href="http://blog.adrianbolboaca.ro/2013/03/taking-baby-steps" target="_blank">Taking Baby Steps</a> by **Adrian Bolboaca**
+    * [Test and commit or revert (TCR)](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864) by **Oddmund Strømme**
+    * [Taking Baby Steps](http://blog.adrianbolboaca.ro/2013/03/taking-baby-steps) by **Adrian Bolboaca**
 
 Recently I added 3 further workflows. They come from the idea of TCR, but trying not to miss the RED step:
 
-* <a href="https://github.com/FaustXVI/demo-tcr/blob/master/tcrdd.sh" target="_blank">RED or revert, GREEN or revert, REFACTOR (also GREEN or revert)</a> by **Xavier Detant**
+* [RED or revert, GREEN or revert, REFACTOR (also GREEN or revert)](https://github.com/FaustXVI/demo-tcr/blob/master/tcrdd.sh) by **Xavier Detant**
 * TDD with TCR constraint and test fails first by **Dave Schinkel**
-* <a href="https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert" target="_blank">(Test && Commit) || TestCodeOnly || Revert</a> by **Jeff Grigg**
+* [(Test and Commit) or TestCodeOnly or Revert](https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert) by **Jeff Grigg**
 
 ## The result
 
 The diagrams to see the differences between them:
-* <a href="/img/cards/posts/test-driven-programming-workflows/workflows.png">Test-driven programming workflows (PNG)</a>
-* <a href="https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows.svg">Test-driven programming workflows (SVG)</a>
-* <a href="/img/cards/posts/test-driven-programming-workflows/workflows-with-TCR-variants.png">Test-driven programming workflows with TCR variants (PNG)</a>
-* <a href="https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows-with-TCR-variants.svg">Test-driven programming workflows with TCR variants (SVG)</a>
+* [Test-driven programming workflows (PNG)](/img/cards/posts/test-driven-programming-workflows/workflows.png)
+* [Test-driven programming workflows (SVG)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows.svg)
+* [Test-driven programming workflows with TCR variants (PNG)](/img/cards/posts/test-driven-programming-workflows/workflows-with-TCR-variants.png)
+* [Test-driven programming workflows with TCR variants (SVG)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows-with-TCR-variants.svg)
 
 And I recorded this short video to explain the diagram, because it's invisible for some people with disabilities:
 
@@ -74,7 +74,7 @@ However, the result of running tests is not checked with TCR, between writing th
 
 ## About missing the RED step with TCR
 
-When Kent Beck shared this <a href="https://www.youtube.com/watch?v=ZrHBVTCbcE0" target="_blank">video about an example of TCR</a>, **Danil Suits** pointed out his way of doing the RED step at Software Crafters Slack: 
+When Kent Beck shared this [video about an example of TCR](https://www.youtube.com/watch?v=ZrHBVTCbcE0), **Danil Suits** pointed out his way of doing the RED step at Software Crafters Slack: 
 
 * Inverting the conditional when introducing the broken test
 * Proving that the old implementation _doesn't_ pass the test
@@ -85,12 +85,13 @@ Maybe we are not missing the RED step, because we have a way of knowing that our
 
 ## Further knowledge
 
-* <a href="https://hanselminutes.com/663/test-commit-revert-with-kent-beck" target="_blank">The Hanselminutes podcast by Scott Hanselman: test && commit || revert with Kent Beck</a>
-* <a href="https://medium.com/@tdeniffel/tcr-variants-test-commit-revert-bf6bd84b17d3" target="_blank">Post with a lot of TCR Variants by Thomas Deniffel</a>
-* <a href="https://www.reddit.com/r/tcrProgramming/" target="_blank">Reddit-community for TCR</a>
+* [The Hanselminutes podcast by Scott Hanselman: test and commit or revert with Kent Beck](https://hanselminutes.com/663/test-commit-revert-with-kent-beck)
+* [Post with a lot of TCR Variants by Thomas Deniffel](https://medium.com/@tdeniffel/tcr-variants-test-commit-revert-bf6bd84b17d3)
+* [Reddit-community for TCR](https://www.reddit.com/r/tcrProgramming/)
 
 ## Acknowledgments
 
 Thanks **Software Crafters Community** for all the received feedback.
 
-Special thanks to <a href="https://twitter.com/DaveSchinkel" target="_blank">Dave Schinkel</a>, <a href="https://twitter.com/fran_reyes" target="_blank">Fran Reyes</a>, <a href="https://twitter.com/sanlaville" target="_blank">Rémy Sanlaville</a>, <a href="https://twitter.com/XDetant" target="_blank">Xavier Detant</a>, <a href="http://wiki.c2.com/?JeffGrigg" target="_blank">Jeff Grigg</a> and <a href="https://twitter.com/VocumSineratio" target="_blank">Danil Suits</a>.
+Special thanks to [Dave Schinkel](https://twitter.com/DaveSchinkel), [Fran Reyes](https://twitter.com/fran_reyes), [Rémy Sanlaville](https://twitter.com/sanlaville), [Xavier Detant](https://twitter.com/XDetant), [Jeff Grigg](http://wiki.c2.com/?JeffGrigg) and [Danil Suits](https://twitter.com/VocumSineratio).
+
