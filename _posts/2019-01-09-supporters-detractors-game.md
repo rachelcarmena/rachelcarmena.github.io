@@ -13,7 +13,7 @@ I would like to propose this session in the next Open Space I participate.
 
 Please, let me know if you try it before in order to know your feedback.
 
-In case you haven't heard about Open Space, it's a format for a meeting or conference created by Harrison Owen in 1985, where schedule is decided on the fly by attendees.
+In case you haven't heard about Open Space, it's a format for a meeting or conference created by Harrison Owen in the 80s, where schedule is decided on the fly by attendees.
 
 ## The origin of the idea
 
