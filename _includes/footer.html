@@ -1,15 +1,3 @@
-<a href="https://github.com/rachelcarmena" title="Github profile"><img src="/img/footer/github.svg" alt=""></a>
-<a href="https://twitter.com/bberrycarmen" title="Twitter profile"><img src="/img/footer/twitter.svg" alt=""></a>
-<a href="https://www.linkedin.com/in/raquelmorenocar/" title="Linkedin profile"><img src="/img/footer/linkedin.svg" alt=""></a>
-<a href="https://www.slideshare.net/raquelmorenocarmena/presentations" title="Slideshare presentations"><img src="/img/footer/slideshare.svg" alt=""></a>
-<a href="https://www.flickr.com/photos/rachelcarmena/albums" title="Photo albums"><img src="/img/footer/camera.svg" alt=""></a>
-<a href="https://www.youtube.com/channel/UCHPmRUkWp_sI4RpWd5X0nag/featured" title="YouTube profile"><img src="/img/footer/youtube.svg" alt=""></a>
-<a href="https://www.meetup.com/members/192375574" title="Meetup profile"><img src="/img/footer/meetup.svg" alt=""></a>
-<a href="https://stackoverflow.com/users/7298719/rachel-m-carmena" title="Stack Overflow profile"><img src="/img/footer/stackoverflow.svg" alt=""></a>
-<a href="https://issues.jenkins-ci.org/issues/?filter=15867" title="Some contributions to Jenkins Community"><img src="/img/footer/jenkins.svg" alt=""></a>
-<a href="https://community.atlassian.com/t5/user/v2/viewprofilepage/user-id/630548" title="Some contributions to Atlassian Community"><img src="/img/footer/atlassian.svg" alt=""></a>
-<a href="https://instagram.com/rachelcarmena" title="Instagram"><img src="/img/footer/instagram.svg" alt=""></a>
-<a href="https://developer.mozilla.org/en-US/profiles/rachelcarmena" title="Mozilla profile"><img src="/img/footer/mozilla.svg" alt=""></a>
-<a href="https://trello.com/rachelmcarmena" title="Trello profile"><img src="/img/footer/trello.svg" alt=""></a>
-<a href="https://www.reddit.com/user/rachelcarmena" title="reddit profile"><img src="/img/footer/reddit.svg" alt=""></a>
-<a href="/feed.xml" title="Atom RSS feed"><img src="/img/footer/rss.svg" alt=""></a>
+{% for link in site.data.footer_links %}
+    <a href="{{ link.url }}" title="{{ link.title }}"><img src="/img/footer/{{ link.image }}" alt=""></a>
+{% endfor %}
