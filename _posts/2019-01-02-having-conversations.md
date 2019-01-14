@@ -51,7 +51,7 @@ A conversation can be a mess when each person has a different thing in mind. We 
 
 > I don't know how to draw my idea
 
-In order to face that situation, I find it very useful to know some notation or language to get graphical representations. I like to use BPMN or UML depending on the goal. Yes, UML. UML is not dead. 
+In order to face that situation, I find it very useful to know some notation or language to get graphical representations. I like to use BPMN or UML depending on the goal. 
 
 A few days ago, [Ivar Jacobson](https://twitter.com/ivarjacobson), one of the creators of UML, wrote an article about it: [Rumors of the death of UML are all false](https://www.linkedin.com/pulse/rumors-death-uml-all-false-ivar-jacobson/). I love these sentences:
 
