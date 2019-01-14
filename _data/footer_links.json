@@ -1,0 +1,77 @@
+[
+  {
+    "title": "Github profile",
+    "image": "github.svg",
+    "url": "https://github.com/rachelcarmena"
+  },
+  {
+    "title": "Twitter profile",
+    "image": "twitter.svg",
+    "url": "https://twitter.com/bberrycarmen"
+  },
+  {
+    "title": "Linkedin profile",
+    "image": "linkedin.svg",
+    "url": "https://www.linkedin.com/in/raquelmorenocar/"
+  },
+  {
+    "title": "Slideshare presentations",
+    "image": "slideshare.svg",
+    "url": "https://www.slideshare.net/raquelmorenocarmena/presentations"
+  },
+  {
+    "title": "Photo albums",
+    "image": "camera.svg",
+    "url": "https://www.flickr.com/photos/rachelcarmena/albums"
+  },
+  {
+    "title": "YouTube profile",
+    "image": "youtube.svg",
+    "url": "https://www.youtube.com/channel/UCHPmRUkWp_sI4RpWd5X0nag/featured"
+  },
+  {
+    "title": "Meetup profile",
+    "image": "meetup.svg",
+    "url": "https://www.meetup.com/members/192375574"
+  },
+  {
+    "title": "Stack Overflow profile",
+    "image": "stackoverflow.svg",
+    "url": "https://stackoverflow.com/users/7298719/rachel-m-carmena"
+  },
+  {
+    "title": "Some contributions to Jenkins Community",
+    "image": "jenkins.svg",
+    "url": "https://issues.jenkins-ci.org/issues/?filter=15867"
+  },
+  {
+    "title": "Some contributions to Atlassian Community",
+    "image": "atlassian.svg",
+    "url": "https://community.atlassian.com/t5/user/v2/viewprofilepage/user-id/630548"
+  },
+  {
+    "title": "Instagram",
+    "image": "instagram.svg",
+    "url": "https://instagram.com/rachelcarmena"
+  },
+  {
+    "title": "Mozilla profile",
+    "image": "mozilla.svg",
+    "url": "https://developer.mozilla.org/en-US/profiles/rachelcarmena"
+  },
+  {
+    "title": "Trello profile",
+    "image": "trello.svg",
+    "url": "https://trello.com/rachelmcarmena"
+  },
+  {
+    "title": "reddit profile",
+    "image": "reddit.svg",
+    "url": "https://www.reddit.com/user/rachelcarmena"
+  },
+  {
+    "title": "Atom RSS feed",
+    "image": "rss.svg",
+    "url": "/feed.xml"
+  }
+]
