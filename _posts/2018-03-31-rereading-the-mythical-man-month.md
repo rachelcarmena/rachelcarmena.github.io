@@ -185,11 +185,6 @@ In **1968**, [Melvin E. Conway](https://twitter.com/conways_law) published [How 
 
 And _if the system design is to be free to change, the organization must be prepared to change._
 
-A few days ago, I saw this tweet by [Gregory Brown](https://practicingdeveloper.com/):
-
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">[#Protip](https://twitter.com/hashtag/Protip?src=hash&ref_src=twsrc%5Etfw): If you want to make an observation or share a theory about Conway&#39;s Law... Mel is still around and actively doing his research.<br><br>Tag [@conways_law](https://twitter.com/conways_law?ref_src=twsrc%5Etfw) and there&#39;s a chance he&#39;ll look at your stuff and comment. 😀<br><br>Also follow him. He&#39;s an incredibly insightful thinker.</p>&mdash; Practicing Developer (@practicingdev) [March 16, 2018](https://twitter.com/practicingdev/status/974704392640389121?ref_src=twsrc%5Etfw)</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 ## Acknowledgments
 
 Thanks to my friends [Marc Villagrasa](https://twitter.com/marcvege) and [Mike González](https://twitter.com/MikeGonYe), good and kind people, because I reread this book because of them. I hope I have been able to make it more enjoyable.
