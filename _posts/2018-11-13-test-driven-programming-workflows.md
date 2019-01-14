@@ -81,7 +81,12 @@ When Kent Beck shared this [video about an example of TCR](https://www.youtube.c
 
 In this way, as **Danil Suits** said, "if you are wrong about the current implementation failing your new test, the test gets thrown out".
 
-Maybe we are not missing the RED step, because we have a way of knowing that our new test is right. If a new test is GREEN it's as bad as if the negation of the new test is RED.
+Maybe we are not missing the RED step, because we have a way of knowing that our new test is right: **if a new test is GREEN it's as bad as if the negation of the new test is RED**. 
+
+I would like to practice this idea in order to check if it can be widely applied. Meanwhile, here the diagrams with this idea:
+
+* [Test-driven programming workflows (PNG)](/img/cards/posts/test-driven-programming-workflows/workflows-with-an-idea-for-TCR.png)
+* [Test-driven programming workflows (SVG)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows-with-an-idea-for-TCR.svg)
 
 ## Further knowledge
 
