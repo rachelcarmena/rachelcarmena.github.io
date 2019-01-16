@@ -22,7 +22,7 @@ They didn't know the reason why those steps. They only knew that they should fol
 
 ## The idea
 
-I love to have maps in my mind. I don't write "mind maps", because they are a well-known type of diagrams. Now I'm talking about having frames, structures or any kind of graphical representation in the mind. For example, I start learning addition by imagining dice in my mind.
+I love to have maps in my mind. I don't write "mind maps", because they are a well-known type of diagrams. Now I'm talking about having frames, structures or any kind of graphical representation in the mind. For example, I started learning addition by imagining dice in my mind.
 
 So I prepared some drawings. It's not necessary to be able to see the drawings to understand this post. I include an explanation for each of them, because of my awareness with accessibility.
 
@@ -133,5 +133,23 @@ I've worked with other version control systems (Visual SourceSafe, TFS and Subve
 
 ## Received feedback
 
-* My friend [Marc Villagrasa](https://twitter.com/marcvege) reminds me that he found it very useful to solve [Git challenges](https://www.slideshare.net/raquelmorenocarmena/git-challenges) and to share the solutions among colleagues.
+My friend [Marc Villagrasa](https://twitter.com/marcvege) reminds me that he found it very useful to solve [Git challenges](https://www.slideshare.net/raquelmorenocarmena/git-challenges) and to share the solutions among colleagues.
 
+Resources from [comments at Hacker News](https://news.ycombinator.com/item?id=18919599):
+
+* [Linus Torvalds' greatest invention](http://perl.plover.com/yak/git/)
+* [Tech Talk: Linus Torvalds on git](https://www.youtube.com/watch?v=4XpnKHJAok8)
+* [Linux.conf.au 2013 - Git For Ages 4 And Up](https://www.youtube.com/watch?v=1ffBJ4sVUb4)
+* [Git From the Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up)
+* [Git From the Bottom Up (PDF)](http://ftp.newartisans.com/pub/git.from.bottom.up.pdf)
+* [Learn Git Branching](https://learngitbranching.js.org)
+* [Flight rules for git](https://github.com/k88hudson/git-flight-rules)
+* [Emacs package: Magit](https://magit.vc)
+* [How to write a Good Commit Message](https://chris.beams.io/posts/git-commit/)
+* [Become a git guru](https://www.atlassian.com/git/tutorials)
+* [Git Immersion](http://gitimmersion.com)
+* [Udacity: How to Use Git and GitHub](https://eu.udacity.com/course/how-to-use-git-and-github--ud775#)
+
+This post is only a starting point for mentors or trainers and I'm sure all of these resources will be very useful as well. Thanks!
+
+And thanks who shared this post at Hacker News!
