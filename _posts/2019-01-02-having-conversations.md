@@ -5,7 +5,6 @@ title: Having conversations
 description: "Two views: conversations are powerful and an idea to have useful conversations"
 image:
    src: /img/cards/posts/having-conversations/cover.jpg
-   thumbnail: /img/cards/posts/having-conversations/thumb.cover.jpg
 ---
 
 This post has 2 different parts. Firstly, I talk about the power of the conversations. Secondly, I give an idea to have useful conversations.

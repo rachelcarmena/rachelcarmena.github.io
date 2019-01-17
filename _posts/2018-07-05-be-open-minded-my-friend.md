@@ -5,7 +5,6 @@ title: "Be open-minded, my friend"
 description: A journey across different technical subjects
 image:
  src: /img/cards/posts/be-open-minded-my-friend/cover.jpg
- thumbnail: /img/cards/posts/be-open-minded-my-friend/thumb.cover.jpg
 ---
 
 ## Summary of the talk

@@ -6,7 +6,6 @@ cover-title: "Supporters and Detractors game"
 description: An idea from debate competitions
 image:
    src: /img/cards/posts/supporters-detractors-game/cover.jpg
-   thumbnail: /img/cards/posts/supporters-detractors-game/thumb.cover.jpg
 ---
 
 I would like to propose this session in the next Open Space I participate.

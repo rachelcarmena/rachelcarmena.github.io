@@ -5,7 +5,6 @@ title: Software as a craft
 description: Talk
 image:
    src: /img/cards/posts/sw-as-a-craft/cover.png
-   thumbnail: /img/cards/posts/sw-as-a-craft/thumb.cover.png
 ---
 
 ## Slide deck
