@@ -14,7 +14,7 @@ title: My card game
                 {% if post.image.src contains '.svg' %}
                     <img class="card_cover" src="{{ post.image.src }}" alt="">
                 {% else %}
-                    <img class="card_cover" src="{{ post.image.src || replace: 'cover', 'thumb.cover' }}" alt="">
+                    <img class="card_cover" src="{{ post.image.src | replace: 'cover', 'thumb.cover' }}" alt="">
                 {% endif %}
                 {% if post.cover-title %}
                     <h2>{{ post.cover-title }}</h2>
