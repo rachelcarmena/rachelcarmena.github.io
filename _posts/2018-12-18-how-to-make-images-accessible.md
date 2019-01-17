@@ -5,7 +5,6 @@ title: How to make images accessible
 description: Considering different types of images
 image:
    src: /img/cards/posts/how-to-make-images-accessible/cover.jpg
-   thumbnail: /img/cards/posts/how-to-make-images-accessible/thumb.cover.jpg
 ---
 
 ## Introduction

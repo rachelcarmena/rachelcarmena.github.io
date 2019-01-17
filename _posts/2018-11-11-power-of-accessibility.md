@@ -5,7 +5,6 @@ title: The Power of Accessibility
 description: It's not only related to people with disabilities
 image:
    src: /img/cards/posts/power-of-accessibility/cover.jpg
-   thumbnail: /img/cards/posts/power-of-accessibility/thumb.cover.jpg
 ---
 
 ## Video

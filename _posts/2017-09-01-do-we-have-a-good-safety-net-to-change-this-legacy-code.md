@@ -6,7 +6,6 @@ cover-title: '99% code coverage'
 description: 'Do we have a good safety net to change this legacy code?'
 image:
   src: /img/cards/posts/mutation-testing/cover.jpg
-  thumbnail: /img/cards/posts/mutation-testing/thumb.cover.jpg
 ---
 
 A long time ago, I met a development team which was working under big pressure by the quality team. Personally, I don’t like this kind of differences between development and quality teams, because it leads to development teams not feeling responsible for quality and to a confrontational relationship. They should be working collaboratively towards a unified goal of delivering a quality product.

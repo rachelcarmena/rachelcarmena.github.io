@@ -5,7 +5,6 @@ title: Rereading The Mythical Man-Month
 description: Discovering a new book after 20 years
 image:
    src: /img/cards/posts/the-mythical-man-month/cover.png
-   thumbnail: /img/cards/posts/the-mythical-man-month/thumb.cover.png
 ---
 
 One of my best childhood memories is listening to the stories that my maternal grandfather, a very curious man, told me. However, not only do we lose a lot of details over time, but also we age and the same story can provide us different information after years. Last summer I reread _Robinson Crusoe_ by _Daniel Defoe_ after more than 20 years and I discovered an absolutely different book. 
