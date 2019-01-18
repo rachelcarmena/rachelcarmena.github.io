@@ -87,6 +87,36 @@ I would like to practice this idea in order to check if it can be widely applied
 * [Test-driven programming workflows (PNG)](/img/cards/posts/test-driven-programming-workflows/workflows-with-an-idea-for-TCR.png)
 * [Test-driven programming workflows (SVG)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows-with-an-idea-for-TCR.svg)
 
+## My proposal of TCR variant
+
+Besides the concern with the RED step, I would like not to miss the feedback between:
+
+* RED > changes are reverted
+* Starting again > GREEN > now it works, but I don't know the mistake I made before
+
+So, I'd prefer:
+
+```
+test && commit || stash
+```
+
+because `stash` implies a final `git reset --hard` as well (code will have to be written again), but we keep the feedback. 
+
+What would be the implementation of `stash` step to get that feedback?
+
+```
+if [ -z "$(git stash list)" ]; then 
+    echo "*** NO PREVIOUS STASH ***"
+    git stash
+else
+    echo "*** DIFF WITH PREVIOUS STASH ***"
+    git stash show
+    echo "*** END OF DIFF ***"
+    git stash clear
+    git stash
+fi
+```
+
 ## Further knowledge
 
 * [The Hanselminutes podcast by Scott Hanselman: test and commit or revert with Kent Beck](https://hanselminutes.com/663/test-commit-revert-with-kent-beck)
