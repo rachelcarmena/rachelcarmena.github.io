@@ -149,6 +149,6 @@ Resources from [comments at Hacker News](https://news.ycombinator.com/item?id=18
 * [Git Immersion](http://gitimmersion.com)
 * [Udacity: How to Use Git and GitHub](https://eu.udacity.com/course/how-to-use-git-and-github--ud775#)
 
-This post is only a starting point for mentors or trainers and I'm sure all of these resources will be very useful as well. Thanks!
+After reading more [comments at Reddit](https://www.reddit.com/r/programming/comments/agko6r/how_to_teach_git/), I think that a more accurate title for this post would be **An idea to teach Git**, because it's only an idea that appeared in my head when learning Git by myself a few years ago with [Pro Git book](https://git-scm.com/book/en). This post is not a complete guide, only a starting point for trainers. I'm sure all of these resources will be very useful as well. Thanks!
 
-And thanks who shared this post at Hacker News!
+And thanks [Stuart Maxwell](https://stuartm.com) who shared this post at Hacker News and [u/cryptoz](https://www.reddit.com/user/cryptoz) who shared it at Reddit!
