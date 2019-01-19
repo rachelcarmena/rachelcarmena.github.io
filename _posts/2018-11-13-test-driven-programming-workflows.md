@@ -91,8 +91,10 @@ I would like to practice this idea in order to check if it can be widely applied
 
 Besides the concern with the RED step, I would like not to miss the feedback between:
 
-* RED > changes are reverted
-* Starting again > GREEN > now it works, but I don't know the mistake I made before
+* RED: changes are reverted
+* Starting again
+    * GREEN: now it works, but I don't know the mistake I made before
+    * or RED: it doesn't still work, but I don't know the difference with previous step
 
 So, I'd prefer:
 
@@ -102,9 +104,32 @@ test && commit || stash
 
 because `stash` implies a final `git reset --hard` as well (code will have to be written again), but we keep the feedback. 
 
-What would be the implementation of `stash` step to get that feedback?
+What would be the implementation of `commit` and `stash` steps to get that feedback?
+
+### commit step
 
 ```
+#!/bin/sh
+
+if [ -z "$(git stash list)" ]; then
+    echo "*** NO PREVIOUS STASH ***"
+else
+    echo "*** DIFF WITH PREVIOUS STASH ***"
+    git stash show
+    echo "*** END OF DIFF ***"
+    git stash clear
+fi
+git add .
+git commit -m "Message doesn't matter here"
+```
+
+Message doesn't matter in that step, because commits will be squashed with the right message before pushing.
+
+### stash step
+
+```
+#!/bin/sh
+
 if [ -z "$(git stash list)" ]; then 
     echo "*** NO PREVIOUS STASH ***"
     git stash
