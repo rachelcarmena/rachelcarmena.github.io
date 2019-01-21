@@ -47,7 +47,7 @@ To sum up, some recommendations:
 
 ## Further reading
 
-* Demystifying another code metric: [_99% code coverage - Do we have a good safety net to change this legacy code?_](/2017/09/01/do-we-have-a-good-safety-net-to-change-this-legacy-code/)
+* Demystifying another code metric: [_99% code coverage - Do we have a good safety net to change this legacy code?_](/2017/09/01/do-we-have-a-good-safety-net-to-change-this-legacy-code.html)
 * _The Pragmatic Programmer: From Journeyman to Master_, by David Thomas and Andrew Hunt
 * _99 Bottles of OOP. A practical guide to Object-Oriented Design_, by Sandi Metz and Katrina Owen, where we can find this sentence:
 > DRY makes sense when it reduces the cost of change more than it increases the cost of understanding the code.

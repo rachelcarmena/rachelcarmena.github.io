@@ -168,7 +168,7 @@ In **1987**, [Tom DeMarco](http://wiki.c2.com/?TomDeMarco) and [Tim Lister](http
 
 > The manager's function is not to make people work, it is to make it possible for people to work.
 
-It reminds me of a post I wrote about my own concept of software quality, [P3 Quality](/2017/07/09/P3-Quality), in which **People** is the key factor.
+It reminds me of a post I wrote about my own concept of software quality, [P3 Quality](/2017/07/09/P3-Quality.html), in which **People** is the key factor.
 
 ## Start-up firms
 

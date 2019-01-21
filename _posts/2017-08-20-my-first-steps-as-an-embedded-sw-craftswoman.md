@@ -16,7 +16,7 @@ I participated in consultancy projects a few years ago, but they were the typica
 
 Soon, I noticed that this approach was only partially useful. When I re-joined a company that I had helped previously, I realised that we hadn’t understood their real problems. When you are inside a company you “feel” its problems, you really know the reasons behind those problems and you have a very different perspective to help you understand possible solutions.
 
-I joined Codurance a few months ago, a very different consultancy company. After a period of apprenticeship, absorbing the principles, values and practices from Codurance, I started working as an embedded software craftswoman. That is to say I’m a member of one of the teams at a client who wanted to improve the [quality](/2017/07/09/P3-Quality) of the software that they produce.
+I joined Codurance a few months ago, a very different consultancy company. After a period of apprenticeship, absorbing the principles, values and practices from Codurance, I started working as an embedded software craftswoman. That is to say I’m a member of one of the teams at a client who wanted to improve the [quality](/2017/07/09/P3-Quality.html) of the software that they produce.
 
 It has been a rewarding experience, because I have the opportunity to see the improvements in the team, "living" with them, while I continue to be a member of an awesome group of people that gives meaning to Codurance, who are always available to help, to share, and to learn with me.
 
