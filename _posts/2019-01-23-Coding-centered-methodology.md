@@ -7,6 +7,8 @@ image:
     src: /img/cards/posts/coding-centered-methodology/cover.jpg
 ---
 
+A friend of mine:
+
 > Rachel, I'm lost with so many names: Scrum, Kanban, Scrumban, Extreme Programming, Agile methodologies and DevOps. And now you are talking about Software Craftsmanship. Absolutely lost. Where are we going? What methodology should I choose?
 
 It was a difficult question and I needed to organize the mentioned methodologies and cultures.
@@ -66,6 +68,38 @@ So I think that we are travelling to a **coding-centered methodology** as follow
 * Having a set of agile technical practices
 
 And following a learning culture in order to share and improve our skills.
+
+My friend again:
+
+> Thanks, I have a general idea now. And what are the rules of that software development methodology?
+
+There aren't rules.
+
+It consists of values:
+
+* [Values from Extreme Programming](http://www.extremeprogramming.org/values.html)
+* [Values from Manifesto for Agile Software Development](https://agilemanifesto.org)
+* [Values from Manifesto for Software Craftsmanship](http://manifesto.softwarecraftsmanship.org/)
+* Pragmatism
+* Proactivity
+* Open-minded
+* Creativity
+* Trust
+
+and principles:
+
+* [Principles from Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming#Principles)
+* [Principles from Manifesto for Agile Software Development](https://agilemanifesto.org/principles.html)
+* [Principles from Continuous Delivery](https://continuousdelivery.com/principles/)
+* [Lean Manufacturing Principles](http://www.lean-manufacturing-junction.com/lean-manufacturing-principles.html)
+
+and practices:
+
+* [Practices from Extreme Programming](https://ronjeffries.com/xprog/what-is-extreme-programming/) 
+* [Other test-driven programming workflows](/2018/11/13/test-driven-programming-workflows.html)
+* [Property-based testing (link of the canonical framework)](https://hackage.haskell.org/package/QuickCheck)
+* [Continuous Delivery](https://continuousdelivery.com)
+* [Trunk based development](https://trunkbaseddevelopment.com)
 
 ## Further reading
 
