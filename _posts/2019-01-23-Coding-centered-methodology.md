@@ -45,7 +45,7 @@ In 2001, there was a discussion about all the new methodologies and the result w
 * Continuous attention to **technical excellence** and **good design** enhances agility.
 * At regular intervals, the team reflects on **how to become more effective**, then tunes and adjusts its behavior accordingly.
 
-These 3 principles are focused on professionalism and a well-craft software. However, in 2008, Robert C. Martin proposed a fifth value for the Agile Manifesto: _Craftsmanship over Crap_. 
+These 3 principles are focused on professionalism and well-craft software. However, in 2008, Robert C. Martin proposed a fifth value for the Agile Manifesto: _Craftsmanship over Crap_. 
 
 More discussions came up with an extension of the Agile Manifesto in 2009: [Manifesto for Software Craftsmanship](http://manifesto.softwarecraftsmanship.org/). 
 
@@ -86,7 +86,7 @@ It consists of values:
 * Creativity
 * Trust
 
-and principles:
+principles:
 
 * [Principles from Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming#Principles)
 * [Principles from Manifesto for Agile Software Development](https://agilemanifesto.org/principles.html)
