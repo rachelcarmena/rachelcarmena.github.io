@@ -71,7 +71,7 @@ And following a learning culture in order to share and improve our skills.
 
 My friend again:
 
-> Thanks, I have a general idea now. And what are the rules of that software development methodology?
+> Thanks, I have a general idea now. And which are the rules of that software development methodology?
 
 There aren't rules.
 
