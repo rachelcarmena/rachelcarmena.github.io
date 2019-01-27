@@ -31,7 +31,7 @@ After a few minutes:
 
 A few days later:
 
-> Oh! We read too quickly. TCR was formulated by [Oddmund Strømme](https://twitter.com/jraregris)...
+> Oh! We read too quickly. TCR was formulated by [Oddmund Strømme](https://twitter.com/jraregris), Ole Tjensvoll Johannessen and [Lars Barlindhaug](https://twitter.com/barlindh) during a code camp with Kent Beck
 
 > It comes from the idea of "test && commit" by Kent Beck
 
@@ -41,14 +41,18 @@ The goal is to see the differences between test-driven programming workflows cle
 
 * Test-driven development (TDD) by **Kent Beck**
 * Using constraints to force yourself to do small steps:
-    * [Test and commit or revert (TCR)](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864) by **Oddmund Strømme**
+    * [Test && commit \|\| revert (TCR)](https://medium.com/@barlindhaug/how-to-test-commit-revert-e850cd6e2520) by **Oddmund Strømme**, **Ole Tjensvoll Johannessen** and **Lars Barlindhaug**
     * [Taking Baby Steps](http://blog.adrianbolboaca.ro/2013/03/taking-baby-steps) by **Adrian Bolboaca**
 
 Recently I added 3 further workflows. They come from the idea of TCR, but trying not to miss the RED step:
 
-* [RED or revert, GREEN or revert, REFACTOR (also GREEN or revert)](https://github.com/FaustXVI/demo-tcr/blob/master/tcrdd.sh) by **Xavier Detant**
+* [RED \|\| revert, GREEN \|\| revert, REFACTOR (also GREEN \|\| revert)](https://github.com/FaustXVI/demo-tcr/blob/master/tcrdd.sh) by **Xavier Detant**
 * TDD with TCR constraint and test fails first by **Dave Schinkel**
-* [(Test and Commit) or TestCodeOnly or Revert](https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert) by **Jeff Grigg**
+* [(Test && Commit) \|\| TestCodeOnly \|\| Revert](https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert) by **Jeff Grigg**
+
+A new variant:
+
+* [test && commit \|\| revert ; pending](https://blog.oddmundo.com/2019/01/27/test-commit-revert-pending.html) by **Oddmund Strømme**
 
 ## The result
 
@@ -93,8 +97,8 @@ Besides the concern with the RED step, I would like not to miss the feedback bet
 
 * RED: changes are reverted
 * Starting again
-    * GREEN: now it works, but I don't know the mistake I made before
-    * or RED: it doesn't still work, but I don't know the difference with previous step
+    * GREEN: now it works, but I don't know the difference with previous step
+    * or RED: it doesn't still work, I see the result of tests before reverting, but I don't know the difference with previous step
 
 So, I'd prefer:
 
@@ -144,6 +148,7 @@ fi
 
 ## Further knowledge
 
+* [First article about TCR by Kent Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864)
 * [The Hanselminutes podcast by Scott Hanselman: test and commit or revert with Kent Beck](https://hanselminutes.com/663/test-commit-revert-with-kent-beck)
 * [Post with a lot of TCR Variants by Thomas Deniffel](https://medium.com/@tdeniffel/tcr-variants-test-commit-revert-bf6bd84b17d3)
 * [Reddit-community for TCR](https://www.reddit.com/r/tcrProgramming/)
