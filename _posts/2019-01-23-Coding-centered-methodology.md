@@ -69,6 +69,10 @@ So I think that we are travelling to a **coding-centered methodology** as follow
 
 And following a learning culture in order to share and improve our skills.
 
+[UPDATE] Of course, coding-centered doesn't mean only coding, nor to remove analysis and design, but focused on getting value and feedback as soon as possible. As [Kent Beck said in an interview](https://www.youtube.com/watch?v=fH4gqsIYzyE):
+
+> We were taught that the way that you develop software is you think very carefully about what you're going to do first (...) you draw lots of diagrams and you write lots of text and you specify exactly what the system needs to do - not exactly how it's going to accomplish it - and then, you design exactly the computer system that will implement those ideas (...) When you start implementing it, you realize "hey, this is not what we want the system to do". And even if that is what we want the system to do, the way we were guessing isn't going to work to make that happen (...) It's a question of the order of the decisions (...) Nobody's saying you don't have to decide what the system has to do, but the question is how much of it you have to decide when.
+
 My friend again:
 
 > Thanks, I have a general idea now. And which are the rules of that software development methodology?
