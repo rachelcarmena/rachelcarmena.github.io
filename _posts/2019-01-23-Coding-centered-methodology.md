@@ -95,7 +95,7 @@ principles:
 * [Principles from Extreme Programming](https://en.wikipedia.org/wiki/Extreme_programming#Principles)
 * [Principles from Manifesto for Agile Software Development](https://agilemanifesto.org/principles.html)
 * [Principles from Continuous Delivery](https://continuousdelivery.com/principles/)
-* [Lean Manufacturing Principles](http://www.lean-manufacturing-junction.com/lean-manufacturing-principles.html)
+* [Lean Software Development Principles](http://www.leanessays.com/2015/06/lean-software-development-history.html)
 
 and practices:
 
