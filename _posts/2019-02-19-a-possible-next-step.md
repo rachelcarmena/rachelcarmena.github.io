@@ -98,14 +98,13 @@ I met a lot of awesome people, but the most involved person in the reflections o
 
 ## Received feedback
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="da" dir="ltr">DevTestOps ;-) ?</p>&mdash; amisai (@amisai) <a href="https://twitter.com/amisai/status/1097845674870222851?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+In [Twitter](https://twitter.com/bberrycarmen/status/1097833633275105282):
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Knowing her was my top <a href="https://twitter.com/hashtag/ETCMoment?src=hash&amp;ref_src=twsrc%5Etfw">#ETCMoment</a> <a href="https://t.co/fn6SBvtE2B">https://t.co/fn6SBvtE2B</a></p>&mdash; Francisco Moreno (@morvader) <a href="https://twitter.com/morvader/status/1097858160856125441?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="da" dir="ltr">DevTestOps ;-) ?</p>&mdash; amisai (@amisai) </blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So much this!! Love it. <a href="https://t.co/ZQL7J193bK">https://t.co/ZQL7J193bK</a></p>&mdash; Elisabeth Hocke (@lisihocke) <a href="https://twitter.com/lisihocke/status/1097924838503731204?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Knowing her was my top <a href="https://twitter.com/hashtag/ETCMoment?src=hash&amp;ref_src=twsrc%5Etfw">#ETCMoment</a> </p>&mdash; Francisco Moreno (@morvader) </blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It’s about testing not testers. <a href="https://t.co/fVg8GZlOtM">https://t.co/fVg8GZlOtM</a></p>&mdash; Maaret Pyhäjärvi (@maaretp) <a href="https://twitter.com/maaretp/status/1097959283512274945?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So much this!! Love it. </p>&mdash; Elisabeth Hocke (@lisihocke) </blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It’s about testing not testers. </p>&mdash; Maaret Pyhäjärvi (@maaretp) </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
