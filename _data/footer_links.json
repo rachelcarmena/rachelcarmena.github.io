@@ -75,6 +75,11 @@
     "url": "https://news.ycombinator.com/user?id=rachelmcarmena"
   },
   {
+    "title": "Personal space (Spanish)",
+    "image": "clover.svg",
+    "url": "/sigfredo"
+  },
+  {
     "title": "Atom RSS feed",
     "image": "rss.svg",
     "url": "/feed.xml"
