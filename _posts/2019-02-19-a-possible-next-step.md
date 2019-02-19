@@ -61,10 +61,10 @@ and with:
 * Developers that feel responsible of the quality (TDD, pairing, code reviews, integration testing, etc).
 * Testers that spot the gaps left by developers (other perspectives when thinking about the solutions, performance, difficult integrations, production observability, etc).
 * Developers who sit with testers to know what they do and vice versa (_Oh! I can help you with..._, _Oh! I can teach you a way for ..._, etc).
-* Developers and testers who are working together from the beginning to the end.
-* Developers and testers who are growing together.
-* Developers and testers who are complementing and cooperating with each other.
-* Developers and testers who are being equally considered, because all of them have particular skills and provide value.
+* Developers and testers who work together from the beginning to the end.
+* Developers and testers who grow together.
+* Developers and testers who complement and cooperate with each other.
+* Developers and testers who are equally considered, because all of them have particular skills and provide value.
 
 Stopping the use of DEV and TEST columns on boards, can it lead to all of those things?
 
