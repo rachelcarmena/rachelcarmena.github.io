@@ -92,6 +92,6 @@ Not always the known things can fit our problems and we can need to improve them
 
 ## Acknowledgments
 
-I would be eternally grateful to the organization of [European Testing Conference](https://europeantestingconference.eu) for the opportunity of attending that awesome event, which provided me new friends, interesting conversations, knowledge, reflection moments and more things that I will be aware of them in the next days.
+I will be eternally grateful to the organization of [European Testing Conference](https://europeantestingconference.eu) for the opportunity of attending that awesome event, which provided me new friends, interesting conversations, knowledge, reflection moments and more things that I will be aware of them in the next days.
 
 I met a lot of awesome people, but the most involved person in the reflections of this post is [Francisco Moreno](https://twitter.com/morvader) (maybe another cousin that I find in a conference, because we have similar origins). He's working as a QA Lead and he gave me the confidence to talk about the current situation openly.
