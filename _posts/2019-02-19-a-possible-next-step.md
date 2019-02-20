@@ -107,4 +107,9 @@ In [Twitter](https://twitter.com/bberrycarmen/status/1097833633275105282):
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So much this!! Love it. </p>&mdash; Elisabeth Hocke (@lisihocke) </blockquote>
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It’s about testing not testers. </p>&mdash; Maaret Pyhäjärvi (@maaretp) </blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great words and better advice! I felt the same and I was not able to express it correctly. &#39;You made it, you test it, you deploy it&#39;. Having a separate QA team is an antipattern. All should be considered to be in the same team and work in parallel from the beginning of the project</p>&mdash; Fran Climent (@fraclipe) </blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;I think that knowing what other roles usually do can help me to be a person with greater awareness, empathy and ideas to work together collaboratively.&quot; <a href="https://twitter.com/hashtag/ThatsItThatsAll?src=hash&amp;ref_src=twsrc%5Etfw">#ThatsItThatsAll</a> 😉</p>&mdash; Cutre Scrum (@q3scrum) </blockquote>
+
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
