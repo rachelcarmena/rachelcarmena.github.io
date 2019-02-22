@@ -116,9 +116,9 @@ What would be the implementation of `commit` and `stash` steps to get that feedb
 #!/bin/sh
 
 if [ -z "$(git stash list)" ]; then
-    echo "*** NO PREVIOUS STASH ***"
+    echo "*** NO PREVIOUS STASHED SOURCE CODE ***"
 else
-    echo "*** DIFF WITH PREVIOUS STASH ***"
+    echo "*** DIFF WITH PREVIOUS STASHED SOURCE CODE ***"
     git stash show
     echo "*** END OF DIFF ***"
     git stash clear
@@ -135,10 +135,10 @@ Message doesn't matter in that step, because commits will be squashed with the r
 #!/bin/sh
 
 if [ -z "$(git stash list)" ]; then 
-    echo "*** NO PREVIOUS STASH ***"
+    echo "*** NO PREVIOUS STASHED SOURCE CODE ***"
     git stash
 else
-    echo "*** DIFF WITH PREVIOUS STASH ***"
+    echo "*** DIFF WITH PREVIOUS STASHED SOURCE CODE ***"
     git stash show
     echo "*** END OF DIFF ***"
     git stash clear
