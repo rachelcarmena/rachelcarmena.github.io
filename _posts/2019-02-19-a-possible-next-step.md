@@ -100,16 +100,20 @@ I met a lot of awesome people, but the most involved person in the reflections o
 
 In [Twitter](https://twitter.com/bberrycarmen/status/1097833633275105282):
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="da" dir="ltr">DevTestOps ;-) ?</p>&mdash; amisai (@amisai) </blockquote>
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="da" dir="ltr">DevTestOps ;-) ?</p>&mdash; amisai (@amisai) <a href="https://twitter.com/amisai/status/1097845674870222851?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Knowing her was my top <a href="https://twitter.com/hashtag/ETCMoment?src=hash&amp;ref_src=twsrc%5Etfw">#ETCMoment</a> </p>&mdash; Francisco Moreno (@morvader) </blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Knowing her was my top <a href="https://twitter.com/hashtag/ETCMoment?src=hash&amp;ref_src=twsrc%5Etfw">#ETCMoment</a> </p>&mdash; Francisco Moreno (@morvader) <a href="https://twitter.com/morvader/status/1097858160856125441?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So much this!! Love it. </p>&mdash; Elisabeth Hocke (@lisihocke) </blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So much this!! Love it. </p>&mdash; Elisabeth Hocke (@lisihocke) <a href="https://twitter.com/lisihocke/status/1097924838503731204?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It’s about testing not testers. </p>&mdash; Maaret Pyhäjärvi (@maaretp) </blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It’s about testing not testers. </p>&mdash; Maaret Pyhäjärvi (@maaretp) <a href="https://twitter.com/maaretp/status/1097959283512274945?ref_src=twsrc%5Etfw">February 19, 2019</a></blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great words and better advice! I felt the same and I was not able to express it correctly. &#39;You made it, you test it, you deploy it&#39;. Having a separate QA team is an antipattern. All should be considered to be in the same team and work in parallel from the beginning of the project</p>&mdash; Fran Climent (@fraclipe) </blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great words and better advice! I felt the same and I was not able to express it correctly. &#39;You made it, you test it, you deploy it&#39;. Having a separate QA team is an antipattern. All should be considered to be in the same team and work in parallel from the beginning of the project</p>&mdash; Fran Climent (@fraclipe) <a href="https://twitter.com/fraclipe/status/1098090551981813762?ref_src=twsrc%5Etfw">February 20, 2019</a></blockquote>
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;I think that knowing what other roles usually do can help me to be a person with greater awareness, empathy and ideas to work together collaboratively.&quot; <a href="https://twitter.com/hashtag/ThatsItThatsAll?src=hash&amp;ref_src=twsrc%5Etfw">#ThatsItThatsAll</a> 😉</p>&mdash; Cutre Scrum (@q3scrum) </blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;I think that knowing what other roles usually do can help me to be a person with greater awareness, empathy and ideas to work together collaboratively.&quot; <a href="https://twitter.com/hashtag/ThatsItThatsAll?src=hash&amp;ref_src=twsrc%5Etfw">#ThatsItThatsAll</a> 😉</p>&mdash; Cutre Scrum (@q3scrum) <a href="https://twitter.com/q3scrum/status/1098113142759063553?ref_src=twsrc%5Etfw">February 20, 2019</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I’m thinking in a world without:<br><br> Developers uncomfortable with the things identified by testers.<br><br> Testers complaining about problems created by developers. <a href="https://twitter.com/hashtag/EuroTestConf?src=hash&amp;ref_src=twsrc%5Etfw">#EuroTestConf</a> </p>&mdash; Ben Linders (@BenLinders) <a href="https://twitter.com/BenLinders/status/1098221135668363264?ref_src=twsrc%5Etfw">February 20, 2019</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I love Rachel’s idea of changing our board columns to better reflect everyone on the team collaborating to build quality in. Let’s try it! </p>&mdash; lisacrispin (@lisacrispin) <a href="https://twitter.com/lisacrispin/status/1101463721099051008?ref_src=twsrc%5Etfw">March 1, 2019</a></blockquote>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
