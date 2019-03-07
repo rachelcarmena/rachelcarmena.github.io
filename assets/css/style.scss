@@ -50,7 +50,7 @@ img {
 
 #main_content {
     max-width: var(--main-max-width);
-    padding: 1.2em;
+    padding: 1.8em;
 }
 
 #main_content h1 {
@@ -126,6 +126,10 @@ img {
     width: 100%;
     object-fit: cover;
     object-position: 0 25%;
+}
+
+.date {
+    font-size: 0.8em;
 }
 
 .js-line-number {

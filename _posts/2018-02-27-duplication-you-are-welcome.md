@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: Duplication, you're welcome
 description: Thoughts and misunderstandings about duplication
+date: 2018-02-27 18:00:00 +00:00
 image:
    src: /img/cards/posts/duplication/cover.jpg
 ---

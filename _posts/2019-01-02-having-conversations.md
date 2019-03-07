@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: Having conversations
 description: "Two views: conversations are powerful and an idea to have useful conversations"
+date: 2019-01-02 12:00:00 +00:00
 image:
    src: /img/cards/posts/having-conversations/cover.jpg
 ---

@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: The Power of Accessibility
 description: It's not only related to people with disabilities
+date: 2018-11-11 12:00:00 +00:00
 image:
    src: /img/cards/posts/power-of-accessibility/cover.jpg
 ---

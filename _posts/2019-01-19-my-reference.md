@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: My reference
 description: My female reference in this profession
+date: 2019-01-19 12:00:00 +00:00
 image:
     src: /img/cards/posts/my-reference/cover.jpg
 ---

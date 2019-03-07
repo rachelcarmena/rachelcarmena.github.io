@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: Software as a craft
 description: Talk
+date: 2018-02-23 12:00:00 +00:00
 image:
    src: /img/cards/posts/sw-as-a-craft/cover.png
 ---

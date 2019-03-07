@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: Living a Global Diversity CFP Day as a mentor
 description: An event for the the diversity and inclusion of underrepresented and marginalized people in tech
+date: 2019-03-02 12:00:00 +00:00
 image:
     src: /img/cards/posts/global-diversity-cfp-day/cover.jpg
 ---

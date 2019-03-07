@@ -4,6 +4,7 @@ asset-type: post
 title: "Open Space session: Supporters and Detractors game"
 cover-title: "Supporters and Detractors game"
 description: An idea from debate competitions
+date: 2019-01-09 12:00:00 +00:00
 image:
    src: /img/cards/posts/supporters-detractors-game/cover.jpg
 ---
