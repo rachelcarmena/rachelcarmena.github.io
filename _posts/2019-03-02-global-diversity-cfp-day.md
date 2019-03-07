@@ -92,7 +92,7 @@ A special kudos to people who encourage and join their friends to attend an even
 
 * [Emma](https://twitter.com/hell03610) from [VLCTechHub](https://twitter.com/VLCTechHub) for her trust to participate in this event.
 * [Emma](https://twitter.com/hell03610), [Mery](https://twitter.com/nyan_dev), [Patricia](https://twitter.com/patrypons) and [César](https://twitter.com/interruptme) for their talks, because I enjoyed and learnt a lot from them.
-* People behind [Global Diversity CFP Day](https://twitter.com/gdcfpday) because of sharing this awesome initiative and providing so many facilities to organize the event: code of conduct, materials and advice, among others.
+* People behind [Global Diversity CFP Day](https://twitter.com/gdcfpday) for sharing this awesome initiative and providing so many facilities to organize the event: code of conduct, materials and advice, among others.
 * Carlos from [Social Nest Space](http://thenestspace.org) for the stuff to be comfortable and his kindness.
 * Last but not least, attendees. I had really interesting conversations with them and I'm impressed with the results of practice time. They have a very valuable knowledge and experience to share. I'll follow them to attend their talks!
 
