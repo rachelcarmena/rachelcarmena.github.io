@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: 'My first steps as an embedded software craftswoman'
 description: Lunch&Learn, challenges, cooking lessons, ...
+date: 2017-08-20 12:00:00 +00:00
 cover-title: 'An embedded software craftswoman'
 image:
   src: /img/cards/posts/embedded-sw-craftswoman/cover.jpg

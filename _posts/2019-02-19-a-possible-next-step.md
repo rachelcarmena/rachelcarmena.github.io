@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: A possible next step
 description: Our profession is evolving continuously
+date: 2019-02-19 12:00:00 +00:00
 image:
     src: /img/cards/posts/a-possible-next-step/cover.jpg
 ---

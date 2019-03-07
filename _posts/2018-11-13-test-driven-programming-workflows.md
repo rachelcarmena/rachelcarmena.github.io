@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: Test-driven programming workflows
 description: TDD, TCR, Taking Baby Steps, ...
+date: 2018-11-13 12:00:00 +00:00
 image:
    src: /img/cards/posts/test-driven-programming-workflows/cover.jpg
 ---

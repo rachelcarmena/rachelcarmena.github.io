@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: How to make images accessible
 description: Considering different types of images
+date: 2018-12-18 12:00:00 +00:00
 image:
    src: /img/cards/posts/how-to-make-images-accessible/cover.jpg
 ---

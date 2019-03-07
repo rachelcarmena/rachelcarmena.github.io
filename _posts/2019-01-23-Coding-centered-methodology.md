@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: Coding-centered methodology
 description: Trying to answer to What methodology?
+date: 2019-01-23 12:00:00 +00:00
 image:
     src: /img/cards/posts/coding-centered-methodology/cover.jpg
 ---

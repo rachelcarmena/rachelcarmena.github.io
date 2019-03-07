@@ -3,6 +3,7 @@ layout: post
 asset-type: post
 title: Living a Coderetreat as a facilitator
 description: Lessons learnt after an awesome event
+date: 2018-01-06 18:00:00 +00:00
 image:
    src: /img/cards/posts/coderetreat/cover.svg
 ---
