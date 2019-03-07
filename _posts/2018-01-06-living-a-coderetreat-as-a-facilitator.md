@@ -130,7 +130,7 @@ After the feedback received and my experience, I took this notes for the next ev
 * Organizing all retrospectives in circle, not only the final one. We commented the sessions standing but next to the tables, so it wasn't easy to see all the faces and a circle would have encouraged more the participation.
 * Starting with a session about thinking the problem on paper, as our old colleague [Samir Talwar](https://codurance.com/blog/author/samir-talwar):
 <center>
-<blockquote class="twitter-tweet" data-lang="es"><p lang="en" dir="ltr">First session: no computers! [#GDCR17](https://twitter.com/hashtag/GDCR17?src=hash&ref_src=twsrc%5Etfw) [pic.twitter.com/76EkvwJUIN](https://t.co/76EkvwJUIN)</p>&mdash; ✈️ flight risk ✈️ (@SamirTalwar) [18 de noviembre de 2017](https://twitter.com/SamirTalwar/status/931822781490237440?ref_src=twsrc%5Etfw)</blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">First session: no computers! <a href="https://twitter.com/hashtag/GDCR17?src=hash&amp;ref_src=twsrc%5Etfw">#GDCR17</a> <a href="https://t.co/76EkvwJUIN">pic.twitter.com/76EkvwJUIN</a></p>&mdash; Samir Talwar (@SamirTalwar) <a href="https://twitter.com/SamirTalwar/status/931822781490237440?ref_src=twsrc%5Etfw">November 18, 2017</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </center>
 
