@@ -151,6 +151,7 @@ fi
 
 * [First article about TCR by Kent Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864)
 * [The Hanselminutes podcast by Scott Hanselman: test and commit or revert with Kent Beck](https://hanselminutes.com/663/test-commit-revert-with-kent-beck)
+* [Using TCR to solve Mars Rover Kata by Jordi](https://medium.com/@itortv/i-implemented-the-mars-rover-kata-through-tcr-test-commit-revert-and-these-are-my-7e11c40983a6)
 * [Post with a lot of TCR Variants by Thomas Deniffel](https://medium.com/@tdeniffel/tcr-variants-test-commit-revert-bf6bd84b17d3)
 * [Reddit-community for TCR](https://www.reddit.com/r/tcrProgramming/)
 
