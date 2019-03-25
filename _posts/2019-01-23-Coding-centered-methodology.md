@@ -105,6 +105,7 @@ and practices:
 * [Property-based testing (link of the canonical framework)](https://hackage.haskell.org/package/QuickCheck)
 * [Continuous Delivery](https://continuousdelivery.com)
 * [Trunk based development](https://trunkbaseddevelopment.com)
+* Mob programming: [remote mob programming](https://www.remotemobprogramming.org)
 
 ## Further reading
 
