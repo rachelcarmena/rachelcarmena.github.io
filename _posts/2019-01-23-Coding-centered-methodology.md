@@ -100,7 +100,8 @@ principles:
 
 and practices:
 
-* [Practices from Extreme Programming](https://ronjeffries.com/xprog/what-is-extreme-programming/) 
+* [Practices from Extreme Programming](https://ronjeffries.com/xprog/what-is-extreme-programming/)
+    * [Pair programming](https://www.cs.utexas.edu/users/downing/papers/PairProgramming-2000.pdf)
 * [Other test-driven programming workflows](/2018/11/13/test-driven-programming-workflows.html)
 * [Property-based testing (link of the canonical framework)](https://hackage.haskell.org/package/QuickCheck)
 * [Continuous Delivery](https://continuousdelivery.com)
@@ -122,3 +123,27 @@ For example, the authors of Scrum called it "Scrum development process" to avoid
 
 In this post, I usually used the terms that appear at the [Wiki](http://wiki.c2.com) by Ward Cunningham.
 
+## Update
+
+I've seen this keynote by [Mary Poppendieck](https://twitter.com/mpoppendieck) about _The Future of Software Engineering_:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6K4ljFZWgW8" title="The Future of Software Engineering by Mary Poppendieck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+She talks about:
+
+* From Scale up to **Scale out**
+* **Infrastructure as code**
+* **Autonomous teams** (autonomous = independent deployment)
+* The new technology stack
+* The dependency problem
+* **Resilience Engineering**
+* From defect free to **fault tolerant**
+* Builing a **deployment pipeline**
+* **End-to-end feedback**
+* From delivery teams to **problem solving teams**
+* A **process** without requirements, features, estimates or a backlog of stories, based on **experimentation and learning**:
+    * Start with signals
+    * Focus on problems
+    * Plan with hypotheses
+    * Do multiple experiments
+    * Use data to decide
