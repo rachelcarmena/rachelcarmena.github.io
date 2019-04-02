@@ -8,7 +8,7 @@ image:
    src: /img/cards/posts/test-driven-programming-workflows/cover.jpg
 ---
 
-## Once upon a time ...
+Once upon a time ...
 
 > Have you seen the last idea by Kent Beck?
 
@@ -76,7 +76,9 @@ The video doesn't have one detail between writing the test code and writing just
 
 However, the result of running tests is not checked with TCR, between writing the test code and writing just enough code to pass the test.
 
-## About missing the RED step with TCR
+## Other things
+
+### About missing the RED step with TCR
 
 When Kent Beck shared this [video about an example of TCR](https://www.youtube.com/watch?v=ZrHBVTCbcE0), **Danil Suits** pointed out his way of doing the RED step at Software Crafters Slack: 
 
@@ -92,7 +94,7 @@ I would like to practice this idea in order to check if it can be widely applied
 * [Test-driven programming workflows (PNG)](/img/cards/posts/test-driven-programming-workflows/workflows-with-an-idea-for-TCR.png)
 * [Test-driven programming workflows (SVG)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows-with-an-idea-for-TCR.svg)
 
-## My proposal of TCR variant
+### My proposal of TCR variant
 
 Besides the concern with the RED step, I would like not to miss the feedback between:
 
@@ -111,7 +113,7 @@ because `stash` implies a final `git reset --hard` as well (code will have to be
 
 What would be the implementation of `commit` and `stash` steps to get that feedback?
 
-### commit step
+#### commit step
 
 ```
 #!/bin/sh
@@ -130,7 +132,7 @@ git commit -m "Message doesn't matter here"
 
 Message doesn't matter in that step, because commits will be squashed with the right message before pushing.
 
-### stash step
+#### stash step
 
 ```
 #!/bin/sh
@@ -151,9 +153,15 @@ fi
 
 * [First article about TCR by Kent Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864)
 * [The Hanselminutes podcast by Scott Hanselman: test and commit or revert with Kent Beck](https://hanselminutes.com/663/test-commit-revert-with-kent-beck)
-* [Using TCR to solve Mars Rover Kata by Jordi](https://medium.com/@itortv/i-implemented-the-mars-rover-kata-through-tcr-test-commit-revert-and-these-are-my-7e11c40983a6)
+* [Using TCR to solve Mars Rover Kata by Jordi Marti](https://medium.com/@itortv/i-implemented-the-mars-rover-kata-through-tcr-test-commit-revert-and-these-are-my-7e11c40983a6)
 * [Post with a lot of TCR Variants by Thomas Deniffel](https://medium.com/@tdeniffel/tcr-variants-test-commit-revert-bf6bd84b17d3)
 * [Reddit-community for TCR](https://www.reddit.com/r/tcrProgramming/)
+* [Answers to questions shared by Thomas Deniffel](https://medium.com/@raquel.moreno.carmena/here-im-as-i-promised-after-your-call-in-twitter-b6a8c435eb25)
+
+## Resources
+
+* [TCR-cli by Jordi Marti](https://github.com/jmarti-theinit/tcr-cli)
+* [Workshop (scripts, slides) by Isidro López and Joe Bew](https://github.com/islomar/tcr-workshop)
 
 ## Acknowledgments
 
