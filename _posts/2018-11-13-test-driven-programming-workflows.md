@@ -158,7 +158,7 @@ fi
 * [Reddit-community for TCR](https://www.reddit.com/r/tcrProgramming/)
 * [Answers to questions shared by Thomas Deniffel](https://medium.com/@raquel.moreno.carmena/here-im-as-i-promised-after-your-call-in-twitter-b6a8c435eb25)
 
-## Resources
+## Other resources
 
 * [TCR-cli by Jordi Marti](https://github.com/jmarti-theinit/tcr-cli)
 * [Workshop (scripts, slides) by Isidro López and Joe Bew](https://github.com/islomar/tcr-workshop)
