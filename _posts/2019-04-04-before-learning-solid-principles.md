@@ -59,4 +59,4 @@ Other principles:
 
 ## Friendly reminder
 
-I prefer having a colleague that follows SOLID principles, rather than a colleague that remembers the list with every title and statement and don't implement them. Please, don't shame a person when not remembering the statement of a letter from SOLID principles.
+I prefer having a colleague who follows SOLID principles, rather than a colleague who remembers the list with every title and statement and doesn't implement them. Please, don't shame a person when not remembering the statement of a letter from SOLID principles.
