@@ -60,3 +60,7 @@ Other principles:
 ## Friendly reminder
 
 I prefer having a colleague who follows SOLID principles, rather than a colleague who remembers the list with every title and statement and doesn't implement them. Please, don't shame a person when not remembering the statement of a letter from SOLID principles.
+
+## Received feedback
+
+[Ricardo Borillo](https://twitter.com/borillo), a good friend and the first project manager I had in my professional experience, likes to explain the anti-patterns when not following these principles: singleton invasion, tight coupling, untestability, premature optimization, indescriptive naming and duplication. They form the acronym STUPIP and are detailed in this article: [From STUPID to SOLID code!](https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/).
