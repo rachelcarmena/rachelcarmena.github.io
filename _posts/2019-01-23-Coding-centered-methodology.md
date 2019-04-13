@@ -127,7 +127,7 @@ In this post, I usually used the terms that appear at the [Wiki](http://wiki.c2.
 
 I've seen this keynote by [Mary Poppendieck](https://twitter.com/mpoppendieck) about _The Future of Software Engineering_:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6K4ljFZWgW8" title="The Future of Software Engineering by Mary Poppendieck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="365" src="https://www.youtube.com/embed/6K4ljFZWgW8" title="The Future of Software Engineering by Mary Poppendieck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 She talks about:
 
