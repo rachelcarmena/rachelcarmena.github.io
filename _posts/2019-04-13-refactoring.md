@@ -101,7 +101,7 @@ If the current system doesn't send text to an output stream, we must follow othe
 * Leaning on the compiler when altering a declaration to cause compile errors.
 * Pair programming: _(...) working in legacy code is surgery, and doctors never operate alone_ - Michael C. Feathers.
 * Learning about the code via [the Mikado Method](https://www.manning.com/books/the-mikado-method).
-* Knowing the programming language to know all the available options.
+* Knowing the programming language to consider all the available options.
 * ...
 
 Are you trying to test a private method? I love this piece of advice by Michael:
