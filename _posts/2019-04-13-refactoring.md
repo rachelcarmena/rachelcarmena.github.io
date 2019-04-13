@@ -124,7 +124,7 @@ I recorded a screencast about a part of the refactoring step: getting a clear co
 
 It's a mouseless demo:
 
-<iframe title="Intermediate step of Gilded Rose Kata" width="560" height="315" src="https://www.youtube.com/embed/JkaRA9y0aPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe title="Intermediate step of Gilded Rose Kata" width="100%" height="365" src="https://www.youtube.com/embed/JkaRA9y0aPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Let's see each change that I made.
 
