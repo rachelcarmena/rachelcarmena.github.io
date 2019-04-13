@@ -63,4 +63,4 @@ I prefer having a colleague who follows SOLID principles, rather than a colleagu
 
 ## Received feedback
 
-[Ricardo Borillo](https://twitter.com/borillo), a good friend and the first project manager I had in my professional experience, likes to explain the anti-patterns when not following these principles: singleton invasion, tight coupling, untestability, premature optimization, indescriptive naming and duplication. They form the acronym STUPIP and are detailed in this article: [From STUPID to SOLID code!](https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/).
+[Ricardo Borillo](https://twitter.com/borillo), a good friend and the first project manager I had in my professional experience, likes to explain the anti-patterns when not following these principles: singleton invasion, tight coupling, untestability, premature optimization, indescriptive naming and duplication. They form the acronym STUPID and are detailed in this article: [From STUPID to SOLID code!](https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/).
