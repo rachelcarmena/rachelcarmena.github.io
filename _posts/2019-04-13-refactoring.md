@@ -98,7 +98,7 @@ After using this technique, refactoring the source code and understanding it bet
 If the current system doesn't send text to an output stream, we must follow other techniques to write tests:
 
 * Breaking dependencies. It can be useful to create [seams](http://ptgmedia.pearsoncmg.com/images/9780131177055/samplepages/0131177052.pdf).
-* Identifying responsibilities and extracting methods for them.
+* Identifying responsibilities and extracting methods for them: _Remember that it is okay to extract methods with poor names or poor structure to get tests in place. Safety first. After the tests are in place, you can make the code much cleaner._ - Michael C. Feathers.
 * Starting with characterization tests to document the actual behaviour.
 * Pair programming: _(...) working in legacy code is surgery, and doctors never operate alone_ - Michael C. Feathers.
 * Knowing the programming language to consider all the available options.
