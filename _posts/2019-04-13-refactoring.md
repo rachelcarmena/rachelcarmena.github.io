@@ -4,6 +4,7 @@ asset-type: post
 title: Refactoring
 description: What do we need to refactor? Reviewing a refactoring kata
 date: 2019-04-13 12:00:00 +00:00
+updated: 2019-04-15 22:00:00 +00:00
 image:
     src: /img/cards/posts/refactoring/cover.jpg
 ---
@@ -66,6 +67,7 @@ I'd mention three things: what to pursue, what to move away from and knowing how
 * **Knowing how to create that safety net if it doesn't exist** (see below)
 * **Refactorings** like [remove dead code](https://refactoring.com/catalog/removeDeadCode.html), [extract method](https://refactoring.com/catalog/extractFunction.html), [inline method](https://refactoring.com/catalog/inlineFunction.html), [replace nested conditional with guard clauses](https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html), ...
 * **Knowing the refactoring options provided by the IDE**. For example, take a look at this [list of refactorings in Intellij IDEA](https://www.jetbrains.com/help/idea/refactoring-source-code.html).
+* **Knowing techniques to refactor**: [the Mikado Method](https://www.manning.com/books/the-mikado-method), [Parallel Change](https://www.martinfowler.com/bliki/ParallelChange.html), leaning on the compiler (when altering a declaration to cause compile errors), scratch refactoring (when doing changes to get a better understanding on the code and then throwing those changes away), ...
 
 ### How to create a safety net if it doesn't exist (some tips)
 
@@ -98,9 +100,7 @@ If the current system doesn't send text to an output stream, we must follow othe
 * Breaking dependencies. It can be useful to create [seams](http://ptgmedia.pearsoncmg.com/images/9780131177055/samplepages/0131177052.pdf).
 * Identifying responsibilities and extracting methods for them.
 * Starting with characterization tests to document the actual behaviour.
-* Leaning on the compiler when altering a declaration to cause compile errors.
 * Pair programming: _(...) working in legacy code is surgery, and doctors never operate alone_ - Michael C. Feathers.
-* Learning about the code via [the Mikado Method](https://www.manning.com/books/the-mikado-method).
 * Knowing the programming language to consider all the available options.
 * ...
 
