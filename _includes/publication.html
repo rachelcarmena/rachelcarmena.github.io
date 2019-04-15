@@ -4,7 +4,7 @@
     {{ content }}
     <hr>
     <div class="date">Published: {{ page.date | date_to_string }}</div>
-    {% if page.updated %}<div class="date">Last updated: {{ page.updated | date_to_string }}</div>{% endif %}
+    {% if page.last_modified_at %}<div class="date">Last updated: {{ page.last_modified_at | date_to_string }}</div>{% endif %}
 </div>
 <div class="pagination">
     <span class="previous_post">

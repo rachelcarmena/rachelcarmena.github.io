@@ -4,7 +4,7 @@ asset-type: post
 title: Refactoring
 description: What do we need to refactor? Reviewing a refactoring kata
 date: 2019-04-13 12:00:00 +00:00
-updated: 2019-04-15 22:00:00 +00:00
+last_modified_at: 2019-04-15 12:00:00 +00:00
 image:
     src: /img/cards/posts/refactoring/cover.jpg
 ---
