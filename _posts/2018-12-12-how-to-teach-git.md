@@ -4,6 +4,7 @@ asset-type: post
 title: How to teach Git
 description: An alternative way to teach Git
 date: 2018-12-12 12:00:00 +00:00
+last_modified_at: 2019-01-18 12:00:00 +00:00
 image:
    src: /img/cards/posts/how-to-teach-Git/cover.jpg
 ---
