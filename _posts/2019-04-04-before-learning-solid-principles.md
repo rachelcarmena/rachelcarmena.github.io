@@ -4,6 +4,7 @@ asset-type: post
 title: Before learning SOLID principles
 description: An alternative list before learning the list of titles and statements
 date: 2019-04-04 09:00:00 +00:00
+last_modified_at: 2019-04-08 12:00:00 +00:00
 image:
     src: /img/cards/posts/before-learning-solid-principles/cover.jpg
 ---
