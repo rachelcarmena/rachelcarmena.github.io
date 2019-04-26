@@ -107,7 +107,7 @@ So, check that objects are fully compared.
 
 I remember that day in which I spent more than fifteen minutes to understand an error raised by the testing framework. 
 
-Finally, I realized that the expected and actual results were swapped in the assertion, so the message doesn't make sense.
+Finally, I realized that the expected and actual results were swapped in the assertion, so the message didn't make sense.
 
 Some testing frameworks have been improved to avoid these mistakes, but take care of it.
 
