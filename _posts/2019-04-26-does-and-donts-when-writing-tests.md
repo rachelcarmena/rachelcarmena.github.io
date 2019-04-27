@@ -111,6 +111,20 @@ Finally, I realized that the expected and actual results were swapped in the ass
 
 Some testing frameworks have been improved to avoid these mistakes, but take care of it.
 
+## Friendly reminder
+
+As **Dani Latorre** says (in English below):
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="es" dir="ltr">Los tests son parte de la documentación. Así que escribir tests para una base de código existente debería tomarse como una oportunidad inmejorable para documentar su funcionamiento, no ser mera cobertura </p>&mdash; Dani Latorre (@dani_latorre) <a href="https://twitter.com/dani_latorre/status/1121412874088386562?ref_src=twsrc%5Etfw">April 25, 2019</a></blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="es" dir="ltr">Que se entiendan, copón</p>&mdash; Dani Latorre (@dani_latorre) <a href="https://twitter.com/dani_latorre/status/1121413066166394880?ref_src=twsrc%5Etfw">April 25, 2019</a></blockquote>
+
+In (my) English:
+
+> Tests are part of the documentation. So, writing tests for existing code should be an amazing opportunity to document the behaviour, not only coverage.
+
+> Please, we need that they are understood!
+
 ## Recommended resources
 
 * [XUnit Test Patterns](http://xunitpatterns.com)
