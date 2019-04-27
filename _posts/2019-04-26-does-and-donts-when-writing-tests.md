@@ -4,6 +4,7 @@ asset-type: post
 title: DO's and DON'Ts when writing tests
 description: Some tips
 date: 2019-04-26 10:00:00 +00:00
+last_modified_at: 2019-04-27 10:00:00 +00:00
 image:
     src: /img/cards/posts/dos-and-donts-when-writing-tests/cover.jpg
 ---
@@ -43,8 +44,8 @@ Test code and production code have different purposes, so they must "live" indep
 
 Test code should be focused on **behaviours**, **intentions** or **capabilities**:
 
-* Refactoring production code will be possible and test code will remain unchanged.
-* Refactoring test code will be possible without having to change production code.
+* Changes in production code won't imply changes in test code and vice versa.
+* Refactoring will be possible.
 * Tests will be a good documentation.
 * Writing tests will be a meaningful task.
 * People will understand the advantages of starting with tests.
@@ -58,6 +59,8 @@ Just as it's useful to listen to production code, it's also useful to listen to 
 When it's said [listen to the code](http://wiki.c2.com/?ListenToTheCode), it's related to all the source code.
 
 If we are facing difficulties when writing a test, it's a signal that should be analysed carefully to know the root causes and to fix them.
+
+Another case (or smell): too much logic or implementation details in tests. What's being tested? How can the test be broken?
 
 ### Think twice before removing duplicated test code
 
@@ -109,7 +112,7 @@ I remember that day in which I spent more than fifteen minutes to understand an 
 
 Finally, I realized that the expected and actual results were swapped in the assertion, so the message didn't make sense.
 
-Some testing frameworks have been improved to avoid these mistakes, but take care of it.
+Although some testing frameworks have been improved to avoid these mistakes, take care of it.
 
 ## Friendly reminder
 

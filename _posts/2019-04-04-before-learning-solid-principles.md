@@ -4,7 +4,7 @@ asset-type: post
 title: Before learning SOLID principles
 description: An alternative list before learning the list of titles and statements
 date: 2019-04-04 09:00:00 +00:00
-last_modified_at: 2019-04-08 12:00:00 +00:00
+last_modified_at: 2019-04-29 12:00:00 +00:00
 image:
     src: /img/cards/posts/before-learning-solid-principles/cover.jpg
 ---
@@ -61,3 +61,11 @@ Please, don't shame a person who doesn't remember the statement of a letter from
 ## Received feedback
 
 [Ricardo Borillo](https://twitter.com/borillo), a good friend and the first project manager I had in my professional experience, likes to explain the anti-patterns when SOLID principles are missing: singleton invasion, tight coupling, untestability, premature optimization, indescriptive naming and duplication. They form the acronym STUPID and are detailed in this article: [From STUPID to SOLID code!](https://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/).
+
+## Related tweet
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Small reminder: <a href="https://twitter.com/hashtag/SOLID?src=hash&amp;ref_src=twsrc%5Etfw">#SOLID</a> principles are applicable to anything that is code.<br>Also:<br>- tests<br>- infrastructure-as-code<br>- pipeline-as-code<br>- builds</p>&mdash; Thierry de Pauw (@tdpauw) <a href="https://twitter.com/tdpauw/status/1120938604631613441?ref_src=twsrc%5Etfw">April 24, 2019</a></blockquote>
+
+## Other resource
+
+* [Why Every Element of SOLID is Wrong](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong) by [Daniel Terhorst-North](https://twitter.com/tastapod).
