@@ -4,7 +4,7 @@ asset-type: post
 title: DO's and DON'Ts when writing tests
 description: Some tips
 date: 2019-04-26 10:00:00 +00:00
-last_modified_at: 2019-04-27 10:00:00 +00:00
+last_modified_at: 2019-04-29 10:00:00 +00:00
 image:
     src: /img/cards/posts/dos-and-donts-when-writing-tests/cover.jpg
 ---
@@ -51,6 +51,10 @@ Test code should be focused on **behaviours**, **intentions** or **capabilities*
 * People will understand the advantages of starting with tests.
 * Tests will be kept updated.
 * Tests will be valuable and appreciated.
+
+As [Kent C. Dodds](https://twitter.com/kentcdodds) says:
+
+> The more your tests resemble the way your software is used, the more confidence they can give you.
 
 ### Listen to test code
 
