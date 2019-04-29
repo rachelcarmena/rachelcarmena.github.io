@@ -4,7 +4,7 @@ asset-type: post
 title: Refactoring
 description: What do we need to refactor? Reviewing a refactoring kata
 date: 2019-04-13 12:00:00 +00:00
-last_modified_at: 2019-04-15 12:00:00 +00:00
+last_modified_at: 2019-04-29 12:00:00 +00:00
 image:
     src: /img/cards/posts/refactoring/cover.jpg
 ---
@@ -285,6 +285,12 @@ I made several small changes to be able to extract these methods to increase and
 ```
 
 It removes the duplicated code and it makes code easier to read and understand.
+
+As **Michael C. Feathers** says:
+
+> Duplication removal is a powerful way of distilling a design. It not only makes a design more flexible, but it also makes change faster and easier.
+
+However, it's useful to know that we are providing value with each removal. Take a look at [Duplication, you're welcome](/2018/02/27/duplication-you-are-welcome.html).
 
 ### Reflecting the domain
 
