@@ -4,6 +4,7 @@ asset-type: post
 title: "Be open-minded, my friend"
 description: A journey across different technical subjects
 date: 2018-07-05 12:00:00 +00:00
+last_modified_at: 2019-04-29 12:00:00 +00:00
 image:
  src: /img/cards/posts/be-open-minded-my-friend/cover.jpg
 ---
@@ -172,3 +173,7 @@ I hope you like the trip. Now I would like you not only to ask me questions, but
 
 END OF TRANSCRIPT
 
+## References
+
+* [Trunk Based Development](https://trunkbaseddevelopment.com)
+* [Comment the Why](http://wiki.c2.com/?CommentTheWhy)
