@@ -4,7 +4,7 @@ asset-type: post
 title: Refactoring
 description: What do we need to refactor? Reviewing a refactoring kata
 date: 2019-04-13 12:00:00 +00:00
-last_modified_at: 2019-04-29 12:00:00 +00:00
+last_modified_at: 2019-04-30 12:00:00 +00:00
 image:
     src: /img/cards/posts/refactoring/cover.jpg
 ---
@@ -401,3 +401,11 @@ Existing quotes in this post come from these books:
 * [Refactoring - Improving the Design of Existing Code](https://refactoring.com) by **Martin Fowler**
     * [Catalog of refactorings](https://refactoring.com/catalog/)
     * [Changes for the 2nd edition of the book](https://martinfowler.com/articles/refactoring-2nd-changes.html)
+
+## Update
+
+After watching [Seven Ineffective Coding Habits of Many Programmers](https://www.youtube.com/watch?v=ZsHMHukIlJY) by [Kevlin Henney](https://twitter.com/KevlinHenney), I discovered the website [Clean Up Your Mess](http://www.visualmess.com) by [Daniel Higginbotham](https://twitter.com/nonrecursive). Although it's about design, it also applies to source code:
+
+> To answer the question "What is clean design?" most succinctly: a clean design is one that supports visual thinking so people can meet their informational needs with a minimum of conscious effort.
+
+Another thing to pursue ;)
