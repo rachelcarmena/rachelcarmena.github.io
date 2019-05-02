@@ -4,7 +4,7 @@ asset-type: post
 title: DO's and DON'Ts when writing tests
 description: Some tips
 date: 2019-04-26 10:00:00 +00:00
-last_modified_at: 2019-04-29 10:00:00 +00:00
+last_modified_at: 2019-05-02 10:00:00 +00:00
 image:
     src: /img/cards/posts/dos-and-donts-when-writing-tests/cover.jpg
 ---
@@ -54,7 +54,7 @@ Test code should be focused on **behaviours**, **intentions** or **capabilities*
 
 As [Kent C. Dodds](https://twitter.com/kentcdodds) says:
 
-> The more your tests resemble the way your software is used, the more confidence they can give you.
+> The more your tests resemble **the way your software is used**, the more confidence they can give you.
 
 ### Listen to test code
 
@@ -132,8 +132,30 @@ In (my) English:
 
 > Please, we need that they are understood!
 
+## Update
+
+### About decoupling production code from test code
+
+This is the abstract of the talk **Are your tests really driving your development?** by [Nat Pryce](https://twitter.com/natpryce) and [Steve Freeman](https://twitter.com/sf105) during XPDay London 2006. It has been preserved thanks to [Kevlin Henney](https://twitter.com/KevlinHenney), because he included it in some [article](https://www.theregister.co.uk/2007/03/09/test_driven_development/) or [talk](https://www.youtube.com/watch?v=ZsHMHukIlJY):
+
+> Everybody knows that TDD stands for Test Driven Development. However, people too often concentrate on the words "Test" and "Development" and don't consider what the word "Driven" really implies. For tests to drive development they must do more than just test that code performs its required functionality: **they must clearly express that required functionality to the reader**. That is, they must be clear specifications of the required functionality. Tests that are not written with their role as specifications in mind can be very confusing to read.
+
+In 2009, [Michael Feathers](https://twitter.com/mfeathers) and [Steve Freeman](https://twitter.com/sf105) gave a talk about [Ten years of Test-Driven Development](http://gotocon.com/dl/micro-agile-cph-mar-2009/slides/SteveFreeman_TDDTenYearsLater.pdf) where they remembered these thoughts by [Kent Beck](https://twitter.com/KentBeck):
+
+> it said the way to program is to look at the input tape and manually type in the output tape you expect. then you program until the actual and expected tapes match.
+
+> i thought, what a stupid idea. i want tests that pass, not tests that fail. why would i write a test when i was sure it would fail. well, i'm in the habit of trying stupid things out just to see what happens, so i tried it and it worked great.
+
+> i was finally able to separate logical from physical design. i'd always been told to do that but no one ever explained how.
+
+and they gave this piece of advice, among others:
+
+> **Separate what from how**
+
 ## Recommended resources
 
+* My post [Duplication, you're welcome](/2018/02/27/duplication-you-are-welcome.html), where I explained the experience included in the section **Think twice before removing duplicated test code**.
 * [XUnit Test Patterns](http://xunitpatterns.com)
 * [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com) by Steve Freeman and Nat Pryce
 * [Fifty quick ideas to improve your tests](https://fiftyquickideas.com/fifty-quick-ideas-to-improve-your-tests/) by Gojko Adzic, David Evans and Tom Roden
+* An example about tests in less than 2 minutes (from 11:20 to 13:05): [Why everyone should care about TDD?](https://www.youtube.com/watch?v=04x0stqD9f0).
