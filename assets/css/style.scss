@@ -25,7 +25,8 @@ header, footer {
 }
 
 #footer_wrap .inner {
-    max-width: var(--main-max-width);
+    max-width: 100%;
+    padding: 30px 10px 40px 10px;
 }
 
 img {
@@ -165,4 +166,12 @@ img {
 
 pre, code {
     padding: 0;
+}
+
+.license {
+    clear: both;
+    color: white;
+    font-size: small;
+    display: block;
+    margin-top: 40px;
 }
