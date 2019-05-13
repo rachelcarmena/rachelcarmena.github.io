@@ -4,7 +4,7 @@ asset-type: post
 title: "Be open-minded, my friend"
 description: A journey across different technical subjects
 date: 2018-07-05 12:00:00 +00:00
-last_modified_at: 2019-04-29 12:00:00 +00:00
+last_modified_at: 2019-05-13 12:00:00 +00:00
 image:
  src: /img/cards/posts/be-open-minded-my-friend/cover.jpg
 ---
@@ -177,3 +177,7 @@ END OF TRANSCRIPT
 
 * [Trunk Based Development](https://trunkbaseddevelopment.com)
 * [Comment the Why](http://wiki.c2.com/?CommentTheWhy)
+
+As [Kevlin Henney](https://twitter.com/KevlinHenney) says in _97 Things Every Programmer Should Know_:
+
+> Comments should say something code does not and cannot say. (...) Instead of compensating for poor method or class names, rename them. Instead of commenting sections in long functions, extract smaller functions whose names capture the former sections’ intent. Try to express as much as possible through code. (...) **Comment what the code _cannot_ say**, not simply what it does not say.
