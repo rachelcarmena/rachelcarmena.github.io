@@ -102,12 +102,13 @@ principles:
 and practices:
 
 * [Practices from Extreme Programming](https://ronjeffries.com/xprog/what-is-extreme-programming/)
-    * [Pair programming](https://www.cs.utexas.edu/users/downing/papers/PairProgramming-2000.pdf)
+* [Pair programming](https://www.cs.utexas.edu/users/downing/papers/PairProgramming-2000.pdf)
 * [Other test-driven programming workflows](/2018/11/13/test-driven-programming-workflows.html)
 * [Property-based testing (link of the canonical framework)](https://hackage.haskell.org/package/QuickCheck)
 * [Continuous Delivery](https://continuousdelivery.com)
 * [Trunk based development](https://trunkbaseddevelopment.com)
-* Mob programming: [remote mob programming](https://www.remotemobprogramming.org)
+* Mob programming / [remote mob programming](https://www.remotemobprogramming.org)
+* [Spikes](http://wiki.c2.com/?SpikeSolution) or [small experiments](http://lindarising.org/uploads/Small_Experiments.pdf)
 
 ## Further reading
 
