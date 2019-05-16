@@ -140,7 +140,7 @@ This is the abstract of the talk **Are your tests really driving your developmen
 
 > Everybody knows that TDD stands for Test Driven Development. However, people too often concentrate on the words "Test" and "Development" and don't consider what the word "Driven" really implies. For tests to drive development they must do more than just test that code performs its required functionality: **they must clearly express that required functionality to the reader**. That is, they must be clear specifications of the required functionality. Tests that are not written with their role as specifications in mind can be very confusing to read.
 
-In 2009, [Michael Feathers](https://twitter.com/mfeathers) and [Steve Freeman](https://twitter.com/sf105) gave a talk about [Ten years of Test-Driven Development](http://gotocon.com/dl/micro-agile-cph-mar-2009/slides/SteveFreeman_TDDTenYearsLater.pdf) where they remembered these thoughts by [Kent Beck](https://twitter.com/KentBeck):
+On the other hand, in 2009, [Michael Feathers](https://twitter.com/mfeathers) and [Steve Freeman](https://twitter.com/sf105) gave a talk about [Ten years of Test-Driven Development](http://gotocon.com/dl/micro-agile-cph-mar-2009/slides/SteveFreeman_TDDTenYearsLater.pdf) where they remembered these thoughts by [Kent Beck](https://twitter.com/KentBeck):
 
 > it said the way to program is to look at the input tape and manually type in the output tape you expect. then you program until the actual and expected tapes match.
 
