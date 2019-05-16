@@ -4,7 +4,7 @@ asset-type: post
 title: Coding-centered methodology
 description: Trying to answer to What methodology?
 date: 2019-01-23 12:00:00 +00:00
-last_modified_at: 2019-03-29 12:00:00 +00:00
+last_modified_at: 2019-05-16 12:00:00 +00:00
 image:
     src: /img/cards/posts/coding-centered-methodology/cover.jpg
 ---
@@ -125,7 +125,7 @@ For example, the authors of Scrum called it "Scrum development process" to avoid
 
 In this post, I usually used the terms that appear at the [Wiki](http://wiki.c2.com) by Ward Cunningham.
 
-## Update
+## Update: The Future of Software Engineering
 
 I've seen this keynote by [Mary Poppendieck](https://twitter.com/mpoppendieck) about _The Future of Software Engineering_:
 
@@ -149,3 +149,17 @@ She talks about:
     * Plan with hypotheses
     * Do multiple experiments
     * Use data to decide
+
+## Update: Agile Anti-Patterns
+
+At the beginning of 2018, I got a book for free because of the first version: 
+
+* [**Quick glance at: Agile Anti-Patterns**](https://www.quickglance.at/agile_antipatterns.html) by [David Tanzer](https://twitter.com/dtanzer)
+
+It included both common situations with agile methodologies and a lot of ideas to improve them. _I must do something_, I thought. _I learnt a lot with this book and it would be very useful for product owners, scrum masters, developers, ... I know a lot of friends who are experiencing the problems described in the book. However, it's in English. I'm sure it would have a bigger impact if it was in Spanish_.
+
+So I decided to translate it in an altruistic way. Here the result: 
+
+* [**Antipatrones del Desarrollo Ágil**](https://www.quickglance.at/agile_antipatterns_es) by [David Tanzer](https://twitter.com/dtanzer)
+
+Thanks [David Tanzer](https://twitter.com/dtanzer) again for your great gift. And thanks [José Manuel Beas](https://twitter.com/jmbeas) again for your review on the first version of the translated book.
