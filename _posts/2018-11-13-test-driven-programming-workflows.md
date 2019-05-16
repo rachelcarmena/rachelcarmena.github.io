@@ -4,7 +4,7 @@ asset-type: post
 title: Test-driven programming workflows
 description: TDD, TCR, Taking Baby Steps, ...
 date: 2018-11-13 12:00:00 +00:00
-last_modified_at: 2019-04-02 20:30:00 +00:00
+last_modified_at: 2019-05-16 12:00:00 +00:00
 image:
    src: /img/cards/posts/test-driven-programming-workflows/cover.jpg
 ---
@@ -52,17 +52,20 @@ Recently I added 3 further workflows. They come from the idea of TCR, but trying
 * TDD with TCR constraint and test fails first by **Dave Schinkel**
 * [(Test && Commit) \|\| TestCodeOnly \|\| Revert](https://jeffgrigg.wordpress.com/2018/11/23/test-driven-development-with-test-commit-testcodeonly-revert) by **Jeff Grigg**
 
-A new variant:
-
-* [test && commit \|\| revert ; pending](https://blog.oddmundo.com/2019/01/27/test-commit-revert-pending.html) by **Oddmund Strømme**
 
 ## The result
 
-The diagrams to see the differences between them:
-* [Test-driven programming workflows (PNG)](/img/cards/posts/test-driven-programming-workflows/workflows.png)
-* [Test-driven programming workflows (SVG)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows.svg)
-* [Test-driven programming workflows with TCR variants (PNG)](/img/cards/posts/test-driven-programming-workflows/workflows-with-TCR-variants.png)
-* [Test-driven programming workflows with TCR variants (SVG)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows-with-TCR-variants.svg)
+The diagrams to see the differences between the previous test-driven programming workflows:
+
+### Test-driven programming workflows
+
+[![Test-driven programming workflows in PNG](/img/cards/posts/test-driven-programming-workflows/png-icon.png)](/img/cards/posts/test-driven-programming-workflows/workflows.png)
+[![Test-driven programming workflows in SVG](/img/cards/posts/test-driven-programming-workflows/svg-icon.png)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows.svg)
+
+### Test-driven programming workflows with TCR variants
+
+[![Test-driven programming workflows with TCR variants in PNG](/img/cards/posts/test-driven-programming-workflows/png-icon.png)](/img/cards/posts/test-driven-programming-workflows/workflows-with-TCR-variants.png)
+[![Test-driven programming workflows with TCR variants in SVG](/img/cards/posts/test-driven-programming-workflows/svg-icon.png)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows-with-TCR-variants.svg)
 
 And I recorded this short video to explain the diagram, because it's invisible for some people with disabilities:
 
@@ -94,6 +97,10 @@ I would like to practice this idea in order to check if it can be widely applied
 
 * [Test-driven programming workflows (PNG)](/img/cards/posts/test-driven-programming-workflows/workflows-with-an-idea-for-TCR.png)
 * [Test-driven programming workflows (SVG)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows-with-an-idea-for-TCR.svg)
+
+On the other hand, **Oddmund Strømme** shared a TCR variant: 
+
+* [test && commit \|\| revert ; pending](https://blog.oddmundo.com/2019/01/27/test-commit-revert-pending.html)
 
 ### My proposal of TCR variant
 
