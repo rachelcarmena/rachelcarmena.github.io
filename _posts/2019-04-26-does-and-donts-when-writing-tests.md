@@ -4,7 +4,7 @@ asset-type: post
 title: DO's and DON'Ts when writing tests
 description: Some tips
 date: 2019-04-26 10:00:00 +00:00
-last_modified_at: 2019-05-02 10:00:00 +00:00
+last_modified_at: 2019-05-17 10:00:00 +00:00
 image:
     src: /img/cards/posts/dos-and-donts-when-writing-tests/cover.jpg
 ---
@@ -156,6 +156,8 @@ and they gave this piece of advice, among others:
 
 * My post [Duplication, you're welcome](/2018/02/27/duplication-you-are-welcome.html), where I explained the experience included in the section **Think twice before removing duplicated test code**.
 * [XUnit Test Patterns](http://xunitpatterns.com)
-* [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com) by Steve Freeman and Nat Pryce
-* [Fifty quick ideas to improve your tests](https://fiftyquickideas.com/fifty-quick-ideas-to-improve-your-tests/) by Gojko Adzic, David Evans and Tom Roden
-* An example about tests in less than 2 minutes (from 11:20 to 13:05): [Why everyone should care about TDD?](https://www.youtube.com/watch?v=04x0stqD9f0).
+* [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com) by **Steve Freeman** and **Nat Pryce**
+* [Fifty quick ideas to improve your tests](https://fiftyquickideas.com/fifty-quick-ideas-to-improve-your-tests/) by **Gojko Adzic**, **David Evans** and **Tom Roden**
+* An example about tests in less than 2 minutes (from 11:20 to 13:05): [Why everyone should care about TDD?](https://www.youtube.com/watch?v=04x0stqD9f0) by **Steve Freeman**
+* [Unit Tests as Specifications - Effective Ways to Think About TDD](https://www.youtube.com/watch?v=3oIe8JPloaw) by **David Bernstein**, a talk with a very good content, reflections and tips for tests, although it appears an example about testing a constructor and I think that example is coupled to the implementation rather than a specification or a behaviour.
+
