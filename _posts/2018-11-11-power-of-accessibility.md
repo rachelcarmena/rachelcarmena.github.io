@@ -4,13 +4,16 @@ asset-type: post
 title: The Power of Accessibility
 description: It's not only related to people with disabilities
 date: 2018-11-11 12:00:00 +00:00
+last_modified_at: 2019-05-21 12:00:00 +00:00
 image:
    src: /img/cards/posts/power-of-accessibility/cover.jpg
 ---
 
 ## Video
 
-It's coming!
+<iframe title="Talk: The power of accessibility" width="100%" height="315" src="https://www.youtube.com/embed/MdmFy_zls1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Captions are coming! (Spanish and English)
 
 ## Transcript
 
@@ -18,7 +21,7 @@ It's coming!
 
 ## Slides
 
-<iframe title="The power of accessibility" src="//www.slideshare.net/slideshow/embed_code/key/3liBRVTtqf0Kfw" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+<iframe title="Slides: The power of accessibility" src="//www.slideshare.net/slideshow/embed_code/key/3liBRVTtqf0Kfw" width="100%" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
 ## Errata
 
@@ -34,3 +37,13 @@ Thanks to:
 * [Carlos Ble](https://twitter.com/carlosble) for his trust to participate as a speaker at [JS Day Canarias 2018](https://jsdaycanarias.com).
 * the awesome organizers of the event, [Dailos R. Díaz Lara](https://twitter.com/dDiaLar) and [Iván Bacallado Trujillo](https://twitter.com/Ivanbtrujillo), for all the facilities to be there.
 
+## More resources
+
+* [Accessibility Scotland](https://accessibility.scot)
+* [5 Tools For Automated Accessibility Audits](https://benrobertson.io/accessibility/tools-for-website-audits) by [Ben Robertson](https://twitter.com/banquos_ghost).
+* [Reviews of accessibility resources](https://a11y.reviews)
+* [An accessibility analysis of the top 1,000,000 home pages](https://webaim.org/projects/million/)
+* [How does your website "sound" like?](https://www.youtube.com/watch?v=yKYA-7tczuk) and [examples](https://codepen.io/collection/XJNepY) by [Adrián Bolonio](https://twitter.com/bolonio).
+* [tota11y: a toolbar to point out errors and ways to fix them](https://khan.github.io/tota11y/). Add it as a bookmark!
+* [Vision simulator for Chrome](https://accessgarage.wordpress.com/2013/02/09/458/)
+* [How to make images accessible](/2018/12/18/how-to-make-images-accessible.html) 
