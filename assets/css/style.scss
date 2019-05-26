@@ -29,6 +29,10 @@ header, footer {
     padding: 30px 10px 40px 10px;
 }
 
+pre {
+    margin: 1em 0;
+}
+
 img {
     border: 0;
     box-shadow: none;
@@ -164,14 +168,14 @@ img {
     color: #bbb;
 }
 
-pre, code {
-    padding: 0;
-}
-
 .license {
     clear: both;
     color: white;
     font-size: small;
     display: block;
     margin-top: 40px;
+}
+
+.highlight {
+    background-color: white;
 }
