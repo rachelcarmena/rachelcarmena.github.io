@@ -34,11 +34,7 @@ However, time can be saved with tasks although they are executed only once.
 
 Furthermore, the personal satisfaction instead of doing a manual task is priceless.
 
-This post is based on **some** useful examples of commands with that in mind:
-
-> Goal: saving time when avoiding manual tasks
-
-Even though I'm a Linux user, I've been working with Windows operating systems as well and it's possible to pursue the same goal with Command Prompt, PowerShell or Cygwin.
+This post is based on **some** useful examples of commands with that in mind.
 
 ### About the examples included
 
@@ -83,6 +79,8 @@ When I feel confident and comfortable with **Z shell**, I'll change my default s
 ```sh
 $ gnome-terminal -e zsh &
 ```
+
+Even though I'm a Linux user, I've been working with Windows operating systems as well and it's possible to pursue the same goal with Command Prompt, PowerShell or Cygwin.
 
 ## Some examples
 
