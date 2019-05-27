@@ -196,6 +196,10 @@ $ for file in *; do mv "$file" "previous_$file"; done
 If we want to make the change for only regular files, not directories:
 
 ```sh
+# File exists and is a regular file:
+#  test -f file.txt
+# Equivalent to: [ -f file.txt ]
+
 $ for file in *
 do
     if [ -f "$file" ]
@@ -270,6 +274,8 @@ $ cd -
 **Z Shell** allows you to do this kind of changes:
 
 ```sh
+# pwd: print name of current/working directory
+
 $ pwd
 /home/rachel/lab/application/3.0/src
 $ cd 3.0 5.0
