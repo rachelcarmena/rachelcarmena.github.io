@@ -4,7 +4,7 @@ asset-type: post
 title: Coding-centered methodology
 description: Trying to answer to What methodology?
 date: 2019-01-23 12:00:00 +00:00
-last_modified_at: 2019-05-16 12:00:00 +00:00
+last_modified_at: 2019-05-27 12:00:00 +00:00
 image:
     src: /img/cards/posts/coding-centered-methodology/cover.jpg
 ---
@@ -166,3 +166,23 @@ She talks about:
 * **End-to-end feedback**
 * From delivery teams to **problem solving teams**
 * A **process** without requirements, features, estimates or a backlog of stories, based on **experimentation and learning**: start with signals, focus on problems, plan with hypotheses, do multiple experiments and use data to decide.
+
+## Update: notes
+
+From [Pragmatic thinking and learning. Refactor your wetware](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) by [Andy Hunt](https://twitter.com/PragmaticAndy):
+
+> Programming is all about problem solving. It requires creativity, ingenuity, and invention.
+
+> (...) the two most important modern skills are these: communication skills, learning and thinking skills.
+
+> Agile methods differ from traditional plan-based methods in a number of significant ways, most notably in eschewing rigid rules and discarding dusty old schedules in favor of adapting to real-time feedback.
+
+> Agile development uses feedback to make constant adjustments in a highly collaborative environment.
+
+> Avoid formal methods if you need creativity, intuition, or inventiveness.
+
+> On a software project, as with an exploratory or inventive project in any discipline, it’s a given that you’ll learn a little bit more every day.
+
+> **Be comfortable with uncertainty.** Agile software development embraces the idea of working with uncertainty. Early on, you don’t know what the project end date will really be. You’re not 100 percent certain which features will be present in the next iteration. You don’t know how many iterations there will be. And that’s perfectly OK: that’s the sort of uncertainty you want to be comfortable with. You’ll find answers as you go along, and by the end, everything will have been answered.
+
+> Agile developers **do** create documentation, but they use a pragmatic filter to make sure the investment in creating any documentation is really worth the effort. It has to have value. 
