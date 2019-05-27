@@ -468,8 +468,6 @@ Thanks to [Marc Cornellà](https://twitter.com/MarcCornella) for letting me know
 * [Small Sharp Software Tools](https://smallsharpsoftwaretools.com) by [Brian P. Hogan](https://twitter.com/bphogan).
 * I admire the comics made by [Julia Evans](https://twitter.com/b0rk) that she usually shares in Twitter. For example: [comic about grep](https://twitter.com/b0rk/status/991880504805871616). They are also collected into [zines](https://wizardzines.com).
 
-<!--
 ## Feedback
 
-Which is your favorite time-saving recommendation? [Here the tweet to reply]().
--->
+Which is your favorite time-saving recommendation? [Here the tweet to reply](https://twitter.com/bberrycarmen/status/1132724015733325825).
