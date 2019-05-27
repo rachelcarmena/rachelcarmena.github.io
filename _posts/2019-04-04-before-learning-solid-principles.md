@@ -4,7 +4,7 @@ asset-type: post
 title: Before learning SOLID principles
 description: An alternative list before learning the list of titles and statements
 date: 2019-04-04 09:00:00 +00:00
-last_modified_at: 2019-05-21 12:00:00 +00:00
+last_modified_at: 2019-05-27 12:00:00 +00:00
 image:
     src: /img/cards/posts/before-learning-solid-principles/cover.jpg
 ---
@@ -71,3 +71,13 @@ Please, don't shame a person who doesn't remember the statement of a letter from
 ## Other resource
 
 * [Why Every Element of SOLID is Wrong](https://speakerdeck.com/tastapod/why-every-element-of-solid-is-wrong) by [Daniel Terhorst-North](https://twitter.com/tastapod).
+
+## Update
+
+From [Pragmatic thinking and learning. Refactor your wetware](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) by [Andy Hunt](https://twitter.com/PragmaticAndy):
+
+> Don’t be in such a hurry. When problem solving, learn to be comfortable with uncertainty. When creating, be comfortable with the absurd and the impractical. When learning, **don’t try so hard to learn and memorize**; just get “used to it” first. Try to understand the meaning first; get the overall gist of it.
+
+> (...) simply mastering a syllabus of knowledge doesn’t increase professional effectiveness. It’s useful, certainly, but by itself it doesn’t contribute all that much to what you do in the actual, daily practice of your craft.
+
+> The model you build in your mind, the questions you ask to build that model, and your experiences and practices built up along the way and that you use daily are far more relevant to your performance. They’re the things that develop competence and expertise. Mastery of the knowledge alone isn’t sufficient.
