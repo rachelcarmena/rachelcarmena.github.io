@@ -4,6 +4,7 @@ asset-type: post
 title: "May the 'command line' be with you"
 description: Saving time when avoiding manual tasks
 date: 2019-05-26 12:00:00 +00:00
+last_modified_at: 2019-05-29 12:00:00 +00:00
 image:
     src: /img/cards/posts/may-the-command-line-be-with-you/cover.jpg
 ---
@@ -428,8 +429,8 @@ fi
 
 * Git provides its own way to create and to save aliases. For example, if you want to rebase with every pull operation:
 ```sh
-$ git config --global alias.pull 'pull --rebase'
-$ git pull 
+$ git config --global alias.pr 'pull --rebase'
+$ git pr
 # It executes: git pull --rebase
 # ---
 # Get all the existing aliases in the global scope
