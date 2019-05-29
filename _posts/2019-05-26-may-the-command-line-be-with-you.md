@@ -440,6 +440,8 @@ $ git config --global -l | grep alias
 # or looking at [alias] section in ~/.gitconfig file
 ```
 
+* You can keep all these customizations in a repository as a backup. For example, GitHub is full of repositories named as `dotfiles`.
+
 ## Friendly reminders
 
 > _Anyone who does not have the command line at their beck-and-call is really missing something._ - [Tim O'Reilly](https://twitter.com/timoreilly/status/956209333267701760)
