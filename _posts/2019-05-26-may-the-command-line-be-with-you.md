@@ -4,7 +4,7 @@ asset-type: post
 title: "May the 'command line' be with you"
 description: Saving time when avoiding manual tasks
 date: 2019-05-26 12:00:00 +00:00
-last_modified_at: 2019-05-29 12:00:00 +00:00
+last_modified_at: 2019-06-04 12:00:00 +00:00
 image:
     src: /img/cards/posts/may-the-command-line-be-with-you/cover.jpg
 ---
@@ -81,7 +81,7 @@ When I feel confident and comfortable with **Z shell**, I'll change my default s
 $ gnome-terminal -e zsh &
 ```
 
-Even though I'm a Linux user, I've been working with Windows operating systems as well and it's possible to pursue the same goal with Command Prompt, PowerShell or Cygwin.
+Even though I'm a Linux user, I've been working with Windows operating systems as well and it's possible to pursue the same goal with Command Prompt, PowerShell or Cygwin (a Unix emulation layer that runs on top of Windows).
 
 ## Some examples
 
@@ -470,6 +470,7 @@ Thanks to [Marc Cornellà](https://twitter.com/MarcCornella) for letting me know
 
 * [Bash reference manual](https://www.gnu.org/software/bash/manual/bash.html)
 * [Z shell documentation](http://zsh.sourceforge.net/Doc/)
+* [Unofficial wiki](http://zshwiki.org)
 * [Oh My Zsh!](https://ohmyz.sh)
 * [Ubuntu and the default system shell: DashAsBinSh](https://wiki.ubuntu.com/DashAsBinSh).
 * [Git aliases](https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases)
