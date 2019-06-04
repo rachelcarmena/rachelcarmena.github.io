@@ -4,7 +4,7 @@ asset-type: post
 title: Refactoring
 description: What do we need to refactor? Reviewing a refactoring kata
 date: 2019-04-13 12:00:00 +00:00
-last_modified_at: 2019-05-22 12:00:00 +00:00
+last_modified_at: 2019-06-04 12:00:00 +00:00
 image:
     src: /img/cards/posts/refactoring/cover.jpg
 ---
@@ -413,3 +413,7 @@ On the other hand, after watching [Seven Ineffective Coding Habits of Many Progr
 > To answer the question "What is clean design?" most succinctly: a clean design is one that supports visual thinking so people can meet their informational needs with a minimum of conscious effort.
 
 Another thing to pursue ;)
+
+Or the talk [Simplicity matters](https://www.youtube.com/watch?v=rI8tNMsozo0) by [Rich Hickey](https://twitter.com/richhickey):
+
+> Good design is about taking things apart. (...) Simplicity enables change. It's the primary source of true agility.
