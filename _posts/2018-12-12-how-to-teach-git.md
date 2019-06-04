@@ -4,7 +4,7 @@ asset-type: post
 title: How to teach Git
 description: An alternative way to teach Git
 date: 2018-12-12 12:00:00 +00:00
-last_modified_at: 2019-01-18 12:00:00 +00:00
+last_modified_at: 2019-06-04 12:00:00 +00:00
 image:
    src: /img/cards/posts/how-to-teach-Git/cover.jpg
 ---
@@ -154,3 +154,7 @@ Resources from [comments at Hacker News](https://news.ycombinator.com/item?id=18
 After reading more [comments at Reddit](https://www.reddit.com/r/programming/comments/agko6r/how_to_teach_git/), I think that a more accurate title for this post would be **An idea to teach Git**, because it's only an idea that appeared in my head when learning Git by myself a few years ago with [Pro Git book](https://git-scm.com/book/en). This post is not a complete guide, only a starting point for trainers. I'm sure all of these resources will be very useful as well. Thanks!
 
 And thanks [Stuart Maxwell](https://stuartm.com) who shared this post at Hacker News and [u/cryptoz](https://www.reddit.com/user/cryptoz) who shared it at Reddit!
+
+## Bonus
+
+This article inspired [Nico Riedmann](https://github.com/UnseenWizzard) to create this awesome post: [Learn git concepts, not commands](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc).
