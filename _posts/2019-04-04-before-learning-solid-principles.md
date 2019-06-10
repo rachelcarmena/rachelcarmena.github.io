@@ -4,7 +4,7 @@ asset-type: post
 title: Before learning SOLID principles
 description: An alternative list before learning the list of titles and statements
 date: 2019-04-04 09:00:00 +00:00
-last_modified_at: 2019-05-27 12:00:00 +00:00
+last_modified_at: 2019-06-10 12:00:00 +00:00
 image:
     src: /img/cards/posts/before-learning-solid-principles/cover.jpg
 ---
@@ -56,7 +56,7 @@ Other principles:
 * [YAGNI = You Aren't Gonna Need It](http://wiki.c2.com/?YouArentGonnaNeedIt)
 * [SoC = Separation of Concerns](http://wiki.c2.com/?SeparationOfConcerns)
 * [LoD = Law of Demeter = Only talk to your immediate friends](http://wiki.c2.com/?LawOfDemeter)
-* [CQS = Command Query Separation](http://wiki.c2.com/?CommandQuerySeparation)
+* [CQS = Command-Query Separation](http://wiki.c2.com/?CommandQuerySeparation). An architecture pattern based on CQS: [CQRS = Command-Query Responsibility Segregation](https://kalele.io/really-simple-cqrs/).
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Frameworks and APIs change fast. Software design principles are evergreen. Learn principles that translate across language barriers.</p>&mdash; Eric Elliott (@_ericelliott) <a href="https://twitter.com/_ericelliott/status/1073701678816333824?ref_src=twsrc%5Etfw">December 14, 2018</a></blockquote>
 
