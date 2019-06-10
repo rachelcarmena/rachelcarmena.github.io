@@ -4,7 +4,7 @@ asset-type: post
 title: Refactoring
 description: What do we need to refactor? Reviewing a refactoring kata
 date: 2019-04-13 12:00:00 +00:00
-last_modified_at: 2019-06-04 12:00:00 +00:00
+last_modified_at: 2019-06-10 12:00:00 +00:00
 image:
     src: /img/cards/posts/refactoring/cover.jpg
 ---
@@ -67,7 +67,7 @@ I'd mention three things: what to pursue, what to move away from and knowing how
 * **Knowing how to create that safety net if it doesn't exist** (see below)
 * **Refactorings** like [remove dead code](https://refactoring.com/catalog/removeDeadCode.html), [extract method](https://refactoring.com/catalog/extractFunction.html), [inline method](https://refactoring.com/catalog/inlineFunction.html), [replace nested conditional with guard clauses](https://refactoring.com/catalog/replaceNestedConditionalWithGuardClauses.html), ...
 * **Knowing the refactoring options provided by the IDE**. For example, take a look at this [list of refactorings in Intellij IDEA](https://www.jetbrains.com/help/idea/refactoring-source-code.html).
-* **Knowing techniques to refactor**: [the Mikado Method](https://www.manning.com/books/the-mikado-method), [Parallel Change](https://www.martinfowler.com/bliki/ParallelChange.html), leaning on the compiler (when altering a declaration to cause compile errors), scratch refactoring (when doing changes to get a better understanding on the code and then throwing those changes away), ...
+* **Knowing techniques to refactor**: [the Mikado Method](https://www.manning.com/books/the-mikado-method), [Parallel Change](https://www.martinfowler.com/bliki/ParallelChange.html), leaning on the compiler (when altering a declaration to cause compile errors), scratch refactoring (when doing changes to get a better understanding on the code and then throwing those changes away), [Strangler Pattern](https://martinfowler.com/bliki/StranglerFigApplication.html), ...
 
 ### How to create a safety net if it doesn't exist (some tips)
 
@@ -417,3 +417,5 @@ Another thing to pursue ;)
 Or the talk [Simplicity matters](https://www.youtube.com/watch?v=rI8tNMsozo0) by [Rich Hickey](https://twitter.com/richhickey):
 
 > Good design is about taking things apart. (...) Simplicity enables change. It's the primary source of true agility.
+
+On the other hand, Sabrina Leandro talks about [Strangler Pattern](https://martinfowler.com/bliki/StranglerFigApplication.html) in her talk [How to rewrite, a bit at a time](https://www.youtube.com/watch?v=AmicHHpogEg).
