@@ -1,7 +1,7 @@
 ---
 layout: post
 asset-type: post
-title: The Power of Accessibility
+title: The power of accessibility
 description: It's not only related to people with disabilities
 date: 2018-11-11 12:00:00 +00:00
 last_modified_at: 2019-05-21 12:00:00 +00:00
