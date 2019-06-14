@@ -5,6 +5,7 @@ title: My main Getting Things Done (GTD) tool
 cover-title: My main GTD tool
 description: How to get things done with a simple notebook
 date: 2019-06-12 12:00:00 +00:00
+last_modified_at: 2019-06-14 12:00:00 +00:00
 image:
     src: /img/cards/posts/my-main-gtd-tool/cover.jpg
 ---
@@ -43,13 +44,23 @@ I write down every pending task with an initial dash:
 
 ![Example of list on the notebook](/img/cards/posts/my-main-gtd-tool/list.jpg)
 
-Anything that I must do is an item on the list. I collect **everything**. 
+Anything that I must do is an item on the list.
+
+I collect **everything**. 
+
+This is one of the fundamental ideas about Getting Things Done (GTD).
+
+It's necessary to get all the tasks out of your head: not to overload your mind with things to do, to prevent the stress feeling because of having a lot things on your mind and to be able to focus on one thing.
 
 ### Priority tasks
 
 If there are priority tasks on the list, I surround them to see them quickly:
 
 ![Example of priority tasks](/img/cards/posts/my-main-gtd-tool/priority-tasks.jpg)
+
+And if there is a relationship between some priority tasks, I draw a line connecting them:
+
+![Example of related priority tasks](/img/cards/posts/my-main-gtd-tool/connection.jpg)
 
 ### Marking as done
 
@@ -58,6 +69,8 @@ When I finish a task, I draw a check on the corresponding dash:
 ![Example of checked items](/img/cards/posts/my-main-gtd-tool/checked-items.jpg)
 
 In this way, I can identify pending and finished tasks easily.
+
+I prefer not to draw strikethrough lines in order to be able to read the finished tasks easily.
 
 ### Handling interruptions
 
@@ -74,7 +87,7 @@ At the end of the day, I review the notebook to plan the next day:
 
 * _This one is too big for a day. I'm going to split it. Tomorrow ..._ Otherwise, it will be a task ripe for procrastination.
 * _I didn't do this one and it's important. I'll start with it tomorrow morning._ And that's translated into a surrounding area with a "1st" on it.
-* _Pending tasks in several pages. I'm going to write them down again not to have to review so many pages_.
+* _Pending tasks in several pages. I'm going to write them down again not to have to review so many pages_. When rewriting them, I reflect about them and they can be transformed into new tasks.
 * _There were a lot of interruptions about ... I'm going to plan a task to review ..._
 * etc.
 
