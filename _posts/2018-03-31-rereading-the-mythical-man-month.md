@@ -4,6 +4,7 @@ asset-type: post
 title: Rereading The Mythical Man-Month
 description: Discovering a new book after 20 years
 date: 2018-03-31 18:00:00 +00:00
+category: reading
 image:
    src: /img/cards/posts/the-mythical-man-month/cover.png
 ---

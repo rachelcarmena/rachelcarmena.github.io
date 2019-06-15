@@ -1,6 +1,14 @@
 theme: jekyll-theme-slate
 title: "Rachel M. Carmena"
 paginate: 12
+permalink: /:year/:month/:day/:title:output_ext
+defaults:
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            category: "coding"
 plugins:
   - jekyll-feed
   - jekyll-paginate
