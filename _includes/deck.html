@@ -1,0 +1,11 @@
+<h1>{{ category | capitalize }}</h1>
+<div id="items">
+{% for post in site.categories[category] %}
+{% include card.html %}
+{% endfor %}
+</div>
+<div class="pagination">
+    <span class="left">
+        <a href="/decks/">&laquo; view other decks</a>
+    </span>
+</div>

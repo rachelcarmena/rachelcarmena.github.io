@@ -5,6 +5,7 @@ title: The power of accessibility
 description: It's not only related to people with disabilities
 date: 2018-11-11 12:00:00 +00:00
 last_modified_at: 2019-05-21 12:00:00 +00:00
+category: talks
 image:
    src: /img/cards/posts/power-of-accessibility/cover.jpg
 ---

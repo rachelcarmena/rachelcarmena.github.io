@@ -1,0 +1,26 @@
+---
+layout: default
+title: My card game
+---
+
+<h1>{{ page.title }}</h1>
+<div>
+    <a href="/2018/07/26/card-game.html">Why a card game?</a>
+    <span class="right"><a href="/">View all cards</a></span>
+</div>
+<div id="items">
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+    <article class="deck">
+        {% assign category_name = category | first %}
+        <a href="/decks/{{ category_name }}.html">
+            <div class="deck_content">
+                <h2>{{ category_name | capitalize }}</h2>
+                <img class="deck_cover" src="/img/decks/{{ category_name }}.jpg" alt="">
+                {% assign cards_number = site.categories[category_name] | size %}
+                <p class="deck_number">{{ cards_number }} card{% if cards_number > 1 %}s{% endif %}</p>
+            </div>
+        </a>
+    </article>
+{% endfor %}
+</div>

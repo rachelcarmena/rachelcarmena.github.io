@@ -6,6 +6,7 @@ cover-title: My main GTD tool
 description: How to get things done with a simple notebook
 date: 2019-06-12 12:00:00 +00:00
 last_modified_at: 2019-06-14 12:00:00 +00:00
+category: tools
 image:
     src: /img/cards/posts/my-main-gtd-tool/cover.jpg
 ---

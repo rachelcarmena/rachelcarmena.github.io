@@ -5,6 +5,7 @@ title: "Be open-minded, my friend"
 description: A journey across different technical subjects
 date: 2018-07-05 12:00:00 +00:00
 last_modified_at: 2019-06-12 12:00:00 +00:00
+category: talks
 image:
  src: /img/cards/posts/be-open-minded-my-friend/cover.jpg
 ---

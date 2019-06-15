@@ -5,6 +5,7 @@ title: Coding-centered methodology
 description: Trying to answer to What methodology?
 date: 2019-01-23 12:00:00 +00:00
 last_modified_at: 2019-05-27 12:00:00 +00:00
+category: reflections
 image:
     src: /img/cards/posts/coding-centered-methodology/cover.jpg
 ---

@@ -5,6 +5,7 @@ title: Discussions
 description: "Two views: discussions are powerful and an idea to have useful discussions"
 date: 2019-01-02 12:00:00 +00:00
 last_modified_at: 2019-05-15 10:00:00 +00:00
+category: reflections
 image:
    src: /img/cards/posts/discussions/cover.jpg
 ---

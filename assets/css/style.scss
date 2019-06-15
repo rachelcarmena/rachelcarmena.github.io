@@ -5,6 +5,7 @@
 
 :root {
     --main-max-width: 54em;
+    --main-color: #333;
 }
 
 header, footer {
@@ -60,39 +61,12 @@ img {
     margin-bottom: 0;
 }
 
-#cards { 
+#items { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     grid-gap: 1.4em;
     margin-top: 0.6em;
-    margin-bottom: 3em;
-}
-
-.card {
-    border: 2px solid #333;
-    border-radius: 10px;
-    position: relative;
-}
-
-.card a {
-    display: block;
-    padding: 0.8em;
-    text-decoration: none;
-}
-
-.card:hover, .card:focus, .card a:focus {
-    background-color: #333;
-    transition: background-color 0.8s;
-}
-
-.card_content {
-    background: white;
-    position: relative;
-    padding: 1.4em;
-}
-
-.card_symbol {
-    margin-bottom: 0.8em;
+    margin-bottom: 1.5em;
 }
 
 .card_cover {
@@ -101,13 +75,74 @@ img {
     object-fit: cover;
 }
 
+.deck_cover {
+    height: 208px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card {
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    position: relative;
+}
+
+.card a, .deck a {
+    display: block;
+    padding: 0.8em;
+    text-decoration: none;
+}
+
+.card:hover, .card:focus, .card a:focus {
+    background-color: var(--main-color);
+    transition: background-color 0.8s;
+}
+
+.card_symbol {
+    margin-bottom: 0.8em;
+}
+
+.card_content {
+    background: white;
+    position: relative;
+    padding: 1.4em;
+}
+
 .card_content h2 {
     background: white;
     line-height: 1.4em !important;
     font-size: 1.6em;
-    color: #333;
+    color: var(--main-color);
     text-align: right;
     min-height: 4.2em;
+}
+
+.deck_content {
+    background: white;
+    position: relative;
+    padding: 1.2em;
+}
+.deck_content h2 {
+    background: white;
+    font-size: 2.2em;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.deck {
+    border: 2px solid var(--main-color);
+    position: relative;
+}
+
+.deck:hover, .deck:focus, .deck a:focus {
+    background-color: var(--main-color);
+    transition: background-color 0.8s;
+}
+
+.deck_number {
+    color: var(--main-color);
+    text-align: right;
+    font-size: 1.2em;
 }
 
 /* Posts ------------------------- */
@@ -178,4 +213,12 @@ img {
 
 .highlight {
     background-color: white;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
 }
