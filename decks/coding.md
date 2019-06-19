@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Coding
+description: Card deck about coding
 image:
     src: /img/decks/coding.jpg
 ---

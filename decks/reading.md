@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Reading
+description: Card deck about reading
 image:
     src: /img/decks/reading.jpg 
 ---

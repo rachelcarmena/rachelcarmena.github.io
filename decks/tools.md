@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Tools
+description: Card deck about tools
 image:
     src: /img/decks/tools.jpg 
 ---

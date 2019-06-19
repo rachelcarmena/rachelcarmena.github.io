@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Reflections
+description: Card deck about reflections
 image:
     src: /img/decks/reflections.jpg
 ---
