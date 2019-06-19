@@ -1,5 +1,7 @@
 ---
 layout: default 
+title: Talks
+description: Card deck about talks
 image:
     src: /img/decks/talks.jpg
 ---
