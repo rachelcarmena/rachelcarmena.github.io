@@ -4,7 +4,7 @@ asset-type: post
 title: "May the 'command line' be with you"
 description: Saving time when avoiding manual tasks
 date: 2019-05-26 12:00:00 +00:00
-last_modified_at: 2019-06-04 12:00:00 +00:00
+last_modified_at: 2019-06-19 12:00:00 +00:00
 category: tools
 image:
     src: /img/cards/posts/may-the-command-line-be-with-you/cover.jpg
@@ -101,15 +101,15 @@ There are more commands and more ways to do the same.
 # Remove blank lines 
 #  ^ = start of line
 #  $ = end of line
-$ sed '/^$/d' file.txt
+$ sed -i '/^$/d' file.txt
 
 # Remove lines with one space
-$ sed '/^ $/d' file.txt
+$ sed -i '/^ $/d' file.txt
 
 # Remove lines with whitespaces 
 #  \s = whitespace
 #  * = zero or more times the preceding character
-$ sed '/^\s*$/d' file.txt
+$ sed -i '/^\s*$/d' file.txt
 ```
 
 #### Replacing strings
