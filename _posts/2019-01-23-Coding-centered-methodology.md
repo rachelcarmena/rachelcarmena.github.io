@@ -4,7 +4,7 @@ asset-type: post
 title: Coding-centered methodology
 description: Trying to answer to What methodology?
 date: 2019-01-23 12:00:00 +00:00
-last_modified_at: 2019-05-27 12:00:00 +00:00
+last_modified_at: 2019-06-20 12:00:00 +00:00
 category: reflections
 image:
     src: /img/cards/posts/coding-centered-methodology/cover.jpg
@@ -186,4 +186,16 @@ From [Pragmatic thinking and learning. Refactor your wetware](https://pragprog.c
 
 > **Be comfortable with uncertainty.** Agile software development embraces the idea of working with uncertainty. Early on, you don’t know what the project end date will really be. You’re not 100 percent certain which features will be present in the next iteration. You don’t know how many iterations there will be. And that’s perfectly OK: that’s the sort of uncertainty you want to be comfortable with. You’ll find answers as you go along, and by the end, everything will have been answered.
 
-> Agile developers **do** create documentation, but they use a pragmatic filter to make sure the investment in creating any documentation is really worth the effort. It has to have value. 
+> Agile developers **do** create documentation, but they use a pragmatic filter to make sure the investment in creating any documentation is really worth the effort. It has to have value.
+
+## Update: consider function first, presentation later
+
+It's usual to see how sketch designs are the first step when creating a software product. As [Jeff Johnson](http://www.uiwizards.com/about.html) wrote in [GUI Bloopers](https://www.elsevier.com/books/gui-bloopers-20/johnson/978-0-12-370643-0) (1998):
+
+> Starting by worrying about appearances (...) results in products that lack important functionality, contain unneeded functionality, and are difficult to learn and use. (...) A recommended way is to design a conceptual model for the software (...) expressed in terms of the concepts of the intended users’ tasks (...) The idea is that by carefully crafting an explicit conceptual model, and then designing a UI from that, the resulting software will be cleaner, simpler, and easier to understand. (...) Keep the conceptual model focused on the tasks, with concepts that will be familiar to users. Leave foreign concepts out. (...) Software developed without a lexicon often suffers from two common user interface “bloopers”: (1) multiple terms for a given concept and (2) the same term for different concepts.
+
+Doesn't it make you think about Domain-Driven Design (DDD)?
+
+[Tobias Goeschel](https://twitter.com/w3ltraumpirat) shows a workflow which starts with the domain model in his talk [Domain prototyping, or design is how it works](http://videos.ncrafts.io/video/342450315):
+
+<iframe title="Domain prototyping, or design is how it works by Tobias Goeschel" src="https://player.vimeo.com/video/342450315?color=0cb2cb&title=0&byline=0&portrait=0" width="100%" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
