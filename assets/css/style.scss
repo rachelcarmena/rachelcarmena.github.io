@@ -76,7 +76,7 @@ img {
 }
 
 .deck_cover {
-    height: 208px;
+    height: 230px;
     width: 100%;
     object-fit: cover;
 }
@@ -120,8 +120,9 @@ img {
 .deck_content {
     background: white;
     position: relative;
-    padding: 1.2em;
+    padding: 0.2em 1.2em 1em 1.2em;
 }
+
 .deck_content h2 {
     background: white;
     font-size: 2.2em;
@@ -141,8 +142,9 @@ img {
 
 .deck_number {
     color: var(--main-color);
-    text-align: right;
+    text-align: center;
     font-size: 1.2em;
+    margin-top: 0;
 }
 
 /* Posts ------------------------- */
