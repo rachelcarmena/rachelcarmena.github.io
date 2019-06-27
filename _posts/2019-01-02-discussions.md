@@ -4,7 +4,7 @@ asset-type: post
 title: Discussions
 description: "Two views: discussions are powerful and an idea to have useful discussions"
 date: 2019-01-02 12:00:00 +00:00
-last_modified_at: 2019-05-15 10:00:00 +00:00
+last_modified_at: 2019-06-27 10:00:00 +00:00
 category: reflections
 image:
    src: /img/cards/posts/discussions/cover.jpg
@@ -88,3 +88,4 @@ I like this reflection by Simon Brown when talking about documentation:
 * **Documentation** section in [Be open-minded, my friend](/2018/07/05/be-open-minded-my-friend.html)
 * [Rumors of the death of UML are all false](https://www.linkedin.com/pulse/rumors-death-uml-all-false-ivar-jacobson/) by Ivar Jacobson
 * [C4 Model](https://c4model.com) by Simon Brown
+* [The Cognitive Tech of Technical Discussions](https://michaelfeathers.silvrback.com/the-cognitive-tech-of-technical-discussions) by Michael Feathers
