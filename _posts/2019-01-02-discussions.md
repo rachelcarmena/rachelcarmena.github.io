@@ -51,6 +51,9 @@ Another day:
 
 So, can we play a game? Can you ask us for an estimate? But you don't really want that estimate. You only want us to have a discussion to get valuable information.
 
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">&quot;Plans are useless, planning is indispensable&quot; ~ Eisenhower ... &quot;Estimates are useless, estimating is indispensable.&quot; ~ <a href="https://twitter.com/ourfounder?ref_src=twsrc%5Etfw">@ourfounder</a> <a href="https://twitter.com/hashtag/agile?src=hash&amp;ref_src=twsrc%5Etfw">#agile</a></p>&mdash; Jim Benson (@ourfounder) <a href="https://twitter.com/ourfounder/status/289236235208249345?ref_src=twsrc%5Etfw">January 10, 2013</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## An idea to have useful discussions
 
 A discussion can be a mess when each person has a different thing in mind. We cannot read the mind, so it's very useful to draw the ideas on a paper or a board.
