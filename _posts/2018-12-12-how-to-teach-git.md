@@ -4,7 +4,7 @@ asset-type: post
 title: How to teach Git
 description: An alternative way to teach Git
 date: 2018-12-12 12:00:00 +00:00
-last_modified_at: 2019-06-19 12:00:00 +00:00
+last_modified_at: 2019-06-27 12:00:00 +00:00
 category: tools
 image:
    src: /img/cards/posts/how-to-teach-Git/cover.jpg
@@ -161,6 +161,10 @@ Resources from comments at Twitter:
 * [This post explained in Japanese](https://gigazine.net/news/20190203-how-to-teach-git/)
 * [How to explain git in simple words?](https://smusamashah.github.io/blog/2017/10/14/explain-git-in-simple-words)
 * [Learn Git](https://www.codecademy.com/learn/learn-git)
+
+Other related things:
+
+* [Better documentation through commit messages](https://corgibytes.com/blog/2019/03/20/commit-messages/) by Josh Kelley
 
 ## Bonus
 
