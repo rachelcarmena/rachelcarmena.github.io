@@ -4,6 +4,7 @@ asset-type: post
 title: Domain-Driven Design to the rescue
 description: Trying to explain DDD easily
 date: 2019-06-24 08:00:00 +00:00
+last_modified_at: 2019-07-01 08:00:00 +00:00
 category: reflections
 image:
     src: /img/cards/posts/ddd-to-the-rescue/cover.jpg
@@ -69,11 +70,11 @@ As [Jeff Johnson](http://www.uiwizards.com/about.html) wrote in "GUI Bloopers":
 
 ### Some domain objects have complex associations with other objects and it's difficult to guarantee the data consistency.
 
-Associated objects that can suffer data consistency problems because of changes should be clustered to be treated as a unit: **aggregate**. The external reference to that cluster should be restricted to one member: **aggregate root**. 
+There are associated objects that can suffer data consistency problems because of changes. Therefore, those objects should be clustered to be treated as a unit: **aggregate**. And the external reference to that cluster should be restricted to one member: **aggregate root**. 
 
 The operations that effect some change to the system intentionally are known as **commands**.
 
-Aggregates should be small in order not to have problems with transactions or memory. If the associated objects can be updated eventually (seconds, minutes, ...), they don't have to be in the same aggregate. In that case, an **domain event** could be published to be consumed afterwards. Or those domain events could be stored in order to be used to reconstitute the state of a domain object (the idea behind _Event Sourcing_).
+Aggregates should be small in order not to have problems with transactions or memory. If the associated objects can be updated eventually (seconds, minutes, ...), they don't have to be in the same aggregate. In that case, a **domain event** could be published to be consumed afterwards. Or those domain events could be stored in order to be used to reconstitute the state of a domain object (the idea behind _Event Sourcing_).
 
 However, domain events are facts that can be caused by other reasons. For example, they could be time-based with a significant business meaning.
 
@@ -99,15 +100,15 @@ Steps:
 
 1. Model domain events in time order
 2. Model commands that cause domain events
-3. Model the aggregates or entities of the model (they receive a command, handle it and produce a domain event)
+3. Model the aggregates or entities of the model: they receive a command, handle it and produce a domain event.
 4. Identify context boundaries
 5. Identify views and other components
 
 ## Friendly reminder
 
-Nowadays we think about microservices very quickly but there are other architectures. Besides, we could have a tidy monolith.
+Nowadays we think about microservices as the great solution. However, a tidy monolith might be enough if there is no need to scale microservices independently.
 
-[Simon Brown](https://twitter.com/simonbrown) differentiates a "modular monolith" from a "monolithic big ball of mud".
+[Simon Brown](https://twitter.com/simonbrown) differentiates a "modular monolith" from a "monolithic big ball of mud". And I could say that I've seen microservices which were really micro-monolithic big balls of mud. It's ok, we make mistakes. The real mistake is not to do anything to fix it.
 
 ## Further knowledge
 
