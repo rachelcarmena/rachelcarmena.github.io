@@ -4,7 +4,7 @@ asset-type: post
 title: "May the 'command line' be with you"
 description: Saving time when avoiding manual tasks
 date: 2019-05-26 12:00:00 +00:00
-last_modified_at: 2019-06-19 12:00:00 +00:00
+last_modified_at: 2019-07-01 12:00:00 +00:00
 category: tools
 image:
     src: /img/cards/posts/may-the-command-line-be-with-you/cover.jpg
@@ -298,6 +298,11 @@ $ vi my_file.txt
 # (it's more funny than thinking on 'exclamation point exclamation point')
 $ !!
 # It executes the last command: 'vi my_file.txt'
+
+# Another useful example
+$ vi /etc/hosts
+# Oh! I forgot to execute it as a superuser
+$ sudo !!
 
 # bang cat
 $ !cat
