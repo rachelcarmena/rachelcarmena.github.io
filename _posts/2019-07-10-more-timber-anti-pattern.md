@@ -25,7 +25,7 @@ The request was translated in Spanish like _¡Más madera! ¡Más madera!_ (_Mor
 
 ## When it happens
 
-**More timber! anti-pattern** happens when infrastructure is the **only** focus when an application crashes or a performance issue occurs: increasing memory, more processing capability, increasing the number of nodes, among others.
+**More timber! anti-pattern** happens if infrastructure is the **only** focus when an application crashes or a performance issue occurs: increasing memory, more processing capability, increasing the number of nodes, among others.
 
 Nobody thinks about reviewing the source code, database queries, database indexes or any other internal aspect about the software.
 
