@@ -4,6 +4,7 @@ asset-type: post
 title: More timber! anti-pattern
 description: Decision when there is a poor performance
 date: 2019-07-10 09:00:00 +00:00
+last_modified_at: 2019-07-23 09:00:00 +00:00
 category: reflections
 image:
     src: /img/cards/posts/more-timber-anti-pattern/cover.jpg
@@ -37,3 +38,13 @@ Nobody thinks about reviewing the source code, database queries, database indexe
 * Benchmarking.
 
 In any case, it's important to detect the issues before users.
+
+## Update
+
+Maybe this anti-pattern didn't happen years ago when there wasn't the current hardware neither the current ease to manage infrastructure in the cloud.
+
+I'll never forget that time when I was helping a recent graduated colleague to improve several loops. He told me:
+
+> I understand your proposal to save resources and time although I don't understand the need of change. I understand my source code and we have enough resources. Look, my code works!
+
+Is the lack of constraints the root of some of our problems about development? I don't know if [Corey Haines](https://twitter.com/coreyhaines) was thinking the same when he came up with [the coderetreat format](https://www.coderetreat.org/pages/facilitating/structure-of-a-coderetreat/) where there is a constraint for each session.
