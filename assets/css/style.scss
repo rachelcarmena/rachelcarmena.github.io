@@ -30,8 +30,13 @@ header, footer {
     padding: 30px 10px 40px 10px;
 }
 
-pre {
-    margin: 1em 0;
+code {
+    box-shadow: none;
+}
+
+pre code {
+    padding: 1em 0.5em;
+    background-color: #f8f8f8;
 }
 
 img {
@@ -213,8 +218,12 @@ img {
     margin-top: 40px;
 }
 
-.highlight {
-    background-color: white;
+.highlighter-rouge {
+    background-color: #f8f8f8;
+}
+
+div .highlighter-rouge {
+    margin: 1em 0em;
 }
 
 .right {
