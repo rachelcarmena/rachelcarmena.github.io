@@ -263,6 +263,7 @@ Lots of thoughts...
 
 * [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://tools.ietf.org/html/rfc7231)
 * [PATCH Method for HTTP](https://tools.ietf.org/html/rfc5789)
+* [Hypertext Transfer Protocol (HTTP/1.1): Range Requests](https://tools.ietf.org/html/rfc7233)
 * [Standard list of media types](http://www.iana.org/assignments/media-types/)
 
 ### API documentation
