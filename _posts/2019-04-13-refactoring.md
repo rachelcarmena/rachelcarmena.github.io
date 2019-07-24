@@ -133,25 +133,21 @@ Let's see each change that I made.
 The main loop is a ```for``` statement with the three expressions:
 
 ```java
-
-  for (int i = 0; i < items.length; i++) {
-      ...
-      // elements are accessed by items[i]
-      ...
-  }
-
+for (int i = 0; i < items.length; i++) {
+    ...
+    // elements are accessed by items[i]
+    ...
+}
 ```
 
 So it's replaced by an enhanced ```for``` statement with **Replace with foreach** option in Intellij IDEA:
 
 ```java
-
-  for (Item item : items) {
-      ...
-      // elements are accessed by item
-      ...
-  }
-
+for (Item item : items) {
+    ...
+    // elements are accessed by item
+    ...
+}
 ```
 
 ### Inverting ```if``` to avoid negative conditionals
@@ -167,45 +163,39 @@ However, Robert C. Martin includes **Avoid negative conditionals** in _Clean Cod
 There are several negative conditionals in the `for` loop. For example:
 
 ```java
-  
-  if (!item.name.equals("Aged Brie")
-          && !item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-      if (item.quality > 0) {
-          ...
-      }
-  }
-  
+if (!item.name.equals("Aged Brie")
+        && !item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+    if (item.quality > 0) {
+        ...
+    }
+}
 ```
 
 I chose **Invert if condition** option in IntelliJ IDEA to get this result:
 
 ```java
-
-  if (item.name.equals("Aged Brie")
-          || item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-      ...
-  } else {
-      if (item.quality > 0) {
-          ...
-      }
-  }
-
+if (item.name.equals("Aged Brie")
+        || item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+    ...
+} else {
+    if (item.quality > 0) {
+        ...
+    }
+}
 ```
 
 In this case, I also extracted the first condition in order not to have two conditions in the same if statement. It's possible with **Extract if ...** or **Split into 2 if's** options:
 
 ```java
-
-  if (item.name.equals("Aged Brie")) {
-      ...
-  } else if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-      ...
-  } else {
-      if (item.quality > 0) {
-          ...
-      }
-  }
-
+if (item.name.equals("Aged Brie")) {
+    ...
+} else if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+    ...
+} else {
+    if (item.quality > 0) {
+        ...
+    }
+}
 ```
 
 ### Removing Dead Code
@@ -213,29 +203,25 @@ In this case, I also extracted the first condition in order not to have two cond
 The IDE detects a piece of dead code inside this condition:
 
 ```java
+if (item.name.equals("Aged Brie")) {
+    if (item.quality < 50) {
+        item.quality = item.quality + 1;
 
-  if (item.name.equals("Aged Brie")) {
-      if (item.quality < 50) {
-          item.quality = item.quality + 1;
-
-          if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
-              ...
-          }
-      }
-  }
-
+        if (item.name.equals("Backstage passes to a TAFKAL80ETC concert")) {
+            ...
+        }
+    }
+}
 ``` 
 
 The field ```name``` is not changed between the two comparisons with it, so the second comparison can be removed because it'll never be true:
 
 ```java
-  
-  if (item.name.equals("Aged Brie")) {
-      if (item.quality < 50) {
-          item.quality = item.quality + 1;
-      }
-  }
-  
+if (item.name.equals("Aged Brie")) {
+    if (item.quality < 50) {
+        item.quality = item.quality + 1;
+    }
+}
 ```
 
 ### Simplifying operations 
@@ -243,25 +229,21 @@ The field ```name``` is not changed between the two comparisons with it, so the 
 There are several verbose operations with the field ```quality```:
 
 ```java
-
-  item.quality = item.quality - 1;
-  ...
-  item.quality = item.quality + 1;
-  ...
-  item.quality = item.quality - item.quality;
-
+item.quality = item.quality - 1;
+...
+item.quality = item.quality + 1;
+...
+item.quality = item.quality - item.quality;
 ```
 
 and they are simplified with the replacing options:
 
 ```java
-
-  item.quality -= 1;
-  ...
-  item.quality += 1;
-  ...
-  item.quality = 0;
-
+item.quality -= 1;
+...
+item.quality += 1;
+...
+item.quality = 0;
 ```
 
 ### Extracting methods
@@ -269,19 +251,15 @@ and they are simplified with the replacing options:
 I made several small changes to be able to extract these methods to increase and decrease the quality:
 
 ```java
-
-  if (item.quality < 50) {
-    item.quality += 1;
-  }
-
+if (item.quality < 50) {
+  item.quality += 1;
+}
 ```
 
 ```java
-
-  if (item.quality > 0) {
-    item.quality -= 1;
-  }
-
+if (item.quality > 0) {
+  item.quality -= 1;
+}
 ```
 
 It removes the duplicated code and it makes code easier to read and understand.
@@ -301,42 +279,38 @@ This change could be DDD-related. The text of the kata includes the following de
 However, the source code shows the consideration of 11 days or 6 days:
 
 ```java
+increaseItemQuality(item);
+if (item.sellIn < 11) {
+    increaseItemQuality(item);
+}
+if (item.sellIn < 6) {
+    increaseItemQuality(item);
+}
 
-  increaseItemQuality(item);
-  if (item.sellIn < 11) {
-      increaseItemQuality(item);
-  }
-  if (item.sellIn < 6) {
-      increaseItemQuality(item);
-  }
+...
 
-  ...
+if (item.name.equals("Sulfuras, Hand of Ragnaros")) {
+} else {
+    item.sellIn -= 1;
+}
 
-  if (item.name.equals("Sulfuras, Hand of Ragnaros")) {
-  } else {
-      item.sellIn -= 1;
-  }
-  
-  ...
+...
 
-  if (item.sellIn < 0) {
-      item.quality = 0;
-  }
-
+if (item.sellIn < 0) {
+    item.quality = 0;
+}
 ```
 
 So, I changed the order of the reduction of the field ```sellIn``` to reflect the domain values. However, it wasn't right, because it's about "10 days or less" and "5 days or less". So, a more accurate change would be:
 
 ```java
-
-  increaseItemQuality(item);
-  if (item.sellIn <= 10) {
-      increaseItemQuality(item);
-  }
-  if (item.sellIn <= 5) {
-      increaseItemQuality(item);
-  }
-
+increaseItemQuality(item);
+if (item.sellIn <= 10) {
+    increaseItemQuality(item);
+}
+if (item.sellIn <= 5) {
+    increaseItemQuality(item);
+}
 ```
 
 Let's see again the text of the kata:
@@ -346,16 +320,14 @@ Let's see again the text of the kata:
 Do we read the same in the source code? I don't think it's clear to have that kind of conditionals that are true at the same time for particular values. Now I think that I'd prefer something as follows:
 
 ```java
-
-  if (item.sellIn <= 5) {
-      increaseItemQuality(item, 3);
-      break;
-  } 
-  if (item.sellIn <= 10) {
-      increaseItemQuality(item, 2);
-      break; 
-  }
-
+if (item.sellIn <= 5) {
+    increaseItemQuality(item, 3);
+    break;
+} 
+if (item.sellIn <= 10) {
+    increaseItemQuality(item, 2);
+    break; 
+}
 ```
 
 **NOTE 1**. This is the previous step to replacing the conditional. That's the reason why `item` is still a parameter in a method.

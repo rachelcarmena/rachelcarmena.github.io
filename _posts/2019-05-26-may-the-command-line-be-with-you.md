@@ -218,7 +218,9 @@ $ for file in *; do if [ -f "$file" ]; then \
 mv "$file" "previous_$file"; fi; done
 ```
 
-**NOTE**: These examples wouldn't need quotes when executing on **Z shell** because it doesn't do [word splitting](https://www.gnu.org/software/bash/manual/html_node/Word-Splitting.html) by default, so they would work properly even with whitespaces in the filenames.
+<div class="note">
+<strong>Note</strong>: These examples wouldn't need quotes when executing on <strong>Z shell</strong> because it doesn't do <a href="https://www.gnu.org/software/bash/manual/html_node/Word-Splitting.html">word splitting</a> by default, so they would work properly even with whitespaces in the filenames.
+</div>
 
 ### Searching
 
