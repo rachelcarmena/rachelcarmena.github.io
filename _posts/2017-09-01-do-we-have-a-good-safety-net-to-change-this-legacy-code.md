@@ -48,13 +48,19 @@ Let’s see some examples with [PIT](http://pitest.org) and a simple [Java proje
 
 A boundary value could be forgotten when writing tests (even following TDD). For example, this piece of production code:
 
-```
+```java
 status arg3 = ((from.getParam1() < from.getParam2())? BLACK: WHITE);
 ```
 
 If we don’t have a test which considers the same value for `param1` and `param2`, a mutation will survive when applying [_Conditional Boundary Mutator_](http://pitest.org/quickstart/mutators/#CONDITIONALS_BOUNDARY):
 
-<script src="https://gist.github.com/rachelcarmena/99b8ee9125859ae9730b1ad2e9519152.js?file=alive-mutation.log"></script>
+```sh
+org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+Generated 1 Killed 0 (0%)
+KILLED 0 SURVIVED 1 TIMED_OUT 0 NON_VIABLE 0 
+MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+NO_COVERAGE 0
+``` 
 
 PIT report shows the affected line.
 
@@ -64,7 +70,13 @@ PIT report shows the affected line.
 
 When adding a test which considers the same value for `param1` and `param2`, the previous mutation will be killed:
 
-<script src="https://gist.github.com/rachelcarmena/99b8ee9125859ae9730b1ad2e9519152.js?file=killed-mutation.log"></script>
+```sh
+org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator
+Generated 1 Killed 1 (100%)
+KILLED 1 SURVIVED 0 TIMED_OUT 0 NON_VIABLE 0 
+MEMORY_ERROR 0 NOT_STARTED 0 STARTED 0 RUN_ERROR 0 
+NO_COVERAGE 0
+```
 
 ## Example: equals and hashCode methods
 
@@ -74,19 +86,25 @@ It’s common to find `equals` and `hashCode` methods in Java which are only use
 
 For example, a property is added to a class without updating `equals` and `hashCode` methods, so PIT statistics results in:
 
-<script src="https://gist.github.com/rachelcarmena/99b8ee9125859ae9730b1ad2e9519152.js?file=bad-statistics.log"></script>
+```sh
+Generated 15 mutations Killed 6 (40%)
+Ran 24 tests (1.6 tests per mutation)
+```
 
 And PIT report alerts on `equals` and `hashCode` methods.
 
 If these methods are only used from test code, we can replace them with [`EqualsBuilder.reflectionEquals`](https://commons.apache.org/proper/commons-lang/apidocs/org/apache/commons/lang3/builder/EqualsBuilder.html#reflectionEquals-java.lang.Object-java.lang.Object-boolean-) from _Apache Commons Lang_:
 
-```
+```java
 assertTrue(reflectionEquals(actualObject, expectedObject));
 ```
 
 In that case, we can succeed in killing every mutation:
 
-<script src="https://gist.github.com/rachelcarmena/99b8ee9125859ae9730b1ad2e9519152.js?file=good-statistics.log"></script>
+```sh
+Generated 5 mutations Killed 5 (100%)
+Ran 7 tests (1.4 tests per mutation)
+```
 
 Another option could be to use [field by field comparisons](http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#field-by-field-comparison) from [AssertJ](http://joel-costigliola.github.io/assertj/index.html). It's useful if the object under comparison has other custom objects as properties, so comparators for types can be added by [`usingComparatorForType`](http://joel-costigliola.github.io/assertj/assertj-core-features-highlight.html#field-by-field-recursive). 
 

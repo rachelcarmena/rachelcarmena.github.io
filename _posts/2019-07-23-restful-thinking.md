@@ -115,7 +115,9 @@ For example, Amazon S3 API:
 * [PUT for creating a bucket](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUT.html)
 * [POST for adding an object to a bucket](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTObjectPOST.html)
 
-**Note**: There is a common misunderstanding about PUT and POST. In the wrong way, it's said: PUT for updating and POST for creating. Nowadays, when remembering that I made the same mistake, I don't understand the reason why it's easy to embrace that belief. There isn't a clear relationship between the meaning of the words "put", "update", "post" and "create". Maybe our mind deceives us because of **pu**t and **up**date ;)
+<div class="note">
+<strong>Note</strong>: There is a common misunderstanding about PUT and POST. In the wrong way, it's said: PUT for updating and POST for creating. Nowadays, when remembering that I made the same mistake, I don't understand the reason why it's easy to embrace that belief. There isn't a clear relationship between the meaning of the words "put", "update", "post" and "create". Maybe our mind deceives us because of <strong>pu</strong>t and <strong>up</strong>date ;)
+</div>
 
 On the other hand, it's our responsibility to meet the method properties according to [the specification](#resources):
 
@@ -123,7 +125,9 @@ On the other hand, it's our responsibility to meet the method properties accordi
 * **Idempotent**: If the intended effect on the server of multiple identical requests is the same as the effect for a single request. The PUT, DELETE and safe request methods are idempotent.
 * **Cacheable**: When responses to a method are allowed to be stored for reuse. Mainly GET and HEAD methods are cacheable.
 
-**Note**: There is also a common misunderstanding about an idempotent HTTP method. It's focused on the intended effect on the server. That's the reason why GET is idempotent although multiple GETs of the same URI can generate a response with different data.
+<div class="note">
+<strong>Note</strong>: There is also a common misunderstanding about an idempotent HTTP method. It's focused on the intended effect on the server. That's the reason why GET is idempotent although multiple GETs of the same URI can generate a response with different data.
+</div>
 
 ### HTTP status codes as response codes
 
@@ -203,9 +207,9 @@ The consumer doesn't have to depend on a big number of static URI templates or c
 
 Therefore, the provider can evolve the internal business rules more easily.
 
-**Note**: Links can also be used to split the resource representation in different parts. The decisions about which data to show in the representation and which data will be obtained when following a link are based on the size of the payload, performance and cacheability, among others.
-
-**Note**: Although we are used to representing relations between entities through identifiers (think about the foreign key in a database), we don't use identifiers but URIs to address the related resources in the resource representation. If we use identifiers, the consumer would have to know how to build the URI of the related resource and it's better if that knowledge is retained in the service provider.
+<div class="note">
+<strong>Note</strong>: Although we are used to representing relations between entities through identifiers (think about the foreign key in a database), we don't use identifiers but URIs to address the related resources in the resource representation. If we use identifiers, the consumer would have to know how to build the URI of the related resource and it's better if that knowledge is retained in the service provider.
+</div>
 
 #### One step further
 
@@ -223,6 +227,10 @@ The URI is together another link, `rel` attribute, where there is information ab
 How could that information be understood by machines? How could computer-to-computer interactions be possible without the need of a human interaction to interpret and to consume it?
 
 That's one of the goals of Semantic Web Technology, machine learning, machine-processable formats, directed labeled graphs, ontontologies to represent knowledge, etc.
+
+<div class="note">
+<strong>Note</strong>: Links can also be used to split the resource representation in different parts. The decisions about which data to show in the representation and which data will be obtained when following a link are based on the size of the payload, performance and cacheability, among others.
+</div>
 
 ## Other things
 

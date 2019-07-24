@@ -78,7 +78,9 @@ Aggregates should be small in order not to have problems with transactions or me
 
 However, domain events are facts that can be caused by other reasons. For example, they could be time-based with a significant business meaning.
 
-Note: a naming convention for domain events is the domain object name followed by a verb in past tense.
+<div class="note">
+<strong>Note</strong>: a naming convention for domain events is the domain object name followed by a verb in past tense.
+</div>
 
 ## Appendix: Event Storming
 

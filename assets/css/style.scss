@@ -8,6 +8,10 @@
     --main-color: #333;
 }
 
+li {
+    margin: 0.3em 0;
+}
+
 header, footer {
     text-align: center;
 }
@@ -30,13 +34,13 @@ header, footer {
     padding: 30px 10px 40px 10px;
 }
 
-code {
+pre, code {
     box-shadow: none;
 }
 
 pre code {
     padding: 1em 0.5em;
-    background-color: #f8f8f8;
+    background-color: #eee;
 }
 
 img {
@@ -51,19 +55,13 @@ img {
 
 #header_title {
     margin-top: 0.1em;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 /* Cards ------------------------- */
 
 #main_content {
     max-width: var(--main-max-width);
-    padding: 1.8em;
-}
-
-#main_content h1 {
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 #items { 
@@ -218,8 +216,12 @@ img {
     margin-top: 40px;
 }
 
+.highlight {
+    background-color: #eee;
+}
+
 .highlighter-rouge {
-    background-color: #f8f8f8;
+    background-color: rgba(220,220,220,.5);
 }
 
 div .highlighter-rouge {
@@ -232,4 +234,9 @@ div .highlighter-rouge {
 
 .left {
     float: left;
+}
+
+.note {
+    background-color: #fff3d4;
+    padding: 1em;
 }
