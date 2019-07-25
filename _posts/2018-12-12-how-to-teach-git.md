@@ -16,9 +16,7 @@ Some of my professional experiences have involved participating in cross-functio
 
 I found post-its on screens with 3 steps: first `add`, second `commit`, third `push`. 
 
-<center>
-<img src="/img/cards/posts/how-to-teach-Git/post-it.png" alt="">
-</center>
+![](/img/cards/posts/how-to-teach-Git/post-it.png)
 
 They didn't know the reason why those steps. They only knew that they should follow them in order not to get into trouble. However, problems happened frequently, so I decided to prepare a workshop about Git.
 
@@ -32,9 +30,7 @@ Furthermore, in this case, it's very important to teach the vocabulary. Otherwis
 
 ## A distributed version control system
 
-<center>
-<img src="/img/cards/posts/how-to-teach-Git/general-drawing.png" alt="">
-</center>
+![](/img/cards/posts/how-to-teach-Git/general-drawing.png)
 
 The general drawing contains 4 areas distributed as follows:
 * The development environment with:
@@ -48,9 +44,7 @@ At that time, you can explain the benefits of a distributed version control syst
 
 ## Cloning a repository
 
-<center>
-<img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/clone.png" alt="">
-</center>
+![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/clone.png)
 
 When cloning a repository, the data from the remote repository travel to 2 areas:
 * Working directory
@@ -58,9 +52,7 @@ When cloning a repository, the data from the remote repository travel to 2 areas
 
 ## Making changes in the working directory
 
-<center>
-<img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/tracked-untracked.png" alt="">
-</center>
+![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/tracked-untracked.png)
 
 There are 2 types of files in the working directory:
 
@@ -69,9 +61,7 @@ There are 2 types of files in the working directory:
 
 ## Updating the remote repository
 
-<center>
-<img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/add-commit-push.png" alt="">
-</center>
+![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/add-commit-push.png)
 
 As changes are ready in the **working directory**, they must be added in the **staging area**. 
 
@@ -81,9 +71,7 @@ When there are one or several commits in the **local repository** ready to be sh
 
 At that time, you can talk about the different states of a file in the development environment: **modified**, **staged** and **committed**.
 
-<center>
-<img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/states.png" alt="">
-</center>
+![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/states.png)
 
 Furthermore, you can explain:
 * how to show the changes of a file in the **working directory**: `git diff`
@@ -95,17 +83,13 @@ Furthermore, you can explain:
 
 ### Fetching
 
-<center>
-<img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/fetch.png" alt="">
-</center>
+![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/fetch.png)
 
 When executing `git fetch`, the data from **remote repository** only travel to the **local repository**.
 
 ### Pulling
 
-<center>
-<img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/pull.png" alt="">
-</center>
+![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/pull.png)
 
 When executing `git pull`, the data from **remote repository** travel to 2 areas:
 * To **local repository**: `fetch`
@@ -115,9 +99,7 @@ If you take care the commit history, consider the use of `git pull --rebase`.
 Instead of `fetch + merge`, it consists of `fetch + rebase`. 
 Your local commits will be replayed and you won't see the known _diamond shape_ in commit history. 
 
-<center>
-<img src="https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/pull-rebase.png" alt="">
-</center>
+![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/pull-rebase.png)
 
 ## Next steps
 

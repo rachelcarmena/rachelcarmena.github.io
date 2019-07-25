@@ -50,9 +50,7 @@ There were common rules for all the sessions:
 
 The problem to solve in a Global Day of Coderetreat is [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life). It's a game which starts with an initial generation of living cells on a board and it evolves automatically to next generations with these rules:
 
-<center>
-<img src="/img/cards/posts/coderetreat/rules.png" alt="Game Rules" class="img img-responsive"/>
-</center>
+![Game Rules](/img/cards/posts/coderetreat/rules.png)
 
 Maybe you ask yourself: the same problem all the years? It seems a simple problem, but it has an infinite number of ways to solve it. I could check it that day, because during the first session, no pair made the same approach to each other. Besides that, constraints help to make this problem more challenging.
 

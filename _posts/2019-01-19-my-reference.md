@@ -27,9 +27,9 @@ What about her work? She programmed in Cobol from the documentation that an anal
 
 When the company started the migration from punch cards to tapes, she left her job, because my father got a place in another province. Then her mates collected money for the wedding as a leaving present. They were very original, because each collected bill was stapled in a punch card.
 
-<img src="/img/cards/posts/my-reference/card-front.jpg" alt="Front of the punch card">
+![Front of the punch card](/img/cards/posts/my-reference/card-front.jpg)
 
-<img src="/img/cards/posts/my-reference/card-back.jpg" alt="Back of the punch card">
+![Back of the punch card](/img/cards/posts/my-reference/card-back.jpg)
 
 She removed the staples from the punch cards to use the money, but she kept one punch card as a reminder. And it was kept in the cookbook as a bookmark. 
 
@@ -82,14 +82,14 @@ First page:
 * How the computer thinks
 * CPU
 
-<img src="/img/cards/posts/my-reference/CPU.jpg" alt="CPU Schema">
+![CPU Schema](/img/cards/posts/my-reference/CPU.jpg)
 
 Second page:
 
 * Bit, byte, Kb, Mb, Gb and conversions
 * Diskettes
 
-<img src="/img/cards/posts/my-reference/diskette.jpg" alt="Diskette Schema">
+![Diskette Schema](/img/cards/posts/my-reference/diskette.jpg)
 
 Third page:
 
@@ -98,7 +98,7 @@ Third page:
 * Programming languages (definition, list and purpose of each of them)
 * Root directory and subdirectories
 
-<img src="/img/cards/posts/my-reference/directories.jpg" alt="Directories tree">
+![Directories tree](/img/cards/posts/my-reference/directories.jpg)
 
 Pages and pages. From the half of the notebook, there are extra pages with exercises.
 

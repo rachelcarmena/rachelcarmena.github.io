@@ -30,15 +30,11 @@ So, we should aim at killing every mutation with tests.
 
 When I heard about it, I thought about that game I played when I was just a teenager: _Super Pang_.
 
-<center>
-<img src="/img/cards/posts/mutation-testing/super-pang-game.jpg" alt="">
-</center>
+![](/img/cards/posts/mutation-testing/super-pang-game.jpg)
 
 And I imagined the following situation: balls are mutations of our production code and the child tries to break those balls with tests rays. Tests must be good enough to detect the balls and to break them.
 
-<center>
-<img src="/img/cards/posts/mutation-testing//super-pang-mutation-testing.jpg" alt="">
-</center>
+![](/img/cards/posts/mutation-testing/super-pang-mutation-testing.jpg)
 
 It’s called **mutation testing** and it's a good way to make sure that you have a good safety net with your current tests to refactor production code or to add new features. It is as if you test your tests in order to get more information about their suitability.
 
@@ -64,9 +60,7 @@ NO_COVERAGE 0
 
 PIT report shows the affected line.
 
-<center>
-<img src="/img/cards/posts/mutation-testing/pit-report-boundaries.jpg" alt="">
-</center>
+![](/img/cards/posts/mutation-testing/pit-report-boundaries.jpg)
 
 When adding a test which considers the same value for `param1` and `param2`, the previous mutation will be killed:
 
