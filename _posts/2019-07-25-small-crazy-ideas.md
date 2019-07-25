@@ -99,7 +99,7 @@ I wrote that list in the Web Console and after 3 seconds I saw how all the tweet
 
 ## Beyond post-it notes
 
-I was going to join another team in a client as a software craftsperson (a mixed between a developer and a technical coach).
+I was going to join another team in a client as a software craftsperson (a mix between a developer and a technical coach).
 
 It was a special situation and I wished to have a good start.
 
