@@ -31,7 +31,7 @@ header, footer {
 
 #footer_wrap .inner {
     max-width: 100%;
-    padding: 30px 10px 40px 10px;
+    padding: 3em 1em;
 }
 
 pre, code {
@@ -62,13 +62,14 @@ img {
 
 #main_content {
     max-width: var(--main-max-width);
+    padding: 2.5em 1em;
 }
 
 #items { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
     grid-gap: 1.4em;
-    margin-top: 0.6em;
+    margin-top: 2em;
     margin-bottom: 1.5em;
 }
 
@@ -85,9 +86,14 @@ img {
 }
 
 .card {
-    border: 2px solid var(--main-color);
     border-radius: 10px;
+}
+
+.card, .deck {
+    border: 2px solid var(--main-color);
     position: relative;
+    max-width: 269px;
+    justify-self: center;
 }
 
 .card a, .deck a {
@@ -133,11 +139,6 @@ img {
     text-align: center;
 }
 
-.deck {
-    border: 2px solid var(--main-color);
-    position: relative;
-}
-
 .deck:hover, .deck:focus, .deck a:focus {
     background-color: var(--main-color);
     transition: background-color 0.8s;
@@ -155,7 +156,7 @@ img {
 #post_content {
     margin-left: auto; 
     margin-right: auto; 
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     max-width: 40em;
 }
 
@@ -170,8 +171,14 @@ img {
     object-position: 0 25%;
 }
 
+.dates {
+    padding: 0.6em 1em;
+    background-color: #f0f0ff;
+    margin: 0.4em 0 2em 0;
+}
+
 .date {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 .js-line-number {
@@ -179,11 +186,9 @@ img {
 }
 
 .pagination {
-    font-size: 14px;
     display: block;
     width: auto;
     overflow: hidden;
-    margin-top: 1em;
 }
 
 .pagination .previous_post, .pagination .next_post {
@@ -202,6 +207,10 @@ img {
 
 .pagination .next_post, .pagination .next_page {
     text-align: right;
+}
+
+.page_number {
+    padding: 0 0.5em;
 }
 
 .info {

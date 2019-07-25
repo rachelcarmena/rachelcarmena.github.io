@@ -23,6 +23,7 @@ title: My card game
     </span>
     <span class="pages">
         {% for page in (1..paginator.total_pages) %}
+            <span class="page_number">
             {% if page == paginator.page %}
                 {{ page }}
             {% elsif page == 1 %}
@@ -30,6 +31,7 @@ title: My card game
             {% else %}
                 <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
             {% endif %}
+            </span>
         {% endfor %}
     </span>
     <span class="next_page">
