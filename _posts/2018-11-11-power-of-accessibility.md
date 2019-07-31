@@ -10,17 +10,7 @@ image:
    src: /img/cards/posts/power-of-accessibility/cover.jpg
 ---
 
-## Video
-
-<iframe title="Talk: The power of accessibility" width="100%" height="315" src="https://www.youtube.com/embed/MdmFy_zls1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Captions are coming! (Spanish and English)
-
-## Transcript
-
-It's coming!
-
-## Slides
+## Slide deck
 
 <iframe title="Slides: The power of accessibility" src="//www.slideshare.net/slideshow/embed_code/key/3liBRVTtqf0Kfw" width="100%" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 
@@ -31,6 +21,16 @@ I've included an additional slide about "only one h1 per page". It's not a Succe
 On the other hand, I've found several articles about this recommendation. It was said that it just made sense before HTML5. However, [HTML5 document outline is not implemented](http://html5doctor.com/computer-says-no-to-html5-document-outline) by assistive technology. You can read the advice and requirements about headings in [HTML5 specification](https://www.w3.org/TR/html/sections.html#the-h1-h2-h3-h4-h5-and-h6-elements).
 
 Thanks to Steve Faulkner, George Kerscher, Katie Haritos-Shea, Phill Jenkins, Michael Wayne Harris and Morten Tollefsen for their answers in [WAI Interest Group Discussion list](https://lists.w3.org/Archives/Public/w3c-wai-ig/2018OctDec/0106.html).
+
+## Video
+
+<iframe title="Talk: The power of accessibility" width="100%" height="315" src="https://www.youtube.com/embed/MdmFy_zls1g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Captions are coming! (Spanish and English)
+
+## Transcript
+
+It's coming!
 
 ## Acknowledgments
 
