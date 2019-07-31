@@ -56,7 +56,7 @@ I was added to Tweetdeck and I thought that I could simulate the user actions to
 I opened the Web Console and I created this function to schedule a tweet at 10:30 by default:
 
 ```javascript
-function scheduleTweet(message, day, goToNextMonth) {
+const scheduleTweet = (message, day, goToNextMonth) => {
   $(".tweet-button").click();
 
   $(".js-compose-text").value = message;
