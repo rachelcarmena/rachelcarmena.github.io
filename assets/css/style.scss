@@ -171,7 +171,7 @@ img {
     max-width: 40em;
 }
 
-#post_content img {
+#post_content img:not(.link) {
     max-width: 100%;
     display: block;
     margin-left: auto;
