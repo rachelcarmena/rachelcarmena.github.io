@@ -18,7 +18,7 @@ title: My card game
         {% if paginator.previous_page %}
             <a href="{{ paginator.previous_page_path }}">previous page</a>
         {% else %}
-            <span class="info">previous page</span>
+            <span class="no-link">previous page</span>
         {% endif %}
     </span>
     <span class="pages">
@@ -38,7 +38,7 @@ title: My card game
         {% if paginator.next_page %}
             <a href="{{ paginator.next_page_path }}">next page</a>
         {% else %}
-            <span class="info">next page</span>
+            <span class="no-link">next page</span>
         {% endif %}
     </span>
 </div>

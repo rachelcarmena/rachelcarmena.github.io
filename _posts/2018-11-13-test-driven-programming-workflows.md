@@ -60,11 +60,13 @@ The diagrams to see the differences between the previous test-driven programming
 ### Test-driven programming workflows
 
 [![Test-driven programming workflows in PNG](/img/cards/posts/test-driven-programming-workflows/png-icon.png)](/img/cards/posts/test-driven-programming-workflows/workflows.png)
+
 [![Test-driven programming workflows in SVG](/img/cards/posts/test-driven-programming-workflows/svg-icon.png)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows.svg)
 
 ### Test-driven programming workflows with TCR variants
 
 [![Test-driven programming workflows with TCR variants in PNG](/img/cards/posts/test-driven-programming-workflows/png-icon.png)](/img/cards/posts/test-driven-programming-workflows/workflows-with-TCR-variants.png)
+
 [![Test-driven programming workflows with TCR variants in SVG](/img/cards/posts/test-driven-programming-workflows/svg-icon.png)](https://raw.githubusercontent.com/rachelcarmena/tips/master/tdd/programming-workflows-with-TCR-variants.svg)
 
 And I recorded this short video to explain the diagram, because it's invisible for some people with disabilities:

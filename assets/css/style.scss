@@ -4,8 +4,11 @@
 @import "{{ site.theme }}";
 
 :root {
-    --main-max-width: 54em;
     --main-color: #333;
+}
+
+body {
+    background: white;
 }
 
 li {
@@ -25,6 +28,11 @@ header, footer {
     padding: 1em 0 0 0;
 }
 
+#main_content {
+    max-width: 54em;
+    padding: 2.5em 1em;
+}
+
 #footer_wrap {
     background: #212121;
 }
@@ -32,15 +40,6 @@ header, footer {
 #footer_wrap .inner {
     max-width: 100%;
     padding: 3em 1em;
-}
-
-pre, code {
-    box-shadow: none;
-}
-
-pre code {
-    padding: 1em 0.5em;
-    background-color: #eee;
 }
 
 img {
@@ -51,19 +50,31 @@ img {
     padding: 0;
 }
 
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
 /* Header content ---------------- */
 
 #header_title {
     margin-top: 0.1em;
-    font-size: 1em;
+}
+
+/* Footer content ---------------- */
+
+.license {
+    clear: both;
+    color: white;
+    font-size: small;
+    display: block;
+    margin-top: 40px;
 }
 
 /* Cards ------------------------- */
-
-#main_content {
-    max-width: var(--main-max-width);
-    padding: 2.5em 1em;
-}
 
 #items { 
     display: grid;
@@ -162,6 +173,9 @@ img {
 
 #post_content img {
     max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #post_image {
@@ -184,6 +198,13 @@ img {
 .js-line-number {
     border: 0 !important;
 }
+
+.note {
+    background-color: #fff3d4;
+    padding: 1em;
+}
+
+/* Pagination -------------------- */
 
 .pagination {
     display: block;
@@ -213,17 +234,11 @@ img {
     padding: 0 0.5em;
 }
 
-.info {
+.no-link {
     color: #bbb;
 }
 
-.license {
-    clear: both;
-    color: white;
-    font-size: small;
-    display: block;
-    margin-top: 40px;
-}
+/* Code blocks ------------------- */
 
 .highlight {
     background-color: #eee;
@@ -237,21 +252,11 @@ div .highlighter-rouge {
     margin: 1em 0em;
 }
 
-.right {
-    float: right;
+pre, code {
+    box-shadow: none;
 }
 
-.left {
-    float: left;
-}
-
-.note {
-    background-color: #fff3d4;
-    padding: 1em;
-}
-
-#post_content img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+pre code {
+    padding: 1em 0.5em;
+    background-color: #eee;
 }
