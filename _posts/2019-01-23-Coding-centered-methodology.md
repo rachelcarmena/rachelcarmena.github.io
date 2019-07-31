@@ -4,7 +4,7 @@ asset-type: post
 title: Coding-centered methodology
 description: Trying to answer to What methodology?
 date: 2019-01-23 12:00:00 +00:00
-last_modified_at: 2019-05-27 12:00:00 +00:00
+last_modified_at: 2019-07-31 12:00:00 +00:00
 category: reflections
 image:
     src: /img/cards/posts/coding-centered-methodology/cover.jpg
@@ -105,6 +105,7 @@ and practices:
 * [Practices from Extreme Programming](https://ronjeffries.com/xprog/what-is-extreme-programming/)
 * [Pair programming](https://www.cs.utexas.edu/users/downing/papers/PairProgramming-2000.pdf)
 * [Other test-driven programming workflows](/2018/11/13/test-driven-programming-workflows.html)
+* [Domain-Driven Design](/2019/06/24/ddd-to-the-rescue.html)
 * [Property-based testing (link of the canonical framework)](https://hackage.haskell.org/package/QuickCheck)
 * [Continuous Delivery](https://continuousdelivery.com)
 * [Trunk based development](https://trunkbaseddevelopment.com)
