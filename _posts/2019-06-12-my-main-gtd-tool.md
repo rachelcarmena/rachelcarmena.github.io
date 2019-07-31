@@ -51,7 +51,9 @@ I collect **everything**.
 
 This is one of the fundamental ideas about Getting Things Done (GTD).
 
-It's necessary to get all the tasks out of your head: not to overload your mind with things to do, to prevent the stress feeling because of having a lot things on your mind and to be able to focus on one thing.
+<div class="note">
+<strong>Important</strong>: It's necessary to get all the tasks out of your head: not to overload your mind with things to do, to prevent the stress feeling because of having a lot things on your mind and to be able to focus on one thing.
+</div>
 
 ### Priority tasks
 
