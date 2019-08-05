@@ -1,6 +1,6 @@
 ---
 layout: default
-title: My card game
+title: Decks
 description: My card game by deck
 ---
 
@@ -15,11 +15,11 @@ description: My card game by deck
     <article class="deck">
         {% assign category_name = category | first %}
         <a href="/decks/{{ category_name }}.html">
-            <div class="deck_content">
+            <div class="deck_preview">
                 <h2>{{ category_name | capitalize }}</h2>
+                <img class="deck_cover" src="/img/decks/thumb.{{ category_name }}.jpg" alt="">
                 {% assign cards_number = site.categories[category_name] | size %}
                 <p class="deck_number">{{ cards_number }} card{% if cards_number > 1 %}s{% endif %}</p>
-                <img class="deck_cover" src="/img/decks/{{ category_name }}.jpg" alt="">
             </div>
         </a>
     </article>

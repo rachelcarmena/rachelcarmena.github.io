@@ -1,4 +1,15 @@
-<h1>{{ category | capitalize }}</h1>
+<div id="deck_content_header">
+    <h1>{{ category | capitalize }}</h1>
+    <div>
+        <a href="/2018/07/26/card-game.html">Why a card game?</a>
+        <span class="right"><a href="/decks/">View other decks</a></span>
+    </div>
+    <img src="/img/decks/{{ category }}.jpg" alt="">
+    <div id="under_cover">
+        {% assign cards_number = site.categories[category] | size %}
+        Deck: {{ cards_number }} card{% if cards_number > 1 %}s{% endif %}
+    </div>
+</div>
 <div id="items">
 {% for post in site.categories[category] %}
 {% include card.html %}
