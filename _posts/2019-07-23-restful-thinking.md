@@ -135,14 +135,14 @@ It's not necessary to define error types or error codes. HTTP status codes are u
 
 Let's see some of them.
 
-#### Successful operations: 2xx status codes
+**Successful operations (2xx status codes):**
 
 * **200 OK**
 * **201 Created**
 * **202 Accepted**: It's used for asynchronous operations. The server accepts the request and provides an URI to get the result later.
 * **204 No Content**: When the server has fulfilled the request but does not need to return a payload (PUT, POST o GET with an empty representation). It's also used to indicate a successful response for a DELETE request. If the response must indicate the final state of the deleted resource: **200 OK** and a full payload with the resource representation.
 
-#### Errors on the client side: 4xx status codes
+**Errors on the client side (4xx status codes):**
 
 * **400 Bad Request**: It's used when returning the payload with the same received data plus a comment about the reason why it's a bad request.
 * **401 Unauthorized**
@@ -151,7 +151,7 @@ Let's see some of them.
 * **409 Conflict**: For example, a requested update cannot be executed.
 * **411 Length Required**: If `Content-Length` header in a request is missing, the service cannot determine if it's a huge payload to cause a DoS attack.
 
-#### Errors on the server side: 5xx status codes
+**Errors on the server side (5xx status codes):**
 
 * **500 Internal Server Error**
 * **503 Service Unavailable**: It's used with a `Retry-After` header.
