@@ -62,3 +62,4 @@ Thanks:
 
 [I published this article at Codurance website](https://codurance.com/2018/02/27/duplication-you-are-welcome).
 
+[I published this article at DZone](https://dzone.com/articles/duplication-youre-welcome).
