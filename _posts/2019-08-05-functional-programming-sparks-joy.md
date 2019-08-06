@@ -18,7 +18,7 @@ When I heard about functional programming I decided to continue learning about i
 
 I agree with [Scott Wlaschin](https://twitter.com/ScottWlaschin) when he says that functional programming is not scary but unfamiliar. It has a mathematical basis and is full of new concepts.
 
-However, more you know about functional programming and working examples, more advantages you notice in the paradigm.
+However, the more you know about functional programming and working examples, the more advantages you notice in the paradigm.
 
 Which programming language am I going to use for the examples? JavaScript. It's not a purely functional programming language like Haskell but multi-paradigm, so it's suitable for talking about it.
 
@@ -405,7 +405,7 @@ const { log } = console;
 const greet = (name, place, message) =>
     `Hello ${name} from ${place}! ${message}`;
 
-const greetFromWonderland = _.partial(greeting, _, "Wonderland", _);
+const greetFromWonderland = _.partial(greet, _, "Wonderland", _);
 
 log(greetFromWonderland("Mike", "Have a good day!"));
 // Hello Mike from Wonderland! Have a good day!
