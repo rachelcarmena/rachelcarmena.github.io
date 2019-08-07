@@ -420,7 +420,7 @@ Last but not least, all of these things (and many more!) make us to think in a d
 * Fewer details. We program at a higher abstraction level.
 * It forces ourselves to separate responsibilities in building blocks and then to combine them.
 * Side effects under control. We are more aware of mutations.
-* I didn't talk about function data types but I could say that [Primitive Obsession smell](http://wiki.c2.com/?PrimitiveObsession) can be eradicated with this paradigm.
+* I didn't talk about functional data types but I could say that [Primitive Obsession smell](http://wiki.c2.com/?PrimitiveObsession) can be eradicated with this paradigm.
 
 A new mindset is needed to embrace functional programming.
 
