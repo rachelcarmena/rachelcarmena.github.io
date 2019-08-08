@@ -4,7 +4,7 @@ asset-type: post
 title: Domain-Driven Design to the rescue
 description: Trying to explain DDD easily
 date: 2019-06-24 08:00:00 +00:00
-last_modified_at: 2019-07-01 08:00:00 +00:00
+last_modified_at: 2019-08-08 08:00:00 +00:00
 category: reflections
 image:
     src: /img/cards/posts/ddd-to-the-rescue/cover.jpg
@@ -28,23 +28,31 @@ It's usual to see how design sketching is the first step when creating a softwar
 
 Or sometimes there is a misunderstanding about Agile methodologies and it's thought that there is no need for neither analysis nor design at all.
 
-The purpose of the software is to enhance a specific **domain** or a business domain. So we should start by understanding and **acquiring knowledge about that domain**.
+The purpose of the software is to enhance a specific **domain** or a business domain, so we should start by **understanding** and **acquiring knowledge** about that domain.
 
 As [Jeff Johnson](http://www.uiwizards.com/about.html) wrote in "GUI Bloopers":
 
 > Starting by worrying about appearances (...) results in products that lack important functionality, contain unneeded functionality, and are difficult to learn and use. (...) A recommended way is to design a conceptual model for the software (...) The idea is that by carefully crafting an explicit conceptual model, and then designing a UI from that, the resulting software will be cleaner, simpler, and easier to understand.
+
+How to acquire knowledge about the business domain?
+
+We'll see a collaborative technique at the end.
 
 ### The software system has no architecture. It's a big ball of mud.
 
 The domain could be divided into logical subdomains: 
 
 * **A core domain**: the main area of expertise.
-* **Supporting subdomains**: they are necessary and support that core domain.
+* **Supporting subdomains**: they are necessary and support the core domain.
 * **Generic subdomains**: they are also necessary but they don't give a relevant meaning to the domain, such as identity and access subdomain.
+
+It's interesting to identify the logical subdomains in order to know what really gives a meaning to the business and if there is something that should be built on third-party components.
 
 When implementing the software system, we don't want to mix knowledge or responsibilities, so we should determine contextual or semantic boundaries: **bounded contexts**.
 
-Generally we'll have one bounded context per subdomain and we'll establish the relationships between those bounded contexts to integrate them: **context mappings**.
+Generally there will be one bounded context per subdomain.
+
+How are those bounded contexts integrated? Through relationships known as **context mappings**.
 
 Some types of context mappings:
 
@@ -54,40 +62,68 @@ Some types of context mappings:
 * **Anti-corruption layer**: the customer builds a translation layer to protect themselves.
 * **Open host service** with a **published language**: the supplier provides well documented services to integrate with.
 
+All of this will be reflected on the architecture.
+
 ### Newcomers to the team struggle to understand the code. Users struggle to use the product.
 
-Both domain experts and developers should use a common vocabulary to ensure a clear understanding: **a ubiquitous language**.
+Both domain experts and developers should use a common vocabulary to ensure a clear understanding of the domain: **a ubiquitous language**.
 
 Every bounded context will have its ubiquitous language and it will be used to model that context.
 
-So we will create the software system in the language of the domain. We will take care of naming for variables, methods, tables, relations, labels, etc.
-
-In this way, the software system will reflect the business domain it's being created for.
+So we will create the software system in the language of the domain, taking care of names for variables, methods, tables, relations, labels, etc.
 
 As [Jeff Johnson](http://www.uiwizards.com/about.html) wrote in "GUI Bloopers":
 
 > A recommended way is to design a conceptual model for the software (...) expressed in terms of the concepts of the intended users’ tasks (...) concepts that will be familiar to users. Leave foreign concepts out. (...) Software developed without a lexicon often suffers from two common user interface “bloopers”: (1) multiple terms for a given concept and (2) the same term for different concepts.
 
+When using a ubiquitous language, the software system will reflect, internally and externally, the business domain it's being created for.
+
 ### Some domain objects have complex associations with other objects and it's difficult to guarantee the data consistency.
 
-There are associated objects that can suffer data consistency problems because of changes. Therefore, those objects should be clustered to be treated as a unit: **aggregate**. And the external reference to that cluster should be restricted to one member: **aggregate root**. 
+On one hand, the operations that effect some change to the system intentionally are known as **commands**. And the result of a command is known as a **domain event**.
 
-The operations that effect some change to the system intentionally are known as **commands**.
+On the other hand, there are associated objects that can suffer data consistency problems because of those changes.
 
-Aggregates should be small in order not to have problems with transactions or memory. If the associated objects can be updated eventually (seconds, minutes, ...), they don't have to be in the same aggregate. In that case, a **domain event** could be published to be consumed afterwards. Or those domain events could be stored in order to be used to reconstitute the state of a domain object (the idea behind _Event Sourcing_).
+Therefore, the associated objects should be clustered to be treated as a unit: an **aggregate**.
 
-However, domain events are facts that can be caused by other reasons. For example, they could be time-based with a significant business meaning.
+The external reference to that cluster is restricted to one member: an **aggregate root**. 
+
+Aggregates should be small in order not to have problems with transactions or memory.
+
+If the associated objects can be updated eventually (seconds, minutes, ...), they don't have to be in the same aggregate. In that case, a domain event could be published to be consumed afterwards. Or those domain events could be stored in order to be used to reconstitute the state of a domain object (the idea behind _Event Sourcing_).
 
 <div class="note">
-<strong>Note</strong>: a naming convention for domain events is the domain object name followed by a verb in past tense.
+<strong>Note</strong>: Domain events are facts that can be caused by other reasons. For example, they could be time-based with a significant business meaning.
+</div>
+
+<div class="note">
+<strong>Note</strong>: A naming convention for domain events is the domain object name followed by a verb in past tense.
 </div>
 
 ## Appendix: Event Storming
 
-Event Storming is a technique for exploring and acquiring knowledge about the domain. It's focused on the operations that happen within a business process. 
+Event Storming is a collaborative technique for exploring and acquiring knowledge about the domain.
 
-* Participants: domain experts and developers.
-* Materials: sticky notes, black markers and a roll of paper.
+It's focused on the operations that happen within a business process. 
+
+As [Scott Wlaschin](https://twitter.com/ScottWlaschin) said:
+
+> Our first guideline is to focus on domain events rather than data structures. A business doesn't just have data, it transforms it somehow.
+
+Participants: 
+
+* Domain experts
+* Developers
+
+Requirements:
+
+* A room with a lot of wall space to be covered
+
+Materials:
+
+* Sticky notes
+* Black markers
+* A roll of paper
 
 The color of a sticky note has a specific meaning:
 
@@ -100,10 +136,10 @@ The color of a sticky note has a specific meaning:
 
 Steps:
 
-1. Model domain events in time order
-2. Model commands that cause domain events
-3. Model the aggregates or entities of the model: they receive a command, handle it and produce a domain event.
-4. Identify context boundaries
+1. Model **domain events** in time order
+2. Model **commands** that cause **domain events**
+3. Model the **aggregates** or **entities** of the model: they receive a command, handle it and produce a domain event.
+4. Identify **context boundaries**
 5. Identify views and other components
 
 ## Friendly reminder
