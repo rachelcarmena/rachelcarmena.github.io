@@ -4,6 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
+last_modified_at: 2019-08-09 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -264,7 +265,7 @@ How? Reusing the call frame instead of adding a new one.
 
 It's known as **tail call optimization** or **proper tail calls**.
 
-This is only possible with a **tail recursive function** where the function calls itself as its last action.
+Given a recursive function, that optimization is possible if it calls itself as its last action. That is, it's a **tail recursive function**.
 
 Let's see a **non-**tail recursive function:
 
@@ -453,3 +454,8 @@ Special thanks to these old colleagues:
 * [Carlos Morera de la Chica](https://twitter.com/CarlosMChica) for being the best travel companion together with Christian during several editions of [Lambda World Conference](http://www.lambda.world/).
 
 * [Richard Wild](https://twitter.com/richardjwild) for providing me a lot of reflection moments with his series about [The Functional Style](https://codurance.com/2018/08/09/the-functional-style-part-1/).
+
+And thanks to:
+
+* [Eduardo Sebastian](https://twitter.com/esebastian) for his pull request to fix some typos.
+* **Christophe Riolo Uusivaara** for his valuable feedback about _tail call optimization_. It's not only related to recursive functions.
