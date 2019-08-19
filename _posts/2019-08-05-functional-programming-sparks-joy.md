@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-08-09 08:00:00 +00:00
+last_modified_at: 2019-08-19 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -205,6 +205,10 @@ numbers.reduce(add); // 5
 
 The power of having functions as first-class citizens and creating higher-order functions promotes the separation of responsibilities and readability.
 
+<div class="note">
+    <strong>Note</strong>: The example of <code>reduce</code> doesn't include an initial value, so the first item will be used as the initial value and skipped. Other programming languages differentiate between <code>reduce</code> (without providing an initial value) and <code>fold</code> (providing an initial value). Others have just <code>fold</code> for both options. And others include <code>foldr</code> (when accumulating from right) or <code>foldl</code> (when accumulating from left).
+</div>
+
 ## Function composition
 
 Functions can be composed into a new one.
@@ -393,6 +397,10 @@ logInfo("New post created");    // "[INFO] New post created"
     <strong>Note</strong>: My own version doesn't work like the <code>curry</code> function that can be found in libraries such as Lodash or Ramda which add more capabilities.
 </div>
 
+<div class="note">
+    <strong>Note</strong>: In languages such as Haskell or F#, all functions are considered curried.
+</div>
+
 ## Partial application
 
 Partial application consists of doing a _projection_: specifying only some arguments in function application, producing another function with the remaining parameters.
@@ -414,6 +422,10 @@ log(greetFromWonderland("Mike", "Have a good day!"));
 
 Partial application allows us to make progressive calls as we have the arguments.
 
+<div class="note">
+    <strong>Note</strong>: Beyond the included examples, currying and partial application are useful to be able to compose functions.
+</div>
+
 ## Another mindset
 
 Last but not least, all of these things (and many more!) make us to think in a different way:
@@ -431,6 +443,7 @@ Some words which weren't used here although they can be useful to understand oth
 
 * **Domain**: Set of possible inputs to a given function.
 * **Codomain**: Set of possible outputs to a given function.
+* **Total function** (vs. **partial function**): It returns a valid output for every possible input. They are just known as **functions**.
 
 ## Further knowledge
 
@@ -444,6 +457,7 @@ Some words which weren't used here although they can be useful to understand oth
 * [Why Functional Programming Matters](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf) by John Hughes
 * [Book: Haskell Programming from first principles](http://haskellbook.com)
 * [Reflection: Functional programming is deep](https://purelyfunctional.tv/issues/purelyfunctional-tv-newsletter-337-functional-programming-is-deep/) by Eric Normand
+* [Articles: PragPub Magazine #38](https://magazines.pragprog.com/2012/pragpub-2012-08.pdf)
 
 ## Acknowledgments
 
