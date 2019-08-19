@@ -13,9 +13,7 @@ image:
 
 It wasn't the first time I met someone who was worried about GitHub contributions panel.
 
-A friend of mine was too much worried about it. Too much...
-
-And my words weren't useful.
+A friend of mine was too much worried about it. Too much... and my words weren't useful.
 
 I needed to come up with something to make an impact on him.
 
@@ -35,11 +33,9 @@ See the full script and all the details in [Space Invader GitHub repository](htt
 
 ## Saying goodbye to an awesome colleague
 
-A colleague was going to leave the company.
+A colleague was going to leave the company and he had been a very important person for all of us.
 
-He was a very important colleague for all of us.
-
-I created a Slack channel as a tribute to write all the things we had learnt from him.
+I then created a Slack channel as a tribute to write all the things we had learnt from him.
 
 That Slack channel was very beautiful and I wanted him to have it forever.
 
@@ -53,7 +49,7 @@ I was helping as an event organizer and it was necessary to schedule tens of twe
 
 I was added to Tweetdeck and I thought that I could simulate the user actions to schedule all the tweets after being logged in.
 
-I opened the Web Console and I created this function to schedule a tweet at 10:30 by default:
+So I opened the Web Console and I created this function to schedule a tweet at 10:30 by default:
 
 ```javascript
 const scheduleTweet = (message, day, goToNextMonth) => {
@@ -63,7 +59,7 @@ const scheduleTweet = (message, day, goToNextMonth) => {
   $(".js-compose-text").dispatchEvent(new InputEvent("change"));
 
   $(".js-schedule-button").click();
-  $("#amPm").click();  // depends on the current time (default value)
+  $("#amPm").click();  // depends on the current time
   $("#scheduled-hour").value = 10;
   $("#scheduled-minute").value = 30;
   if (goToNextMonth) {
@@ -99,13 +95,9 @@ I wrote that list in the Web Console and after 3 seconds I saw how all the tweet
 
 ## Beyond post-it notes
 
-I was going to join another team in a client as a software craftsperson (a mix between a developer and a technical coach).
+I was going to join another team in a client as a software craftsperson (a mix between a developer and a technical coach). It was a special situation and I wished to have a good start.
 
-It was a special situation and I wished to have a good start.
-
-I organized a meeting a few days before joining as a first contact to meet each other.
-
-I wanted to know their concerns and wanted them to have an idea of all the things that we could get together.
+I organized a meeting a few days before joining as a first contact to meet each other. I wanted to know their concerns and wanted them to have an idea of all the things that we could get together.
 
 I tried to come up with something different to the use of post-it notes in order to have a pleasant meeting and to promote the participation.
 
