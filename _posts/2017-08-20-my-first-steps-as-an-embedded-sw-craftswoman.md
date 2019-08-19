@@ -4,6 +4,7 @@ asset-type: post
 title: 'My first steps as an embedded software craftswoman'
 description: Lunch&Learn, challenges, cooking lessons, ...
 date: 2017-08-20 12:00:00 +00:00
+last_modified_at: 2019-08-19 12:00:00 +00:00
 cover-title: 'An embedded software craftswoman'
 category: experiences
 image:
@@ -76,3 +77,6 @@ Finally, I would like to thank my new team for the warm welcome. They are very g
 
 [I published this article at Codurance website](https://codurance.com/2017/08/20/my-first-steps-as-an-embedded-sw-craftswoman).
 
+<div class="note">
+    <strong>Note</strong>: If I repeat this experience again, I'll try not to use the lunch time to share and learn.
+</div>
