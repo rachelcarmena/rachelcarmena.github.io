@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-08-20 08:00:00 +00:00
+last_modified_at: 2019-08-22 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -148,6 +148,10 @@ The consequences of immutability are testable and parallelizable code.
     <strong>Note</strong>: The <code>map</code> function doesn't only return an array with the same type of items. It accepts a function from the original type to any type.
 </div>
 
+<div class="note">
+    <strong>Note</strong>: Moore's law established that the number of transistors on integrated circuits would double every two years. However, the limit was reached for the year 2002. Later, multicore processors appeared to keep the speed increases. Parallelizable code is the only way to take advantage of them.
+</div>
+
 On the other hand, we can find impure functions in JavaScript like `sort`:
 
 ```js
@@ -212,19 +216,26 @@ const add = (accum, value) => accum + value;
 
 const numbers = [4, 10, 1, -10];
 numbers.reduce(add); // 5
+
+// Good habit: indicating an initial value
+numbers.reduce(add, 0); // 5
 ```
 
 The power of having functions as first-class citizens and creating higher-order functions promotes the separation of responsibilities and readability.
 
 <div class="note">
-    <strong>Note</strong>: The example of <code>reduce</code> doesn't include an initial value, so the first item will be used as the initial value and skipped. Other programming languages differentiate between <code>reduce</code> (without providing an initial value) and <code>fold</code> (providing an initial value). Others have just <code>fold</code> for both options.
+    <strong>Note</strong>: When <code>reduce</code> doesn't include an initial value (second parameter), the first item from the array is used as the initial value for the accumulator and skipped. In the included example, it's not necessary to indicate an initial value, because the first item can be used as the initial value and skipped. However, I talked about a <em>good habit</em> to avoid problems with empty lists.
+</div>
+
+<div class="note">
+    <strong>Note</strong>: Some programming languages differentiate between <code>reduce</code> (without providing an initial value) and <code>fold</code> (providing an initial value). Others have just <code>fold</code> for both options.
 </div>
 
 ## Function composition
 
 Functions can be composed into a new one.
 
-When following the definition of composing two functions, the functions appear from right to left because the output of each function is the input of the following one.
+When following the definition of composing two functions, the functions appear from right to left because the output of the first function is the input of the following one.
 
 ![](/img/cards/posts/functional-programming-sparks-joy/function-composition.png)
 
@@ -232,7 +243,7 @@ For example, the `sumOfSquares` function:
 
 ```js
 const square = array => array.map(number => Math.pow(number, 2));
-const sum = array => array.reduce((accum, value) => (accum + value));
+const sum = array => array.reduce((accum, value) => (accum + value), 0);
 
 const sumOfSquares = numbers => sum(square(numbers));
 
@@ -248,7 +259,7 @@ For example, let's see the `sumOfSquares` function as a pipe:
 
 ```js
 const square = array => array.map(number => Math.pow(number, 2));
-const sum = array => array.reduce((accum, value) => (accum + value));
+const sum = array => array.reduce((accum, value) => (accum + value), 0);
 const pipe = (f, g) => (...args) => g(f(...args));
 
 const sumOfSquares = numbers => pipe(square, sum)(numbers);
@@ -263,9 +274,8 @@ or as a chain:
 const square = number => Math.pow(number, 2);
 const sum = (accum, value) => (accum + value);
 
-const sumOfSquares = numbers =>
-    numbers.map(square)
-           .reduce(sum);
+const sumOfSquares = numbers => numbers.map(square)
+                                       .reduce(sum, 0);
 ```
 
 <div class="note">
@@ -453,7 +463,7 @@ A new mindset is needed to embrace functional programming.
 Some words which weren't used here although they can be useful to understand other articles:
 
 * **Domain**: Set of possible inputs to a given function.
-* **Codomain**: Set of possible outputs to a given function.
+* **Codomain**: Set of possible outputs to a given function (the prefix "co" is used to refer to the opposite).
 * **Total function** (vs. **partial function**): It returns a valid output for every possible input. They are just known as **functions**.
 * **Polymorphic function**: In functional programming, polymorphism is also known as **parametric polymorphism**. A polymorphic function operates on values without depending on their type. It's valid for any type.
 
@@ -463,6 +473,7 @@ Some words which weren't used here although they can be useful to understand oth
 * [Post: Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) by Aditya Bhargava
 * [Online book: Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html) by Harold Abelson, Gerald Jay Sussman and Julie Sussman 
 * [Playlist: MIT 6.001 Structure and Interpretation, 1986](https://www.youtube.com/playlist?list=PLE18841CABEA24090) by Hal Abelson and Gerald Jay Sussman
+* [Book: Category Theory for Programmers](https://github.com/hmemcpy/milewski-ctfp-pdf) by Bartosz Milewski
 * [Talk (Spanish): Better types = fewer tests](https://www.youtube.com/watch?v=TScwxX62uig) by Raúl Raja
 * [Talk: Domain Modeling Made Functional](https://www.youtube.com/watch?v=Up7LcbGZFuo) by Scott Wlaschin
 * [Specification: Fantasy Land Algebra](https://github.com/fantasyland/fantasy-land)
@@ -485,3 +496,90 @@ And thanks to:
 
 * [Eduardo Sebastian](https://twitter.com/esebastian) for his pull request to fix some typos.
 * **Christophe Riolo Uusivaara** for his valuable feedback about _tail call optimization_. It's not only related to recursive functions.
+
+<hr>
+
+# Let's continue
+
+Before adding more concepts, I would like to share a reflection.
+
+I think that object-oriented programming and functional programming are such different paradigms that they are not comparable. However, I find a similar feeling.
+
+When I discovered object-oriented design patterns, I realized that we weren't doing anything special. Our problems were widespread.
+
+The only difference between our development project and others could be the business domain.
+
+What if we step forward? What if we can model the domain with two kinds of pieces? 
+
+When I was a child, I didn't have LEGO bricks but TENTE with smaller pieces.
+
+I had this helicopter of the forest brigade that I assembled and disassembled hundreds of times:
+
+![Helicopter](/img/cards/posts/functional-programming-sparks-joy/helicopter.png)
+
+However, it had more than two kinds of pieces.
+
+What if we only need two kinds of pieces for creating software?
+
+What if there is a branch of mathematics that tries to generalize things with two kinds of pieces and can be moved to computer programming?
+
+I'm talking about **category theory** where a **category** is a collection of:
+
+* Objects
+* Relationships (also known as morphisms or arrows) between the objects
+
+Functional programming is based on a **category of sets** where:
+
+* The objects are **types** (sets of values)
+* The arrows are **functions**
+
+Just two kinds of _pieces_ and the **power of composition** with all the **abstractions** defined and proved matematically.
+
+As [Bartosz Milewski](https://twitter.com/BartoszMilewski) wrote:
+
+> One of the important advantages of having a mathematical model for programming is that it’s possible to perform formal proofs of correctness of software.
+
+Let's review the previous concepts:
+
+* If functions were impure, it would be very difficult to "play" with them and to compose with each other.
+* Mathematically, the common needs to compose types and to compose functions are defined. We only have to use them, so we'll program in a higher abstraction level.
+* Immutability is also essential to compose things. Otherwise, the results couldn't be anticipated.
+* If functions are composed, they will have to be input or output as well. Every function also has a type.
+* Recursion will appear when composing types or functions.
+* Currying and partial application are some of the techniques to be able to compose functions. Think about having an output that can be the input of the following function.
+
+Finally, think about the business domain you are working on, the state machines, the transformations, the processes, ... how do they fit types and functions?
+
+## About the examples
+
+So far, I've used plain JavaScript and an example with Lodash library.
+
+However, to continue explaining functional programming, I'll include examples in [PureScript](http://www.purescript.org), a strongly-typed functional programming language that compiles to JavaScript.
+
+I would have had a clear choice with other programming languages: 
+
+* [Arrow](https://arrow-kt.io) for Kotlin
+* [Cats](https://typelevel.org/cats/) for Scala
+* [VAVR](https://www.vavr.io) for Java
+
+I think it's good to have libraries which add functional capabilities to non-purely programming languages. It's a way of extending a language more quickly and with the support of the developers community.
+
+However, I had a lot of alternatives in JavaScript:
+
+* **Libraries**: Lodash, Underscore, Rambda, etc.
+* **Languages which compile to JavaScript**: TypeScript, PureScript, Elm, ClojureScript, Reason, OCaml (the last two options thanks to BuckleScript), etc.
+
+Why PureScript? I made the decision when trying to explain type composition:
+
+* Libraries such as Lodash or Underscore don't allow to create sum types.
+* Ramda library provides Either, though it's for doing an OR of function results.
+* I found a library for creating sum types: [Daggy](https://github.com/fantasyland/daggy). However, this alternative involved making more decisions later.
+* TypeScript uses the pipe to represent the choice between basic types or the intersection of properties between objects.
+* I found type composition in Reason, though I didn't find other capabilities.
+* What about the rest of options? I reviewed PureScript and it provided the characteristics I was looking for.
+
+My only purpose is explaining functional programming. PureScript is only a choice for it.
+
+## Type composition
+
+**To be continued...**
