@@ -455,6 +455,7 @@ Some words which weren't used here although they can be useful to understand oth
 * **Domain**: Set of possible inputs to a given function.
 * **Codomain**: Set of possible outputs to a given function.
 * **Total function** (vs. **partial function**): It returns a valid output for every possible input. They are just known as **functions**.
+* **Polymorphic function**: In functional programming, polymorphism is also known as **parametric polymorphism**. A polymorphic function operates on values without depending on their type. It's valid for any type.
 
 ## Further knowledge
 
