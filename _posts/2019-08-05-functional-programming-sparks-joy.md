@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-08-19 08:00:00 +00:00
+last_modified_at: 2019-08-20 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -85,12 +85,23 @@ However, compare it with this alternative where an expression is used to describ
 
 ```js
 const numbers = [2, 4, 8, 10, 20, 11];
+numbers.every(number => isEven(number)); // false
+
+// Following the pointfree style:
 numbers.every(isEven); // false
 ```
 
 If fewer details are given then: less prone to error and easier to read.
 
 In this case, less tests would be needed because the `every` function is known to work as expected.
+
+<div class="note">
+    <strong>Note</strong>: The "point" of <strong>pointfree style</strong> is not <code>.</code> but a point on a space. <code>f(x)</code> can be read as "the value of f at point x". So pointfree style consists on not specifying the parameters to avoid redundancy.
+</div>
+
+<div class="note">
+    <strong>Note</strong>: The function <code>isEven</code> is an example of <strong>predicate</strong>, a function that returns a boolean value.
+</div>
 
 ## Immutability
 
@@ -206,7 +217,7 @@ numbers.reduce(add); // 5
 The power of having functions as first-class citizens and creating higher-order functions promotes the separation of responsibilities and readability.
 
 <div class="note">
-    <strong>Note</strong>: The example of <code>reduce</code> doesn't include an initial value, so the first item will be used as the initial value and skipped. Other programming languages differentiate between <code>reduce</code> (without providing an initial value) and <code>fold</code> (providing an initial value). Others have just <code>fold</code> for both options. And others include <code>foldr</code> (when accumulating from right) or <code>foldl</code> (when accumulating from left).
+    <strong>Note</strong>: The example of <code>reduce</code> doesn't include an initial value, so the first item will be used as the initial value and skipped. Other programming languages differentiate between <code>reduce</code> (without providing an initial value) and <code>fold</code> (providing an initial value). Others have just <code>fold</code> for both options.
 </div>
 
 ## Function composition
