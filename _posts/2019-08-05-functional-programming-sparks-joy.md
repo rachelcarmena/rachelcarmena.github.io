@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-08-22 08:00:00 +00:00
+last_modified_at: 2019-08-23 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -569,17 +569,29 @@ However, I had a lot of alternatives in JavaScript:
 * **Libraries**: Lodash, Underscore, Rambda, etc.
 * **Languages which compile to JavaScript**: TypeScript, PureScript, Elm, ClojureScript, Reason, OCaml (the last two options thanks to BuckleScript), etc.
 
-Why PureScript? I made the decision when trying to explain type composition:
+Why PureScript? I made the decision when trying to explain composite types:
 
 * Libraries such as Lodash or Underscore don't allow to create sum types.
 * Ramda library provides Either, though it's for doing an OR of function results.
 * I found a library for creating sum types: [Daggy](https://github.com/fantasyland/daggy). However, this alternative involved making more decisions later.
 * TypeScript uses the pipe to represent the choice between basic types or the intersection of properties between objects.
-* I found type composition in Reason, though I didn't find other capabilities.
+* I found composite types in Reason, though I didn't find other capabilities.
 * What about the rest of options? I reviewed PureScript and it provided the characteristics I was looking for.
 
 My only purpose is explaining functional programming. PureScript is only a choice for it.
 
-## Type composition
+## Composite types
+
+<div class="note">
+    <strong>Note</strong>: Initially I wrote <em>type composition</em> as section title. It wasn't right because it can be confused with <em>composition</em> from <strong>function composition</strong>.
+</div>
+
+Types can be combined to create a new type.
+
+The new type is also known as an **algebraic data type** (ADT). Why _algebraic_? Because we can "play" with them on equations and symbols (I didn't cover it here although it's fun!).
+
+There are two common kinds of composite types: **product types** and **sum types**.
+
+Let's see what they are and some examples and then I'll explain a curiosity that can be useful to understand the reason of their names.
 
 **To be continued...**
