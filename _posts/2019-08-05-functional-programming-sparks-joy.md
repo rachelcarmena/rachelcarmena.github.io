@@ -585,7 +585,7 @@ My only purpose is explaining functional programming. PureScript is only a choic
 ## Composite types
 
 <div class="note">
-    <strong>Note</strong>: Initially I wrote <em>type composition</em> as section title. It wasn't right because it can be confused with <em>composition</em> from <strong>function composition</strong>.
+    <strong>Note</strong>: Initially I wrote <em>type composition</em> as section title. It wasn't right because it could be confused with <em>composition</em> from <strong>function composition</strong>.
 </div>
 
 Types can be combined to create a new type.
