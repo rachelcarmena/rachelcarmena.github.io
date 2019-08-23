@@ -513,9 +513,11 @@ What if we step forward? What if we can model the domain with two kinds of piece
 
 When I was a child, I didn't have LEGO bricks but TENTE with smaller pieces.
 
-I had this helicopter of the forest brigade that I assembled and disassembled hundreds of times:
+I still remember my helicopter of the forest brigade:
 
 ![Helicopter](/img/cards/posts/functional-programming-sparks-joy/helicopter.png)
+
+I assembled it and disassembled it hundreds of times.
 
 However, it had more than two kinds of pieces.
 
