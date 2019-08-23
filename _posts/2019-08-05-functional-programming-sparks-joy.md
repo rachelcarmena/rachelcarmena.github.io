@@ -544,10 +544,10 @@ As [Bartosz Milewski](https://twitter.com/BartoszMilewski) wrote:
 Let's review the previous concepts:
 
 * If functions were impure, it would be very difficult to "play" with them and to compose with each other.
-* Mathematically, the common needs to compose types and to compose functions are defined. We only have to use them, so we'll program in a higher abstraction level.
-* Immutability is also essential to compose things. Otherwise, the results couldn't be anticipated.
+* Mathematically, the common needs with types and functions are defined. We only have to use them, so we'll program in a higher abstraction level.
+* Immutability is also essential to compose functions. Otherwise, the results couldn't be anticipated.
 * If functions are composed, they will have to be input or output as well. Every function also has a type.
-* Recursion will appear when composing types or functions.
+* Recursion will appear when defining types or functions.
 * Currying and partial application are some of the techniques to be able to compose functions. Think about having an output that can be the input of the following function.
 
 Finally, think about the business domain you are working on, the state machines, the transformations, the processes, ... how do they fit types and functions?
