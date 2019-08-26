@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-08-23 08:00:00 +00:00
+last_modified_at: 2019-08-26 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -435,13 +435,15 @@ const { log } = console;
 const greet = (name, place, message) =>
     `Hello ${name} from ${place}! ${message}`;
 
-const greetFromWonderland = _.partial(greet, _, "Wonderland", _);
+const greetFromWonderland = 
+    _.partial(greet, _, "Wonderland", _);
 
-log(greetFromWonderland("Mike", "Have a good day!"));
+const greetFromWonderlandWithWish =
+    _.partial(greetFromWonderland, _, "Have a good day!");
+
+log(greetFromWonderlandWithWish("Mike"));
 // Hello Mike from Wonderland! Have a good day!
 ```
-
-Partial application allows us to make progressive calls as we have the arguments.
 
 <div class="note">
     <strong>Note</strong>: Beyond the included examples, currying and partial application are useful to be able to compose functions.
@@ -501,6 +503,8 @@ And thanks to:
 
 # Let's continue
 
+![](/img/cards/posts/functional-programming-sparks-joy/separator.jpg)
+
 Before adding more concepts, I would like to share a reflection.
 
 I think that object-oriented programming and functional programming are such different paradigms that they are not comparable. However, I find a similar feeling.
@@ -548,23 +552,33 @@ Let's review the previous concepts:
 * Immutability is also essential to compose functions. Otherwise, the results couldn't be anticipated.
 * If functions are composed, they will have to be input or output as well. Every function also has a type.
 * Recursion will appear when defining types or functions.
-* Currying and partial application are some of the techniques to be able to compose functions. Think about having an output that can be the input of the following function.
+* Currying and partial application are some of the techniques to be able to compose functions (an output must match with the input of the following function).
 
-Finally, think about the business domain you are working on, the state machines, the transformations, the processes, ... how do they fit types and functions?
+Finally, let's consider the business domain we are working on, the state machines, the processes, the transformations, the validations, ... how do they fit types and functions?
+
+<div class="note">
+<strong>Note</strong>: Only an additional idea about category. Imagine more than one category and arrows between them:
+<ul>
+<li>From objects of a category to objects of another one.</li>
+<li>From arrows of a category to arrows of another one (remember that functions are first-class citizens and can be input and output as well).</li>
+</ul>
+<p>It's awesome the amount of things that can be built when "playing" with only two kinds of pieces. As Bartosz Milewski wrote:</p>
+<blockquote>Category theory is full of simple but powerful ideas.</blockquote>
+</div>
 
 ## About the examples
 
 So far, I've used plain JavaScript and an example with Lodash library.
 
-However, to continue explaining functional programming, I'll include examples in [PureScript](http://www.purescript.org), a strongly-typed functional programming language that compiles to JavaScript.
+However, to continue explaining functional programming, I'll include examples in [PureScript](http://www.purescript.org), a strongly-typed functional programming language that compiles to JavaScript. It's heavily influenced by Haskell.
 
-I would have had a clear choice with other programming languages: 
+I would have had a clear choice with other non-purely programming languages: 
 
 * [Arrow](https://arrow-kt.io) for Kotlin
 * [Cats](https://typelevel.org/cats/) for Scala
 * [VAVR](https://www.vavr.io) for Java
 
-I think it's good to have libraries which add functional capabilities to non-purely programming languages. It's a way of extending a language more quickly and with the support of the developers community.
+I think it's good to have libraries which add functional capabilities as a way of extending a language more quickly and with the support of the developers community.
 
 However, I had a lot of alternatives in JavaScript:
 
@@ -582,18 +596,114 @@ Why PureScript? I made the decision when trying to explain composite types:
 
 My only purpose is explaining functional programming. PureScript is only a choice for it.
 
-## Composite types
+<div class="note">
+    <strong>Note</strong>: Sometimes we think about selecting only one programming language (as I did here). However, for a real software product, we could choose different programming languages according to the needs. There are a lot of languages which compile to JavaScript, which run under JVM or which run under the CLR, among other options.
+</div>
+
+### Declaration and definition
+
+In PureScript, as in Haskell, it's a good practice to provide type annotations as documentation though compiler is able to infer them.
+
+The function type annotation is known as the **function declaration**. Its notation is influenced by [Hindley-Milner type system](https://en.wikipedia.org/wiki/Hindley%E2%80%93Milner_type_system) and it has the following parts:
+
+* Function name
+* `::` (= "is of type" or "has the type of")
+* Function type:
+    * Input type
+    * `->`
+    * Output type
+
+The **function definition** is where the function is actually defined. 
+
+For instance, the declaration and definition of `add` function:
+
+```js
+add :: Int -> Int -> Int
+add x y = x + y
+```
 
 <div class="note">
-    <strong>Note</strong>: Initially I wrote <em>type composition</em> as section title. It wasn't right because it could be confused with <em>composition</em> from <strong>function composition</strong>.
+<strong>Note</strong>: As in other languages such as Haskell or F#, all functions are considered curried. So the <code>add</code> function is really:
+<p><code class="highlighter-rouge">
+add :: Int -> (Int -> Int)
+</code></p>
+<p>It takes an integer (the first operand) and returns a function. That function takes the other integer (the second operand) and returns the sum.</p>
+<p>This is transparent to us because the function definition and the use work like a function of 2 parameters.</p>
 </div>
+
+## Composite types
 
 Types can be combined to create a new type.
 
-The new type is also known as an **algebraic data type** (ADT). Why _algebraic_? Because we can "play" with them on equations and symbols (I didn't cover it here although it's fun!).
+The new type is also known as an **algebraic data type** (ADT). 
 
-There are two common kinds of composite types: **product types** and **sum types**.
+Why _algebraic_? Because we can "play" with them on equations and symbols (I didn't cover it here although it's fun!).
+
+There are two common kinds of composite types: 
+* Product types
+* Sum types
 
 Let's see what they are and some examples and then I'll explain a curiosity that can be useful to understand the reason of their names.
+
+### Product types
+
+This is an example of the creation of a new type with the product of two types:
+
+```
+data Money = Money {
+    amount   :: Amount,
+    currency :: Currency
+}
+```
+
+Its values will contain both a value of type `Amount` **and** a value of type `Currency`.
+
+Why _product_? Think about the number of different values for that type: the _product_ of the number of different values of the type `Amount` and the number of different values of the type `Currency`.
+
+### Sum types
+
+This is an example of the creation of a new type with the sum of two types:
+
+```
+data SendingMethod 
+    = Email String
+    | Address { street  :: String, 
+                city    :: String, 
+                country :: String }
+```
+
+The new type `SendingMethod` represents a choice between `Email` and `Address`.
+
+The values of this new type will contain a value of type `Email` **or** a value of type `Address`.
+
+Why _sum_? Think about the number of different values for that type: the _sum_ of the number of different values of the type `Email` and the number of different values of the type `Address`.
+
+<div class="note">
+<strong>Note</strong>: I only included examples of combining two types for simplicity though there is no limit.
+</div>
+
+<div class="note">
+<strong>Note</strong>: Initially I used <em>type composition</em> as section title. It wasn't right because it could be confused with <em>composition</em> from <em>function composition</em>.
+</div>
+
+## Pattern matching
+
+In functional programming, pattern matching is based on constructors as patterns.
+
+Given a value, it can be disassembled down to parts that were used to construct it.
+
+This is a powerful tool to make decisions according to types: 
+
+```
+showSendingMethod :: SendingMethod -> String
+showSendingMethod sendingMethod = 
+    case sendingMethod of
+        Email email -> "Sent by mail to: " <> email
+        Address address -> "Sent to an address"
+```
+
+## Maybe
+
+It's also known as **Option**.
 
 **To be continued...**
