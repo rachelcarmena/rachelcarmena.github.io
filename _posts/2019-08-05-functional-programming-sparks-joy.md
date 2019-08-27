@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-08-26 08:00:00 +00:00
+last_modified_at: 2019-08-27 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -702,8 +702,134 @@ showSendingMethod sendingMethod =
         Address address -> "Sent to an address"
 ```
 
-## Maybe
+## Some composite types
 
-It's also known as **Option**.
+### Tuple
+
+`Tuple` is an example of _product_ type that represents a pair of values.
+
+It's defined in the module `Data.Tuple` of PureScript:
+
+```
+data Tuple a b = Tuple a b
+```
+
+where:
+
+* The lowercase letters `a` and `b` represents any type
+* The first `Tuple` is the type constructor
+* The second `Tuple` is the value constructor
+
+Let's see an example:
+
+```
+pair :: Tuple String String
+pair = Tuple "spam" "eggs"
+```
+
+where:
+
+* The type constructor `Tuple` is used in the declaration: `pair` is of type `Tuple String String`
+* The value constructor `Tuple` is used in the definition: the value of `pair` is `Tuple "spam" "eggs"`
+
+It's known as **Pair** in other languages.
+
+### Maybe
+
+`Maybe` is an example of _sum_ type that is used to define optional values.
+
+It's defined in the module `Data.Maybe` of PureScript:
+
+```
+data Maybe a = Nothing | Just a
+```
+
+`Maybe` of a type can represent one of these options:
+
+* A missing value: `Nothing`
+* The presence of a value of that type: `Just a`
+
+Let's see an example of use:
+
+```
+showTheValue :: Maybe Number -> String
+showTheValue value =
+    case value of
+        Nothing -> "There is no value"
+        Just value' -> "The value is: " <> toString value'
+```
+
+It's known as **Option** in other languages.
+
+### Either
+
+`Either` is another example of _sum_ type and it's commonly use for error handling.
+
+It's defined in the module `Data.Either` of PureScript:
+
+```
+data Either a b = Left a | Right b
+```
+
+`Either` represents the choice between 2 types of values where:
+
+* `Left` is used to carry an error value
+* `Right` is used to carry a success value
+
+Let's see an example of use:
+
+```
+showTheValue :: Either String Number -> String
+showTheValue value =
+    case value of
+        Left value' -> "Error: " <> value'
+        Right value' -> "The value is: " <> toString value'
+```
+
+## Some guidelines
+
+### Making illegal states unrepresentable
+
+This is a design guideline by [Yaron Minsky](https://twitter.com/yminsky).
+
+Let's see an example. Imagine that we have a type Course with this content:
+
+```
+data Course = Course {
+    title           :: String,
+    started         :: Boolean,
+    lastInteraction :: Maybe Date
+}
+```
+
+There is an illegal state that can be representable: `started` is false and `lastInteraction` has a date.
+
+For instance, that illegal state could be avoided with a sum type:
+
+```
+data Course 
+    = StartedCourse { title :: String, lastInteraction :: Date }
+    | UnstartedCourse { title :: String }
+```
+
+<div class="note">
+<strong>Note</strong>: This design guideline reminds me another one that has a wider application. It was formulated by <strong>Scott Meyers</strong>:
+<blockquote>
+<p>Make interfaces easy to use correctly and hard to use incorrectly.</p>
+<p>Interfaces occur at the highest level of abstraction (user interfaces), at the lowest (function interfaces), and at levels in between (class interfaces, library interfaces, etc.)</p>
+</blockquote>
+</div>
+
+### Making things explicit
+
+It can be said that functional programming is based on making things explicit as much as possible.
+
+For instance, let's think about `Maybe`. 
+
+If a function returns an integer, a missing value is not expected.
+
+With `Maybe`, it can be made explicit that the function returns an integer or not.
+
+## Type Classes
 
 **To be continued...**
