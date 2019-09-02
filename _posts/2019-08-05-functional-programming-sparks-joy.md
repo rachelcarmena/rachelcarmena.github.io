@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-08-27 08:00:00 +00:00
+last_modified_at: 2019-09-02 07:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -716,7 +716,7 @@ data Tuple a b = Tuple a b
 
 where:
 
-* The lowercase letters `a` and `b` represents any type
+* The lowercase letters `a` and `b` represent any type
 * The first `Tuple` is the type constructor
 * The second `Tuple` is the value constructor
 
@@ -743,6 +743,11 @@ It's defined in the module `Data.Maybe` of PureScript:
 ```
 data Maybe a = Nothing | Just a
 ```
+
+where:
+
+* The lowercase letter `a` represents any type
+* `Maybe` is the type constructor
 
 `Maybe` of a type can represent one of these options:
 
@@ -771,6 +776,11 @@ It's defined in the module `Data.Either` of PureScript:
 data Either a b = Left a | Right b
 ```
 
+where:
+
+* The lowercase letters `a` and `b` represent any type
+* `Either` is the type constructor
+
 `Either` represents the choice between 2 types of values where:
 
 * `Left` is used to carry an error value
@@ -787,6 +797,16 @@ showTheValue value =
 ```
 
 ## Some guidelines
+
+### Making things explicit
+
+It can be said that functional programming is based on making things **explicit** as much as possible.
+
+For instance, let's think about `Maybe`. 
+
+If a function returns an integer, a missing value is not expected.
+
+With `Maybe`, it can be made explicit that the function returns an integer or not.
 
 ### Making illegal states unrepresentable
 
@@ -820,16 +840,79 @@ data Course
 </blockquote>
 </div>
 
-### Making things explicit
+## Functors
 
-It can be said that functional programming is based on making things explicit as much as possible.
+A **functor** is a type constructor which provides a mapping operation.
 
-For instance, let's think about `Maybe`. 
+You already know a **functor**!!
 
-If a function returns an integer, a missing value is not expected.
+`Array` is a **functor** which provides the `map` function.
 
-With `Maybe`, it can be made explicit that the function returns an integer or not.
+I included this example in the first part (plain JavaScript):
 
-## Type Classes
+```js
+const square = number => Math.pow(number, 2);
+
+const numbers = [2, 5, 8];
+numbers.map(square); // [4, 25, 64]
+```
+
+The same example in PureScript:
+
+```
+square :: Int -> Int
+square number = pow number 2
+
+numbers = [2, 5, 8] :: Array Int
+
+logShow (map square numbers)
+-- [4,25,64]
+```
+
+![](/img/cards/posts/functional-programming-sparks-joy/array_functor.png)
+
+It's said that:
+
+* The `map` function allows the function `square` to be _lifted_ over an array
+* Or just, the `map` function _lifts_ the `square` function
+
+### How to form a functor
+
+Following the definition, a **functor** can be formed by:
+
+* A type constructor
+* A mapping function
+
+For instance, the **functor** formed by:
+
+* The type constructor `Maybe` (in this case, from `String` to `Maybe String`)
+* The following `fmap` function:
+    * From a function `(String -> String)`
+    * To a function `(Maybe String -> Maybe String)`
+
+```
+repeat :: String -> String
+repeat aString = aString <> aString
+
+fmap :: (String -> String) -> Maybe String -> Maybe String
+fmap f value =
+    case value of
+        Nothing -> Nothing
+        Just value' -> Just (f value')
+
+message :: Maybe String
+message = fmap repeat (Just " bla ")
+-- (Just " bla  bla ")
+```
+
+![](/img/cards/posts/functional-programming-sparks-joy/maybe_functor.png)
+
+In this example, the `fmap` function _lifts_ the `repeat` function.
+
+In the next section, we'll see how to abstract the concept of **functor**.
+
+<div class="note">
+<strong>Note</strong>: What's the purpose of <strong>functors</strong>? Let's remember the need of composing functions and the need of adapting the input and output to compose them. We've already seen some tools for it and a <strong>functor</strong> is another one. We'll see more of them in the next sections.
+</div>
 
 **To be continued...**
