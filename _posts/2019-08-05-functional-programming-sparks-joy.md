@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-09-02 07:00:00 +00:00
+last_modified_at: 2019-09-03 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -534,7 +534,7 @@ I'm talking about **category theory** where a **category** is a collection of:
 * Objects
 * Relationships (also known as morphisms or arrows) between the objects
 
-Functional programming is based on a **category of sets** where:
+**Functional programming** is based on a **category of sets** where:
 
 * The objects are **types** (sets of values)
 * The arrows are **functions**
@@ -545,26 +545,34 @@ As [Bartosz Milewski](https://twitter.com/BartoszMilewski) wrote:
 
 > One of the important advantages of having a mathematical model for programming is that it’s possible to perform formal proofs of correctness of software.
 
-Let's review the previous concepts:
+<div class="note">
+<strong>Note</strong>: Imagine more than one category. And now, imagine arrows between categories:
+<ul>
+<li>From objects of a category to objects of another one.</li>
+<li>From arrows of a category to arrows of another one.</li>
+</ul>
+<p>Therefore, in <strong>functional programming</strong>:</p>
+<ul>
+<li>The objects are <strong>types</strong> and <strong>functions</strong></li>
+</ul>
+<p>Remember that functions are first-class citizens and can be input and output as well.</p>
+</div>
+
+It's awesome the amount of things that can be built when "playing" with only two kinds of pieces.
+
+[Bartosz Milewski](https://twitter.com/BartoszMilewski) also wrote:
+
+> Category theory is full of simple but powerful ideas
+
+Let's review the other previous concepts (I already mentioned functions as first-class citizens):
 
 * If functions were impure, it would be very difficult to "play" with them and to compose with each other.
 * Mathematically, the common needs with types and functions are defined. We only have to use them, so we'll program in a higher abstraction level.
 * Immutability is also essential to compose functions. Otherwise, the results couldn't be anticipated.
-* If functions are composed, they will have to be input or output as well. Every function also has a type.
 * Recursion will appear when defining types or functions.
 * Currying and partial application are some of the techniques to be able to compose functions (an output must match with the input of the following function).
 
-Finally, let's consider the business domain we are working on, the state machines, the processes, the transformations, the validations, ... how do they fit types and functions?
-
-<div class="note">
-<strong>Note</strong>: Only an additional idea about category. Imagine more than one category and arrows between them:
-<ul>
-<li>From objects of a category to objects of another one.</li>
-<li>From arrows of a category to arrows of another one (remember that functions are first-class citizens and can be input and output as well).</li>
-</ul>
-<p>It's awesome the amount of things that can be built when "playing" with only two kinds of pieces. As Bartosz Milewski wrote:</p>
-<blockquote>Category theory is full of simple but powerful ideas.</blockquote>
-</div>
+Finally, let's consider the business domain we are working on, the state machines, the processes, the transformations, the validations, ... how do types and functions fit those needs? It seems they absolutely fit them.
 
 ## About the examples
 
