@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-09-03 08:00:00 +00:00
+last_modified_at: 2019-09-04 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -548,8 +548,8 @@ As [Bartosz Milewski](https://twitter.com/BartoszMilewski) wrote:
 <div class="note">
 <strong>Note</strong>: Imagine more than one category. And now, imagine arrows between categories:
 <ul>
-<li>From objects of a category to objects of another one.</li>
-<li>From arrows of a category to arrows of another one.</li>
+<li>From objects of a category to objects of another one</li>
+<li>From arrows of a category to arrows of another one</li>
 </ul>
 <p>Therefore, in <strong>functional programming</strong>:</p>
 <ul>
@@ -848,15 +848,58 @@ data Course
 </blockquote>
 </div>
 
-## Functors
+## Monoids
 
-A **functor** is a type constructor which provides a mapping operation.
+A **monoid** is useful to explain how the values of a type are combined.
+
+Let's see some examples with known types.
+
+For instance, natural numbers:
+
+* They could be combined with addition, for instance.
+* Zero could be the starting point and then, add each number.
+* Given 3 numbers, the result with be the same for these operations:
+    * The addition of the first 2 numbers is added with the third number.
+    * The first number is added with the addition of the other 2 numbers.
+
+Or strings:
+
+* They could be combined with concatenation.
+* An empty string could be the starting point and then, concatenate each string.
+* Given 3 strings, the result with be the same for these operations: 
+    * The concatenation of the first 2 strings is concatenated with the third string.
+    * The first string is concatenated with the concatenation of the other 2 strings.
+
+How to express it in an easy way?
+
+**Monoids** to the rescue!
+
+Read the following definition together with the previous examples.
+
+A **monoid** is a type with a binary operation (2 elements). That operation has the following properties:
+
+* It has a neutral element
+* It's associative
+
+Did you identify each part of the definition in the previous examples?
+
+Later, we'll see how to abstract the concept of **monoid** for any type and then, how to define it for concrete types.
+
+<div class="note">
+<strong>Note</strong>: I included examples with simple and known types. However, think about <strong>any</strong> kind of type and the need to define how the values of a type are combined.
+</div>
+
+## Functors
 
 You already know a **functor**!!
 
+A **functor** is a type constructor which provides a mapping operation.
+
+Which **functor** do you know for sure?
+
 `Array` is a **functor** which provides the `map` function.
 
-I included this example in the first part (plain JavaScript):
+Let's remember the included example in the first part (plain JavaScript):
 
 ```js
 const square = number => Math.pow(number, 2);
@@ -876,6 +919,8 @@ numbers = [2, 5, 8] :: Array Int
 logShow (map square numbers)
 -- [4,25,64]
 ```
+
+Graphically:
 
 ![](/img/cards/posts/functional-programming-sparks-joy/array_functor.png)
 
@@ -913,11 +958,17 @@ message = fmap repeat (Just " bla ")
 -- (Just " bla  bla ")
 ```
 
+Graphically:
+
 ![](/img/cards/posts/functional-programming-sparks-joy/maybe_functor.png)
 
 In this example, the `fmap` function _lifts_ the `repeat` function.
 
-In the next section, we'll see how to abstract the concept of **functor**.
+Later, we'll see how to abstract the concept of **functor** for any type constructor and then, how to define it for concrete type constructors.
+
+<div class="note">
+<strong>Note</strong>: For simplicity in the examples, I included functions like <code>square</code> and <code>repeat</code> which have the same type for input and output. However, that condition is <strong>not</strong> necessary.
+</div>
 
 <div class="note">
 <strong>Note</strong>: What's the purpose of <strong>functors</strong>? Let's remember the need of composing functions and the need of adapting the input and output to compose them. We've already seen some tools for it and a <strong>functor</strong> is another one. We'll see more of them in the next sections.
