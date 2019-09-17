@@ -237,7 +237,7 @@ Functions can be composed into a new one.
 
 When following the definition of composing two functions, the functions appear from right to left because the output of the first function is the input of the following one.
 
-![](/img/cards/posts/functional-programming-sparks-joy/function-composition.png)
+![](/img/cards/posts/functional-programming-sparks-joy/function_composition.png)
 
 For example, the `sumOfSquares` function:
 
@@ -1079,6 +1079,25 @@ logShow (repeat `map` (Just " bla "))
 
 logShow (repeat <$> (Just " bla "))
 -- (Just " bla  bla ")
+```
+
+### Functor composition
+
+So far I've included examples of `Array` functor and `Maybe` functor separately.
+
+What if there are more than one functor?
+
+What if we want to apply the `repeat` function into a `Maybe (Array String)`?
+
+![](/img/cards/posts/functional-programming-sparks-joy/functor_composition.png)
+
+Firstly, we use the mapping function of `Array` and then, the mapping function of `Maybe` over the result.
+
+In other words, the mapping functions are composed (operator `>>>`):
+
+```
+logShow ((map >>> map) repeat (Just [" bla ", " ha "]))
+-- (Just [" bla  bla "," ha  ha "])
 ```
 
 **To be continued...**
