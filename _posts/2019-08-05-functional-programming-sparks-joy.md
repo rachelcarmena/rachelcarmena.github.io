@@ -931,12 +931,12 @@ The **monoid** for strings in PureScript (modules `Data.Semigroup` and `Data.Mon
 
 ```
 instance semigroupString :: Semigroup String where
-  append = concatString
+    append = concatString
 ```
 
 ```
 instance monoidString :: Monoid String where
-  mempty = ""
+    mempty = ""
 ```
 
 The binary operation is concatenation and the neutral element is the empty string.
