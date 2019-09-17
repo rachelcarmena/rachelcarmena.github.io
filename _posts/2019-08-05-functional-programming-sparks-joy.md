@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-09-04 08:00:00 +00:00
+last_modified_at: 2019-09-17 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -483,6 +483,7 @@ Some words which weren't used here although they can be useful to understand oth
 * [Book: Haskell Programming from first principles](http://haskellbook.com)
 * [Reflection: Functional programming is deep](https://purelyfunctional.tv/issues/purelyfunctional-tv-newsletter-337-functional-programming-is-deep/) by Eric Normand
 * [Articles: PragPub Magazine #38](https://magazines.pragprog.com/2012/pragpub-2012-08.pdf)
+* [Typeclassopedia](https://wiki.haskell.org/Typeclassopedia)
 
 ## Acknowledgments
 
@@ -584,6 +585,7 @@ I would have had a clear choice with other non-purely programming languages:
 
 * [Arrow](https://arrow-kt.io) for Kotlin
 * [Cats](https://typelevel.org/cats/) for Scala
+* [Bow](https://bow-swift.io) for Swift
 * [VAVR](https://www.vavr.io) for Java
 
 I think it's good to have libraries which add functional capabilities as a way of extending a language more quickly and with the support of the developers community.
@@ -848,6 +850,16 @@ data Course
 </blockquote>
 </div>
 
+## Typeclasses
+
+> A **typeclass** defines a family of types that support a common interface
+
+Typeclasses are useful to define concepts like **monoids** and **functors** for all the types or types constructors, respectively.
+
+And then, it's possible to create instances of those typeclasses for concrete types or types constructors.
+
+I include more details about it in following sections.
+
 ## Monoids
 
 A **monoid** is useful to explain how the values of a type are combined.
@@ -878,16 +890,64 @@ Read the following definition together with the previous examples.
 
 A **monoid** is a type with a binary operation (2 elements). That operation has the following properties:
 
-* It has a neutral element
+* It has a neutral element (identity)
 * It's associative
 
 Did you identify each part of the definition in the previous examples?
 
-Later, we'll see how to abstract the concept of **monoid** for any type and then, how to define it for concrete types.
-
 <div class="note">
 <strong>Note</strong>: I included examples with simple and known types. However, think about <strong>any</strong> kind of type and the need to define how the values of a type are combined.
 </div>
+
+### Typeclass for monoids
+
+Let's see how to abstract the concept of **monoid** for any type and then, how to define it for concrete types.
+
+In Haskell, the typeclass for a **monoid** includes the neutral element (called `mempty`) and the binary operation (called `mappend`):
+
+```
+class Monoid m where
+    mempty :: m
+    mappend :: m -> m -> m
+```
+
+However, PureScript has a previous abstraction and includes the binary operation in `Semigroup` typeclass:
+
+```
+class Semigroup a where
+    append :: a -> a -> a
+```
+
+So **Monoid** typeclass extends the `Semigroup` typeclass with the neutral element: 
+
+```
+class Semigroup m <= Monoid m where
+    mempty :: m
+```
+
+That's the abstraction. Now, for instance, how to define the way of combining strings?
+
+The **monoid** for strings in PureScript (modules `Data.Semigroup` and `Data.Monoid`, respectively):
+
+```
+instance semigroupString :: Semigroup String where
+  append = concatString
+```
+
+```
+instance monoidString :: Monoid String where
+  mempty = ""
+```
+
+The binary operation is concatenation and the neutral element is the empty string.
+
+In this way, it's possible to combine all the strings from an array into a single string when using the `append` and `mempty` defined for strings:
+
+```
+greeting :: String
+greeting = foldl append mempty ["Hello,", " ", "world!"]
+-- "Hello, world!"
+```
 
 ## Functors
 
@@ -917,6 +977,16 @@ square number = pow number 2
 numbers = [2, 5, 8] :: Array Int
 
 logShow (map square numbers)
+-- [4,25,64]
+```
+
+or using an _infix_ function application (as an operator between the two arguments):
+
+```
+logShow (square `map` numbers)
+-- [4,25,64]
+
+logShow (square <$> numbers)
 -- [4,25,64]
 ```
 
@@ -964,8 +1034,6 @@ Graphically:
 
 In this example, the `fmap` function _lifts_ the `repeat` function.
 
-Later, we'll see how to abstract the concept of **functor** for any type constructor and then, how to define it for concrete type constructors.
-
 <div class="note">
 <strong>Note</strong>: For simplicity in the examples, I included functions like <code>square</code> and <code>repeat</code> which have the same type for input and output. However, that condition is <strong>not</strong> necessary.
 </div>
@@ -973,5 +1041,44 @@ Later, we'll see how to abstract the concept of **functor** for any type constru
 <div class="note">
 <strong>Note</strong>: What's the purpose of <strong>functors</strong>? Let's remember the need of composing functions and the need of adapting the input and output to compose them. We've already seen some tools for it and a <strong>functor</strong> is another one. We'll see more of them in the next sections.
 </div>
+
+### Typeclass for functors
+
+Let's see how to abstract the concept of **functor** for any type constructor and then, how to define it for a concrete type constructor.
+
+The typeclass for a **functor** appears in `Data.Functor` module:
+
+```
+class Functor f where
+    map :: forall a b. (a -> b) -> f a -> f b
+```
+
+Following the previous example, the **functor** for `Maybe` is already defined in `Data.Maybe` module:
+
+```
+instance functorMaybe :: Functor Maybe where
+    map fn (Just x) = Just (fn x)
+    map _  _        = Nothing
+```
+
+So it can be used to get the same result than before with less code:
+
+```
+repeat :: String -> String
+repeat aString = aString <> aString
+
+logShow (map repeat (Just " bla "))
+-- (Just " bla  bla ")
+```
+
+or using an _infix_ function application (as an operator between the two arguments):
+
+```
+logShow (repeat `map` (Just " bla "))
+-- (Just " bla  bla ")
+
+logShow (repeat <$> (Just " bla "))
+-- (Just " bla  bla ")
+```
 
 **To be continued...**
