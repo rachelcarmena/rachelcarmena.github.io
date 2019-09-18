@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-09-17 08:00:00 +00:00
+last_modified_at: 2019-09-18 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -1099,5 +1099,78 @@ In other words, the mapping functions are composed (operator `>>>`):
 logShow ((map >>> map) repeat (Just [" bla ", " ha "]))
 -- (Just [" bla  bla "," ha  ha "])
 ```
+
+## Applicative
+
+There are a lot of things about **applicative**. I include the basic **applicative** abstraction also known as an **applicative functor**.
+
+An **applicative functor** is an step further than a **functor**.
+
+Let's see what happens if we have a function with more than one parameter.
+
+For instance:
+
+```
+fullName :: String -> String -> String
+fullName name surname = name <> " " <> surname
+```
+
+Functions are curried by default in PureScript, so in this case: the input is a `String` and the output is another function `String -> String`.
+
+![](/img/cards/posts/functional-programming-sparks-joy/fullName.png)
+
+What happens if instead of two strings for `name` and `surname` we have `Maybe String` for each of them?
+
+With `map` from `functorMaybe`, we get another function from `Maybe String` to `Maybe (String -> String)`.
+
+![](/img/cards/posts/functional-programming-sparks-joy/fullName-map.png)
+
+In other words, the function `String -> String` is wrapped with the type constructor `Maybe`.
+
+How can we continue?
+
+How can we get another function from `Maybe String` to `Maybe String`? 
+
+`apply` from `applyMaybe` to the rescue!
+
+![](/img/cards/posts/functional-programming-sparks-joy/applicative-2-params.png)
+
+```
+logShow (apply (map fullName (Just "Rachel")) (Just "M. Carmena"))
+-- (Just "Rachel M. Carmena")
+
+logShow (apply (map fullName (Just "Rachel")) Nothing)
+-- Nothing
+```
+
+or using an _infix_ function application (in this case, `<*>` is the equivalent to `apply`):
+
+```
+logShow (fullName <$> Just "Rachel" <*> Just "M. Carmena")
+-- (Just "Rachel M. Carmena")
+
+logShow (fullName <$> Just "Rachel" <*> Nothing)
+-- Nothing
+```
+
+If we have a function with more than two parameters, we'd use `<$>` (`map`) for the first parameter and then `<*>` (`apply`) for the rest of parameters.
+
+![](/img/cards/posts/functional-programming-sparks-joy/applicative-3-params.png)
+
+Another powerful tool to compose functions. Think about other type constructors like `Either`, form validations, etc.
+
+Finally, after the examples, it could be easier to understand the difference between `map` from **functor** and `apply` from **applicative functor**:
+
+```
+map :: forall a b. (a -> b) -> f a -> f b
+```
+
+```
+apply :: forall a b. f (a -> b) -> f a -> f b
+```
+
+<div class="note">
+<strong>Note</strong>: In this section, I didn't include the formal definition of <strong>applicative functor</strong> in PureScript and the corresponding instance for <code>Maybe</code>. They can be found in the modules <code>Control.Apply</code>, <code>Control.Applicative</code> and <code>Data.Maybe</code>. 
+</div>
 
 **To be continued...**
