@@ -4,7 +4,7 @@ asset-type: post
 title: Functional programming sparks joy
 description: Some characteristics of functional programming
 date: 2019-08-05 10:00:00 +00:00
-last_modified_at: 2019-09-18 08:00:00 +00:00
+last_modified_at: 2019-09-20 08:00:00 +00:00
 image:
     src: /img/cards/posts/functional-programming-sparks-joy/cover.jpg
 ---
@@ -1131,9 +1131,11 @@ How can we continue?
 
 How can we get another function from `Maybe String` to `Maybe String`? 
 
-`apply` from `applyMaybe` to the rescue!
+`apply` to the rescue!
 
 ![](/img/cards/posts/functional-programming-sparks-joy/applicative-2-params.png)
+
+In PureScript, the applicative for Maybe is already defined so it's possible to use `apply` with that kind of type constructor:
 
 ```
 logShow (apply (map fullName (Just "Rachel")) (Just "M. Carmena"))
@@ -1153,13 +1155,13 @@ logShow (fullName <$> Just "Rachel" <*> Nothing)
 -- Nothing
 ```
 
-If we have a function with more than two parameters, we'd use `<$>` (`map`) for the first parameter and then `<*>` (`apply`) for the rest of parameters.
+Therefore, if we have a function with more than two parameters, we'd use `<$>` (`map`) for the first parameter and then `<*>` (`apply`) for the rest of parameters.
 
 ![](/img/cards/posts/functional-programming-sparks-joy/applicative-3-params.png)
 
 Another powerful tool to compose functions. Think about other type constructors like `Either`, form validations, etc.
 
-Finally, after the examples, it could be easier to understand the difference between `map` from **functor** and `apply` from **applicative functor**:
+Finally, after the examples, it could be easier to understand the difference between `map` from **functors** and `apply` from **applicative functors**:
 
 ```
 map :: forall a b. (a -> b) -> f a -> f b
@@ -1169,8 +1171,52 @@ map :: forall a b. (a -> b) -> f a -> f b
 apply :: forall a b. f (a -> b) -> f a -> f b
 ```
 
+Both get the same result though `map` transforms a function and `apply` transforms a function which is wrapped.
+
 <div class="note">
-<strong>Note</strong>: In this section, I didn't include the formal definition of <strong>applicative functor</strong> in PureScript and the corresponding instance for <code>Maybe</code>. They can be found in the modules <code>Control.Apply</code>, <code>Control.Applicative</code> and <code>Data.Maybe</code>. 
+<strong>Note</strong>: In this section, I didn't include the formal definition of <strong>applicative functors</strong> in PureScript and the corresponding instance for <code>Maybe</code>. They can be found in the modules <code>Control.Apply</code>, <code>Control.Applicative</code> and <code>Data.Maybe</code>. There are also instances for <code>Either</code>, <code>Array</code>, <code>List</code>, etc. 
 </div>
 
-**To be continued...**
+## Monad
+
+Let's see what happens if we have a `getUser` function from a `String` value to a `Maybe User` value:
+
+![](/img/cards/posts/functional-programming-sparks-joy/monad-initial-function.png)
+
+and we don't have a `String` value available to be provided to the function but a `Maybe String` value.
+
+Then, we can think about the `Maybe` **functor** to have a `Maybe String` value as an input:
+
+![](/img/cards/posts/functional-programming-sparks-joy/monad-problem.png)
+
+However, the result will be a `Maybe (Maybe User)` value.
+
+How can we get just a `Maybe User` value?
+
+Flattening `Maybe (Maybe User)` into `Maybe User`:
+
+![](/img/cards/posts/functional-programming-sparks-joy/monad-solution.png)
+
+Both operations are considered together by `bind` from a **monad**:
+
+```
+bind :: forall a b. m a -> (a -> m b) -> m b
+```
+
+Following the example of the `getUser` function, it's possible to get a `Maybe User` value from a `Maybe String` value, because the instance of `Monad` for `Maybe` is already available in PureScript:
+
+```
+user :: Maybe User
+user = bind (Just "12345") getUser
+```
+
+or using an _infix_ function application (in this case, `>>=` is the equivalent to `bind`):
+
+```
+user :: Maybe User
+user = (Just "12345") >>= getUser
+```
+
+<div class="note">
+<strong>Note</strong>: The ability to wrap a value to a context is done by the <code>pure</code> function from a <strong>functor</strong>. For instance, from a <code>String</code> value to a <code>Maybe String</code> value.
+</div>
