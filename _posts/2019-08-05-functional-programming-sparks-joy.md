@@ -854,7 +854,7 @@ data Course
 
 > A **typeclass** defines a family of types that support a common interface
 
-Typeclasses are useful to define concepts like **monoids** and **functors** for all the types or types constructors, respectively.
+Typeclasses are useful to define concepts like **monoids**, **functors**, **applicative** and **monads** for all the types or types constructors, respectively.
 
 And then, it's possible to create instances of those typeclasses for concrete types or types constructors.
 
@@ -948,6 +948,10 @@ greeting :: String
 greeting = foldl append mempty ["Hello,", " ", "world!"]
 -- "Hello, world!"
 ```
+
+<div class="note">
+<strong>Note</strong>: <code>foldl</code> folds the array from the left. In this case, the result would be the same with <code>foldr</code>.
+</div>
 
 ## Functors
 
@@ -1203,6 +1207,8 @@ Both operations are considered together by `bind` from a **monad**:
 bind :: forall a b. m a -> (a -> m b) -> m b
 ```
 
+![](/img/cards/posts/functional-programming-sparks-joy/monad-solution-details.png)
+
 Following the example of the `getUser` function, it's possible to get a `Maybe User` value from a `Maybe String` value, because the instance of `Monad` for `Maybe` is already available in PureScript:
 
 ```
@@ -1216,6 +1222,10 @@ or using an _infix_ function application (in this case, `>>=` is the equivalent 
 user :: Maybe User
 user = (Just "12345") >>= getUser
 ```
+
+It's said that **monads** are useful to chain dependent functions in series:
+
+![](/img/cards/posts/functional-programming-sparks-joy/monad-chain.png)
 
 <div class="note">
 <strong>Note</strong>: The ability to wrap a value to a context is done by the <code>pure</code> function from a <strong>functor</strong>. For instance, from a <code>String</code> value to a <code>Maybe String</code> value.
