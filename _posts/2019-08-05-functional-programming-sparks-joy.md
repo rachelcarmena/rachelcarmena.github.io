@@ -471,6 +471,7 @@ Some words which weren't used here although they can be useful to understand oth
 
 ## Further knowledge
 
+* [The Science Behind Functional Programming](https://www.47deg.com/blog/science-behind-functional-programming/) by Rafa Paradela
 * [Talk: Tail Call Optimization: The Musical!!](https://www.youtube.com/watch?v=-PX0BV9hGZY) by Anjana Vakil & Natalia Margolis
 * [Post: Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) by Aditya Bhargava
 * [Online book: Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html) by Harold Abelson, Gerald Jay Sussman and Julie Sussman 
