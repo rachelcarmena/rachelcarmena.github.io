@@ -4,6 +4,7 @@ asset-type: post
 title: Not only source code smells
 description: Reflections about experiences
 date: 2020-12-29 10:00:00 +00:00
+category: [experiences,reflections]
 image:
     src: /img/cards/posts/not-only-source-code-smells/cover.jpg
 ---
