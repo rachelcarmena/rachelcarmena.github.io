@@ -67,13 +67,15 @@ Stop and think. Detect the smells. Detect what things are _telling_. Why this co
 
 ## Further knowledge
 
-* [David Tanzer](https://twitter.com/dtanzer) talks about the product backlog bankruptcy in his [Agile Anti-Patterns](https://www.quickglance.at/agile_antipatterns.html) book among other interesting reflections. It's also available in Spanish: [Antipatrones del Desarrollo Ágil](https://www.quickglance.at/agile_antipatterns_es).
+* [Book: Agile Anti-Patterns](https://www.quickglance.at/agile_antipatterns.html) by [David Tanzer](https://twitter.com/dtanzer) - he talks about the product backlog bankruptcy among other interesting reflections - it's also available in Spanish: [Antipatrones del Desarrollo Ágil](https://www.quickglance.at/agile_antipatterns_es)
 
-* [El patadón pa'lante. Posponer decisiones](https://www.youtube.com/watch?v=vEr2xbNoUxM) by [Eduardo Ferro](https://twitter.com/eferro).
+* [Talk: El patadón pa'lante. Posponer decisiones](https://www.youtube.com/watch?v=vEr2xbNoUxM) by [Eduardo Ferro](https://twitter.com/eferro)
 
-* [Duplication, you're welcome](/2018/02/27/duplication-you-are-welcome.html)
+* [Book: Pragmatic thinking and learning. Refactor your wetware](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) by [Andy Hunt](https://twitter.com/PragmaticAndy)
 
-* [Coding-centered methodology](/2019/01/23/Coding-centered-methodology.html)
+* [Post: Duplication, you're welcome](/2018/02/27/duplication-you-are-welcome.html)
+
+* [Post: Coding-centered methodology](/2019/01/23/Coding-centered-methodology.html)
 
 ## Credit
 
