@@ -73,6 +73,8 @@ Stop and think. Detect the smells. Detect what things are _telling_. Why this co
 
 * [Book: Pragmatic thinking and learning. Refactor your wetware](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) by [Andy Hunt](https://twitter.com/PragmaticAndy)
 
+* [Post: A possible next step](/2019/02/19/a-possible-next-step.html)
+
 * [Post: Duplication, you're welcome](/2018/02/27/duplication-you-are-welcome.html)
 
 * [Post: Coding-centered methodology](/2019/01/23/Coding-centered-methodology.html)
