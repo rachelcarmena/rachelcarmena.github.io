@@ -4,6 +4,7 @@ asset-type: post
 title: Not only source code smells
 description: Reflections about experiences
 date: 2020-12-29 10:00:00 +00:00
+last_modified_at: 2021-01-01 10:00:00 +00:00
 category: [experiences,reflections]
 image:
     src: /img/cards/posts/not-only-source-code-smells/cover.jpg
@@ -69,7 +70,9 @@ Stop and think. Detect the smells. Detect what things are _telling_. Why this co
 
 * [Book: Agile Anti-Patterns](https://www.quickglance.at/agile_antipatterns.html) by [David Tanzer](https://twitter.com/dtanzer) - he talks about the product backlog bankruptcy among other interesting reflections - it's also available in Spanish: [Antipatrones del Desarrollo Ágil](https://www.quickglance.at/agile_antipatterns_es)
 
-* [Talk: El patadón pa'lante. Posponer decisiones](https://www.youtube.com/watch?v=vEr2xbNoUxM) by [Eduardo Ferro](https://twitter.com/eferro)
+* [Post and talk: El patadón pa'lante. Posponer decisiones](https://www.eferro.net/2016/12/el-arte-del-patadon-palante-posponer.html) by [Eduardo Ferro](https://twitter.com/eferro)
+
+* [Post and talk: El arte del patadón pa'lante. Libro de recetas](https://www.eferro.net/2017/06/el-arte-del-patadon-palante-libro-de.html) by [Eduardo Ferro](https://twitter.com/eferro) and [Luis Artola](https://twitter.com/artolamola)
 
 * [Book: Pragmatic thinking and learning. Refactor your wetware](https://pragprog.com/book/ahptl/pragmatic-thinking-and-learning) by [Andy Hunt](https://twitter.com/PragmaticAndy)
 
