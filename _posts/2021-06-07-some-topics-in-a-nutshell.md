@@ -4,7 +4,6 @@ asset-type: post
 title: Some topics in a nutshell
 description: Small reflections for podcasts
 date: 2021-06-07 10:00:00 +00:00
-last_modified_at: 2021-06-07 10:00:00 +00:00
 category: reflections
 image:
     src: /img/cards/posts/some-topics-in-a-nutshell/cover.jpg
