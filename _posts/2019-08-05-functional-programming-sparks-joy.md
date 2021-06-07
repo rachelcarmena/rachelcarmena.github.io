@@ -1231,3 +1231,7 @@ It's said that **monads** are useful to chain dependent functions in series:
 <div class="note">
 <strong>Note</strong>: The ability to wrap a value to a context is done by the <code>pure</code> function from a <strong>functor</strong>. For instance, from a <code>String</code> value to a <code>Maybe String</code> value.
 </div>
+
+## Credit
+
+Image by <a href="https://pixabay.com/users/asundermeier-448808/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4075123">Anke Sundermeier</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4075123">Pixabay</a>
