@@ -10,6 +10,7 @@
 body {
     background: white;
     line-height: 1.75;
+    font-size: 1.2em;
 }
 
 li {
@@ -35,7 +36,7 @@ header, footer {
 }
 
 #main_content {
-    max-width: 57em;
+    max-width: 54em;
     padding: 2.5em 1em;
 }
 
@@ -112,13 +113,13 @@ img {
 
 .card, .deck {
     position: relative;
-    width: 270px;
+    width: 95%;
     justify-self: center;
 }
 
 .card a, .deck a {
     display: block;
-    padding: 0.8em;
+    padding: 0.4em;
     text-decoration: none;
 }
 
@@ -134,7 +135,7 @@ img {
 .card_content {
     background: white;
     position: relative;
-    padding: 1.4em;
+    padding: 1.8em;
 }
 
 .card_content h2 {
@@ -175,7 +176,7 @@ img {
 #deck_content_header img {
     max-width: none;
     width: 100%;
-    max-height: 120px;
+    max-height: 130px;
     object-fit: cover;
     object-position: 0 40%;
     margin-top: 1em;
@@ -197,7 +198,7 @@ img {
 }
 
 #post_image {
-    max-height: 200px;
+    max-height: 260px;
     width: 100%;
     object-fit: cover;
     object-position: 0 25%;
@@ -206,8 +207,8 @@ img {
 #under_cover {
     padding: 0.6em 1em;
     background-color: #f0f0ff;
-    margin: 0.4em 0 2em 0;
-    font-size: 0.9em;
+    margin: 0.4em 0 3em 0;
+    font-size: 0.8em;
 }
 
 .js-line-number {
