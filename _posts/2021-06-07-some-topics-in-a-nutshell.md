@@ -33,7 +33,7 @@ On the other hand, I've had bad experiences in this profession.
 
 So, I think it could be useful to address these things:
 
-* Making visible women who **were** in this profession.
+* Making women who **were** in this profession visible.
 * Taking care of women who **are** in this profession.
 
 Further reading: [My reference](/2019/01/19/my-reference.html).
