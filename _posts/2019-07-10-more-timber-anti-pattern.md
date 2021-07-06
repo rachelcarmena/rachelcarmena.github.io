@@ -14,7 +14,7 @@ image:
 
 > Users are complaining about slowness issues.
 
-> Ok, let's talk to System Team to increase resources.
+> Ok, let's talk to Infrastructure Team to increase resources.
 
 I've listened that decision a lot of times.
 
