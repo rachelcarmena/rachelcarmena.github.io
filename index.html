@@ -27,7 +27,7 @@ title: My card game
             {% if page == paginator.page %}
                 {{ page }}
             {% elsif page == 1 %}
-                <a href="{{ paginator.previous_page_path | relative_url }}" aria-label="Page {{ page }}">{{ page }}</a>
+                <a href="/" aria-label="Page 1">{{ page }}</a>
             {% else %}
                 <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}" aria-label="Page {{ page }}">{{ page }}</a>
             {% endif %}
