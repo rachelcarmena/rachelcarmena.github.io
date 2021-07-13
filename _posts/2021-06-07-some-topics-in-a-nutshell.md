@@ -71,4 +71,4 @@ Thank you so much again, [Carlos Blé](https://www.carlosble.com).
 
 ## Credit
 
-Image by <a href="https://pixabay.com/users/capri23auto-1767157/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5004736">Capri23auto</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5004736">Pixabay</a>
+Image by <a href="https://pixabay.com/users/krzysztofniewolny-4120434/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6221925">Krzysztof Niewolny</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=6221925">Pixabay</a>
