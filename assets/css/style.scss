@@ -233,12 +233,16 @@ img {
 }
 
 .pagination .previous_page, .pagination .pages, .pagination .next_page {
-    width: 33%;
     float: left;
+}
+
+.pagination .previous_page, .pagination .next_page {
+    width: 28%;
 }
 
 .pagination .pages {
     text-align: center;
+    width: 43%;
 }
 
 .pagination .next_post, .pagination .next_page {
