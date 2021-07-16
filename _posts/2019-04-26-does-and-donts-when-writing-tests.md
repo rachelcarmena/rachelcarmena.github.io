@@ -4,7 +4,7 @@ asset-type: post
 title: DO's and DON'Ts when writing tests
 description: Some tips
 date: 2019-04-26 10:00:00 +00:00
-last_modified_at: 2019-05-17 10:00:00 +00:00
+last_modified_at: 2021-07-16 10:00:00 +00:00
 image:
     src: /img/cards/posts/dos-and-donts-when-writing-tests/cover.jpg
 ---
@@ -17,9 +17,9 @@ This post includes some small tips from my experience when writing tests. I'll u
 
 ### Don't mix production code and test code
 
-A long time ago, I reviewed a module which was responsible of receiving messages and doing some actions from them.
+A long time ago, I reviewed a module which was responsible for receiving messages and doing some actions afterwards.
 
-However, I found production code both to send messages and to receive them. Why? Because it was used by a test.
+However, I found production code both to send messages and to receive them. Why? Because it was used for a test.
 
 It was very confusing for me: production code was communicating a wrong responsibility. In that case, source code to send messages was part of test code rather than production code.
 
@@ -33,10 +33,10 @@ There are software development teams following this rule: one test class per pro
 
 * Writing tests is a boring task.
 * People don't write tests because of being convinced about the advantages.
-* Writing tests seems a waste of time.
+* Writing tests seems like a waste of time.
 * Every single change breaks several tests.
 * Refactoring production code is a pain because of a huge amount of coupled tests.
-* Tests are focused on **implementation**: they are not a good documentation.
+* Tests are focused on **implementation**: they are not good documentation.
 * There are a lot of tests that don't provide any value or don't make sense.
 * Sooner or later, tests are skipped.
 
@@ -46,7 +46,7 @@ Test code should be focused on **behaviours**, **intentions** or **capabilities*
 
 * Changes in production code won't imply changes in test code and vice versa.
 * Refactoring will be possible.
-* Tests will be a good documentation.
+* Tests will be good documentation.
 * Writing tests will be a meaningful task.
 * People will understand the advantages of starting with tests.
 * Tests will be kept updated.
@@ -88,7 +88,7 @@ In this way, you'll see the test name very near the assertion and you'll be able
 
 Furthermore, time is not wasted arranging test data, acting and then realizing that the test makes no sense when writing the assertion. 
 
-On the other hand, it forces yourself to focus on checking a single thing. As it's said in [Fifty quick ideas to improve your tests](https://fiftyquickideas.com/fifty-quick-ideas-to-improve-your-tests/) by Gojko Adzic, David Evans and Tom Roden:
+On the other hand, it forces you to focus on checking a single thing. As it's said in [Fifty quick ideas to improve your tests](https://fiftyquickideas.com/fifty-quick-ideas-to-improve-your-tests/) by Gojko Adzic, David Evans and Tom Roden:
 
 > Write assertions first. (...) Tests that are written bottom up, by doing the outputs first, tend to be shorter and more directly explain the purpose.
 
@@ -110,13 +110,21 @@ Testing frameworks include specific assertions to facilitate this kind of compar
 
 So, check that objects are fully compared.
 
-### Expected vs. actual
+### Check the failure messages
 
-I remember that day in which I spent more than fifteen minutes to understand an error raised by the testing framework. 
-
-Finally, I realized that the expected and actual results were swapped in the assertion, so the message didn't make sense.
+I remember that day in which I spent more than fifteen minutes trying to understand an error raised by the testing framework. Finally, I realized that the expected and actual results were swapped in the assertion, so the message didn't make sense.
 
 Although some testing frameworks have been improved to avoid these mistakes, take care of it.
+
+Check that the tests will raise an understable message if they fail: what's failing, the expected output and the actual output.
+
+### Choose good and meaningful inputs for the tests
+
+The inputs of the tests are not only important to check possible edge cases but also to show the tested behaviour.
+
+Sometimes it's possible to describe the properties of the behaviour under test: [property-based testing](https://fsharpforfunandprofit.com/pbt).
+
+On the other hand, if some input data isn't relevant for a test, it can be named like `any...`.
 
 ## Friendly reminder
 
@@ -142,11 +150,11 @@ This is the abstract of the talk **Are your tests really driving your developmen
 
 On the other hand, in 2009, [Michael Feathers](https://twitter.com/mfeathers) and [Steve Freeman](https://twitter.com/sf105) gave a talk about [Ten years of Test-Driven Development](http://gotocon.com/dl/micro-agile-cph-mar-2009/slides/SteveFreeman_TDDTenYearsLater.pdf) where they remembered these thoughts by [Kent Beck](https://twitter.com/KentBeck):
 
-> it said the way to program is to look at the input tape and manually type in the output tape you expect. then you program until the actual and expected tapes match.
+> It said the way to program is to look at the input tape and manually type in the output tape you expect. Then you program until the actual and expected tapes match.
 
-> i thought, what a stupid idea. i want tests that pass, not tests that fail. why would i write a test when i was sure it would fail. well, i'm in the habit of trying stupid things out just to see what happens, so i tried it and it worked great.
+> I thought, what a stupid idea. I want tests that pass, not tests that fail. Why would I write a test when I was sure it would fail. Well, I'm in the habit of trying stupid things out just to see what happens, so I tried it and it worked great.
 
-> i was finally able to separate logical from physical design. i'd always been told to do that but no one ever explained how.
+> I was finally able to separate logical from physical design. I'd always been told to do that but no one ever explained how.
 
 and they gave this piece of advice, among others:
 
