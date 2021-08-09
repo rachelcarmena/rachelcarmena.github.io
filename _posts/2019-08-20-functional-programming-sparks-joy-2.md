@@ -736,6 +736,18 @@ It's said that **monads** are useful to chain dependent functions in series:
 <strong>Note</strong>: The ability to wrap a value to a context is done by the <code>pure</code> function from a <strong>functor</strong>. For instance, from a <code>String</code> value to a <code>Maybe String</code> value.
 </div>
 
+## Further knowledge
+
+* [Talk: Truth about Types](https://www.youtube.com/watch?v=dgrucfgv2Tw) by Bartosz Milewski
+* [Post: The Science Behind Functional Programming](https://www.47deg.com/blog/science-behind-functional-programming/) by Rafa Paradela
+* [Post: Functors, Applicatives, And Monads In Pictures](http://adit.io/posts/2013-04-17-functors,_applicatives,_and_monads_in_pictures.html) by Aditya Bhargava
+* [Online book: Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html) by Harold Abelson, Gerald Jay Sussman and Julie Sussman
+* [Playlist: MIT 6.001 Structure and Interpretation, 1986](https://www.youtube.com/playlist?list=PLE18841CABEA24090) by Hal Abelson and Gerald Jay Sussman
+* [Online book: Category Theory for Programmers](https://github.com/hmemcpy/milewski-ctfp-pdf) by Bartosz Milewski
+* [Specification: Fantasy Land Algebra](https://github.com/fantasyland/fantasy-land)
+* [Typeclassopedia](https://wiki.haskell.org/Typeclassopedia)
+* [Book: Haskell Programming from first principles](http://haskellbook.com) by Julie Moronuki and Christopher Allen
+
 ## Credit
 
 Image by <a href="https://pixabay.com/users/t0nymix-5936404/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2532622">Anthony Jarrin</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2532622">Pixabay</a>
