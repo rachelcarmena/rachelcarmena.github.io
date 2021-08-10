@@ -4,7 +4,7 @@ asset-type: post
 title: How to teach Git
 description: An alternative way to teach Git
 date: 2018-12-12 12:00:00 +00:00
-last_modified_at: 2019-06-27 12:00:00 +00:00
+last_modified_at: 2021-08-10 12:00:00 +00:00
 category: tools
 image:
    src: /img/cards/posts/how-to-teach-Git/cover.jpg
@@ -18,33 +18,35 @@ I found post-its on screens with 3 steps: first `add`, second `commit`, third `p
 
 ![](/img/cards/posts/how-to-teach-Git/post-it.png)
 
-They didn't know the reason why those steps. They only knew that they should follow them in order not to get into trouble. However, problems happened frequently, so I decided to prepare a workshop about Git.
+They didn't know the reason for those steps. They only knew that they should follow them in order not to get into trouble. However, problems happened frequently, so I decided to prepare a workshop about Git.
 
 ## The idea
 
-I love to have maps in my mind. I don't write "mind maps", because they are a well-known type of diagrams. Now I'm talking about having frames, structures or any kind of graphical representation in the mind. For example, I started learning addition by imagining dice in my mind.
+I love to have maps in my mind. I don't write "mind maps" because they are a well-known type of diagrams. Now I'm talking about having frames, structures or any kind of graphical representation in the mind. For example, I started learning addition by imagining dice in my mind.
 
-So I prepared some drawings. It's not necessary to be able to see the drawings to understand this post. I include an explanation for each of them, because of my awareness with accessibility.
+So I prepared some drawings. It's not necessary to be able to see the drawings to understand this post. I include an explanation for each of them because of my awareness of accessibility.
 
-Furthermore, in this case, it's very important to teach the vocabulary. Otherwise they won't understand the messages from Git. The drawings are a good way to introduce them that vocabulary.
+Furthermore, in this case, it's very important to teach the vocabulary. Otherwise, they won't understand the Git messages. The drawings are a good way to introduce them to that vocabulary.
 
 ## A distributed version control system
 
 ![](/img/cards/posts/how-to-teach-Git/general-drawing.png)
 
-The general drawing contains 4 areas distributed as follows:
-* The development environment with:
-    * Working directory
-    * Staging area or index
-    * Local repository
-* A server with:
-    * Remote repository
+The general drawing contains 4 areas distributed as follows.
+
+A **development environment** with:
+* Working directory
+* Staging area or index
+* Local repository
+
+A **server** with:
+* Remote repository
 
 At that time, you can explain the benefits of a distributed version control system.
 
 ## Cloning a repository
 
-![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/clone.png)
+![](/img/cards/posts/how-to-teach-Git/clone.png)
 
 When cloning a repository, the data from the remote repository travel to 2 areas:
 * Working directory
@@ -52,54 +54,57 @@ When cloning a repository, the data from the remote repository travel to 2 areas
 
 ## Making changes in the working directory
 
-![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/tracked-untracked.png)
+![](/img/cards/posts/how-to-teach-Git/tracked-untracked.png)
 
 There are 2 types of files in the working directory:
 
-* **Tracked**: files that Git knows about.
-* **Untracked**: files that have still not been added, so Git doesn't know about.
+* **Tracked**: Files that are known by Git.
+* **Untracked**: Files that have not yet been added, so they aren't known by Git.
 
 ## Updating the remote repository
 
-![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/add-commit-push.png)
+![](/img/cards/posts/how-to-teach-Git/add-commit-push.png)
 
-As changes are ready in the **working directory**, they must be added in the **staging area**. 
+As soon as changes are ready in the **working directory**, they must be added in the **staging area**. 
 
 When there is a set of changes with a single purpose in the **staging area**, it's the time to create a commit with a message about that purpose in the **local repository**.
 
-When there are one or several commits in the **local repository** ready to be shared with the rest of the world, they must be pushed to the **remote repository**.
+When there is one or several commits in the **local repository** that are ready to be shared with the rest of the world, they must be pushed to the **remote repository**.
 
 At that time, you can talk about the different states of a file in the development environment: **modified**, **staged** and **committed**.
 
-![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/states.png)
+![](/img/cards/posts/how-to-teach-Git/states.png)
 
 Furthermore, you can explain:
-* how to show the changes of a file in the **working directory**: `git diff`
-* how to show the changes of a file in the **staging area**: `git diff --staged`
-* how a file can be changed in the **working directory** after being added to the **staging area**
+* How to show the changes in the **working directory**: `git diff`.
+* How to show the changes in the **staging area**: `git diff --staged`.
+* How to show the changes in the **working directory** and the **staging area**: `git diff HEAD`.
+* How a file can be changed in the **working directory** after being added to the **staging area**.
 * etc.
 
 ## Updating the development environment
 
 ### Fetching
 
-![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/fetch.png)
+![](/img/cards/posts/how-to-teach-Git/fetch.png)
 
 When executing `git fetch`, the data from **remote repository** only travel to the **local repository**.
 
 ### Pulling
 
-![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/pull.png)
+![](/img/cards/posts/how-to-teach-Git/pull.png)
 
-When executing `git pull`, the data from **remote repository** travel to 2 areas:
-* To **local repository**: `fetch`
-* To **working directory**: `merge`
+When executing `git pull`, the data from **remote repository** travel to two areas:
+* To **local repository**: `fetch`.
+* To **working directory**: `merge`.
 
-If you take care the commit history, consider the use of `git pull --rebase`. 
+If you take care of the commit history, consider the use of `git pull --rebase`.
+
 Instead of `fetch + merge`, it consists of `fetch + rebase`. 
+
 Your local commits will be replayed and you won't see the known _diamond shape_ in commit history. 
 
-![](https://raw.githubusercontent.com/rachelcarmena/how-to-teach/master/git/pull-rebase.png)
+![](/img/cards/posts/how-to-teach-Git/pull-rebase.png)
 
 ## Next steps
 
@@ -134,7 +139,7 @@ Resources from [comments at Hacker News](https://news.ycombinator.com/item?id=18
 * [Git Immersion](http://gitimmersion.com)
 * [Udacity: How to Use Git and GitHub](https://eu.udacity.com/course/how-to-use-git-and-github--ud775#)
 
-After reading more [comments at Reddit](https://www.reddit.com/r/programming/comments/agko6r/how_to_teach_git/), I think that a more accurate title for this post would be **An idea to teach Git**, because it's only an idea that appeared in my head when learning Git by myself a few years ago with [Pro Git book](https://git-scm.com/book/en). This post is not a complete guide, only a starting point for trainers. I'm sure all of these resources will be very useful as well. Thanks!
+After reading more [comments at Reddit](https://www.reddit.com/r/programming/comments/agko6r/how_to_teach_git/), I think that a more accurate title for this post would be **An idea to teach Git**, because it's only an idea that appeared in my mind when learning Git by myself a few years ago with [Pro Git book](https://git-scm.com/book/en). This post is not a complete guide, only a starting point for trainers. I'm sure all of these resources will be very useful as well. Thanks!
 
 And thanks [Stuart Maxwell](https://stuartm.com) who shared this post at Hacker News and [u/cryptoz](https://www.reddit.com/user/cryptoz) who shared it at Reddit!
 
