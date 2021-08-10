@@ -4,7 +4,7 @@ asset-type: post
 title: "Be open-minded, my friend"
 description: A journey across different technical subjects
 date: 2018-07-05 12:00:00 +00:00
-last_modified_at: 2019-07-31 12:00:00 +00:00
+last_modified_at: 2021-08-10 12:00:00 +00:00
 category: talks
 image:
  src: /img/cards/posts/be-open-minded-my-friend/cover.jpg
@@ -387,3 +387,7 @@ As [Kevlin Henney](https://twitter.com/KevlinHenney) says in _97 Things Every Pr
 As [Staffan Nöteberg](https://twitter.com/staffannoteberg) says in _Pomodoro Technique Illustrated_:
 
 > Sometimes you come to a point where the emerging task is more of a search-and-investigate nature, not a normal constructive collaboration task. Then it could be easier to split up for a Pomodoro. “I look for this, you look for that, and then we meet again after the next Pomodoro break.” (...) just to get two independent views on a problem. We go apart and do two parallel and individual brainstorms. When the clock rings and after a small break, we join up and explain our new results to each other.
+
+As [V. Anton Spraul](http://vantonspraul.com/) says in _Think Like a Programmer: An Introduction to Creative Problem Solving_:
+
+> Thinking about the problem may be as productive, or in some cases more productive, than thinking about the solution.
