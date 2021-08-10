@@ -4,7 +4,7 @@ asset-type: post
 title: DO's and DON'Ts when writing tests
 description: Some tips
 date: 2019-04-26 10:00:00 +00:00
-last_modified_at: 2021-07-16 10:00:00 +00:00
+last_modified_at: 2021-08-10 10:00:00 +00:00
 image:
     src: /img/cards/posts/dos-and-donts-when-writing-tests/cover.jpg
 ---
@@ -126,6 +126,27 @@ Sometimes it's possible to describe the properties of the behaviour under test: 
 
 On the other hand, if some input data isn't relevant for a test, it can be named like `any...`.
 
+### Check that the test fails under the wrong circumstances
+
+My cousin [Francisco Moreno](https://twitter.com/morvader) usually says:
+
+> Don't trust a test if you didn't see it fail.
+
+How could we make a passing test fail?
+
+* Changing the input or the expected output.
+* Changing the related production code (similar to mutation testing).
+
+Failing tests during the red phase of TDD might not be included in that list: it's about making a passing test fail.
+
+More details about my cousin's advice (in Spanish):
+
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">A mí, la técnica que mejor me funciona es seguir estos pasos:<br>1- Escribe un test que funcione<br>2- Cambia el aserto y aseguráte de que falla<br>3- Déjalo como estaba <a href="https://t.co/EWhRCailiy">pic.twitter.com/EWhRCailiy</a></p>&mdash; Francisco Moreno (@morvader) <a href="https://twitter.com/morvader/status/1268600288157544450?ref_src=twsrc%5Etfw">June 4, 2020</a></blockquote>
+
+### Don't mix behaviours in the same test
+
+Every test should have just one reason to fail.
+
 ## Friendly reminder
 
 As **Dani Latorre** says (in English below):
@@ -162,10 +183,11 @@ and they gave this piece of advice, among others:
 
 ## Recommended resources
 
-* My post [Duplication, you're welcome](/2018/02/27/duplication-you-are-welcome.html), where I explained the experience included in the section **Think twice before removing duplicated test code**.
-* [XUnit Test Patterns](http://xunitpatterns.com)
-* [Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com) by **Steve Freeman** and **Nat Pryce**
-* [Fifty quick ideas to improve your tests](https://fiftyquickideas.com/fifty-quick-ideas-to-improve-your-tests/) by **Gojko Adzic**, **David Evans** and **Tom Roden**
+* [Post: Duplication, you're welcome](/2018/02/27/duplication-you-are-welcome.html), where I explained the experience included in the section **Think twice before removing duplicated test code**.
+* [Post: 99% code coverage - Do we have a good safety net to change this legacy code?](/2017/09/01/do-we-have-a-good-safety-net-to-change-this-legacy-code.html)
+* [Book: XUnit Test Patterns](http://xunitpatterns.com)
+* [Book: Growing Object-Oriented Software Guided by Tests](http://www.growing-object-oriented-software.com) by **Steve Freeman** and **Nat Pryce**
+* [Book: Fifty quick ideas to improve your tests](https://fiftyquickideas.com/fifty-quick-ideas-to-improve-your-tests/) by **Gojko Adzic**, **David Evans** and **Tom Roden**
 * An example about tests in less than 2 minutes (from 11:20 to 13:05): [Why everyone should care about TDD?](https://www.youtube.com/watch?v=04x0stqD9f0) by **Steve Freeman**
-* [Unit Tests as Specifications - Effective Ways to Think About TDD](https://www.youtube.com/watch?v=3oIe8JPloaw) by **David Bernstein**, a talk with a very good content, reflections and tips for tests, although it appears an example about testing a constructor and I think that example is coupled to the implementation rather than a specification or a behaviour.
+* [Talk: Unit Tests as Specifications - Effective Ways to Think About TDD](https://www.youtube.com/watch?v=3oIe8JPloaw) by **David Bernstein**, a talk with a very good content, reflections and tips for tests, although it appears an example about testing a constructor and I think that example is coupled to the implementation rather than a specification or a behaviour.
 
