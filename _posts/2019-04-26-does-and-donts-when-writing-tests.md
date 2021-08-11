@@ -4,18 +4,14 @@ asset-type: post
 title: DO's and DON'Ts when writing tests
 description: Some tips
 date: 2019-04-26 10:00:00 +00:00
-last_modified_at: 2021-08-10 10:00:00 +00:00
+last_modified_at: 2021-08-11 10:00:00 +00:00
 image:
     src: /img/cards/posts/dos-and-donts-when-writing-tests/cover.jpg
 ---
 
-## Introduction
-
 This post includes some small tips from my experience when writing tests. I'll update it as soon as I have more things to share about it.
 
-## Some tips
-
-### Don't mix production code and test code
+## Don't mix production code and test code
 
 A long time ago, I reviewed a module which was responsible for receiving messages and doing some actions afterwards.
 
@@ -27,7 +23,7 @@ Another case: adding objects comparison capabilities in production code which ar
 
 So, don't add extra code in production code if it's only used by tests.
 
-### Decouple production code from test code
+## Decouple production code from test code
 
 There are software development teams following this rule: one test class per production class (or one test file per production file or something similar depending on the programming language). And I've seen these effects:
 
@@ -56,7 +52,7 @@ As [Kent C. Dodds](https://twitter.com/kentcdodds) says:
 
 > The more your tests resemble **the way your software is used**, the more confidence they can give you.
 
-### Listen to test code
+## Listen to test code
 
 Just as it's useful to listen to production code, it's also useful to listen to test code.
 
@@ -66,7 +62,7 @@ If we are facing difficulties when writing a test, it's a signal that should be 
 
 Another case (or smell): too much logic or implementation details in tests. What's being tested? How can the test be broken?
 
-### Think twice before removing duplicated test code
+## Think twice before removing duplicated test code
 
 A long time ago, I was reviewing a test class with 4 extracted parameterized methods (for 4 different types of expectations) and 6 extracted methods (for 6 different JSON files). I sat with the author of that class and we applied inline method refactoring (in other words, replacing method calls by the corresponding source code). After that, we realized that the test class was more readable and understandable without those 10 additional methods, despite having duplicated source code.
 
@@ -74,13 +70,13 @@ As it's said in [Fifty quick ideas to improve your tests](https://fiftyquickidea
 
 > It's far better to optimise tests for reading than for writing (...) if you need to compromise either ease of maintenance or readability, keep readability.
 
-### Consider test code as important as production code
+## Consider test code as important as production code
 
 All the source code should be cared or reviewed when refactoring, not only production code.
 
 Test code is part of the documentation of your project.
 
-### Communicate through proper test names
+## Communicate through proper test names
 
 I find it easier to write proper test names when following this piece of advice by [Sandro Mancuso](https://twitter.com/sandromancuso): invert the order of writing [test parts](http://wiki.c2.com/?ArrangeActAssert) when starting with the assertion. 
 
@@ -96,13 +92,13 @@ They also include an interesting recommendation about test names:
 
 > Avoid using conjunctions (and, or, not) in test names. Conjunctions are a sign the test is trying to do too much, or lacks focus.
 
-### Consider the possibility of extending the testing framework
+## Consider the possibility of extending the testing framework
 
 If the testing framework doesn't include a matcher which would be interesting for you, consider the possibility of creating a custom matcher to fit your testing needs.
 
 For example, I created a [custom Hamcrest Matcher for Golden Master Refactoring](https://github.com/rachelcarmena/legacyutils/blob/custom-hamcrest-matcher/src/test/java/com/gmaur/legacycode/legacyutils/output/StringIsEqualsAsPreviousInMatcher.java), although now I'd recommend the use of [ApprovalTests](https://github.com/approvals) to get the same thing ;)
 
-### Don't check only a few properties when comparing objects
+## Don't check only a few properties when comparing objects
 
 I've seen problems because of comparing only 1 or 2 properties from objects with more properties.
 
@@ -110,7 +106,7 @@ Testing frameworks include specific assertions to facilitate this kind of compar
 
 So, check that objects are fully compared.
 
-### Check the failure messages
+## Check the failure messages
 
 I remember that day in which I spent more than fifteen minutes trying to understand an error raised by the testing framework. Finally, I realized that the expected and actual results were swapped in the assertion, so the message didn't make sense.
 
@@ -118,7 +114,7 @@ Although some testing frameworks have been improved to avoid these mistakes, tak
 
 Check that the tests will raise an understable message if they fail: what's failing, the expected output and the actual output.
 
-### Choose good and meaningful inputs for the tests
+## Choose good and meaningful inputs for the tests
 
 The inputs of the tests are not only important to check possible edge cases but also to show the tested behaviour.
 
@@ -126,7 +122,7 @@ Sometimes it's possible to describe the properties of the behaviour under test: 
 
 On the other hand, if some input data isn't relevant for a test, it can be named like `any...`.
 
-### Check that the test fails under the wrong circumstances
+## Check that the test fails under the wrong circumstances
 
 My cousin [Francisco Moreno](https://twitter.com/morvader) usually says:
 
@@ -143,9 +139,17 @@ More details about my cousin's advice (in Spanish):
 
 <blockquote class="twitter-tweet"><p lang="es" dir="ltr">A mí, la técnica que mejor me funciona es seguir estos pasos:<br>1- Escribe un test que funcione<br>2- Cambia el aserto y aseguráte de que falla<br>3- Déjalo como estaba <a href="https://t.co/EWhRCailiy">pic.twitter.com/EWhRCailiy</a></p>&mdash; Francisco Moreno (@morvader) <a href="https://twitter.com/morvader/status/1268600288157544450?ref_src=twsrc%5Etfw">June 4, 2020</a></blockquote>
 
-### Don't mix behaviours in the same test
+## Don't mix behaviours in the same test
 
 Every test should have just one reason to fail.
+
+## Be careful with the false sense of security
+
+As Dijkstra said in [The Humble Programmer](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html):
+
+> (...) program testing can be a very effective way to show the presence of bugs, but is hopelessly inadequate for showing their absence.
+
+On the other hand, a high value of code coverage isn't a guarantee of the testing quality. I talked about it in [99% code coverage - Do we have a good safety net to change this legacy code?](/2017/09/01/do-we-have-a-good-safety-net-to-change-this-legacy-code.html).
 
 ## Friendly reminder
 
@@ -183,6 +187,7 @@ and they gave this piece of advice, among others:
 
 ## Recommended resources
 
+* [Turing lecture: The Humble Programmer](https://www.cs.utexas.edu/~EWD/transcriptions/EWD03xx/EWD340.html)
 * [Post: Duplication, you're welcome](/2018/02/27/duplication-you-are-welcome.html), where I explained the experience included in the section **Think twice before removing duplicated test code**.
 * [Post: 99% code coverage - Do we have a good safety net to change this legacy code?](/2017/09/01/do-we-have-a-good-safety-net-to-change-this-legacy-code.html)
 * [Book: XUnit Test Patterns](http://xunitpatterns.com)
