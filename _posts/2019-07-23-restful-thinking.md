@@ -4,6 +4,7 @@ asset-type: post
 title: RESTful thinking
 description: Do the current called RESTful services really use the power of the Web architecture? 
 date: 2019-07-23 10:00:00 +00:00
+last_modified_at: 2021-09-05 12:00:00 +00:00
 category: coding
 image:
     src: /img/cards/posts/restful-thinking/cover.jpg
@@ -51,9 +52,11 @@ This characteristic promotes the simplicity, low coupling and scalability.
 
 I mentioned **resources**. What are they?
 
-As Roy Thomas Fielding wrote:
+According to Roy Thomas Fielding:
 
 > Any information that can be named can be a resource: a document or image, a temporal service (e.g. "today's weather in Los Angeles"), a collection of other resources, a non-virtual object (e.g. a person), and so on.
+
+Mark Massé differentiates four resource archetypes: document (singular noun), collection (plural noun), store (plural noun) and controller (verb or verb phrase in lower camel case). The last one would be used for actions that don't correspond with the known HTTP methods.
 
 ### Intuitive URIs
 
@@ -64,10 +67,10 @@ Sometimes it's interesting to pursue the opposite for security reasons. In that 
 On the other hand, URIs can be specified through templates as follows:
 
 ```
-http://my-card-game.com/game/{game_id}
+http://my-card-game.com/decks/{deck-id}
 ```
 
-Where `{game_id}` can be replaced by a game identifier.
+Where `{deck-id}` can be replaced by a deck identifier.
 
 It's an easy way to understand, validate or create URIs.
 
@@ -86,10 +89,10 @@ Following the example, it'd be used, respectively:
 
 Resources can be manipulated through HTTP methods as actions.
 
-We are responsible to keep the semantics of these HTTP methods according to [the specification](#resources):
+We are responsible to keep the semantics of these HTTP methods according to the specification:
 
-* **GET** for retrieving the details of a resource. 
-* **HEAD** when the consumer only wants to receive the HTTP headers.
+* **GET** for retrieving the details of a resource. **The request message doesn't include a body.** Use the query component of the URI (`?`) to include filters.
+* **HEAD** when the consumer only wants to receive the HTTP headers. **The request message doesn't include a body.**
 * **OPTIONS** for checking which HTTP methods a resource supports. 
 * **DELETE** for deleting a resource.
 * **PUT** for **creating** a resource or **updating** the state of a resource.
@@ -100,7 +103,7 @@ As Sam Ruby and Leonard Richardson wrote:
 
 > POST is commonly used to create subordinate resources: resources that exist in relation to some other “parent” resource.
 
-Why not to use PUT to create those resources?
+Why not use PUT to create those resources?
 
 > The difference between PUT and POST is this: the client uses PUT when it’s in charge of deciding which URI the new resource should have. The client uses POST when the _server_ is in charge of deciding which URI the new resource should have. (...) The POST method is a way of creating a new resource without the client having to know its exact URI. In most cases the client only needs to know the URI of a “parent” or “factory” resource.
 
@@ -119,7 +122,7 @@ For example, Amazon S3 API:
 <strong>Note</strong>: There is a common misunderstanding about PUT and POST. In the wrong way, it's said: PUT for updating and POST for creating. Nowadays, when remembering that I made the same mistake, I don't understand the reason why it's easy to embrace that belief. There isn't a clear relationship between the meaning of the words "put", "update", "post" and "create". Maybe our mind deceives us because of <strong>pu</strong>t and <strong>up</strong>date ;)
 </div>
 
-On the other hand, it's our responsibility to meet the method properties according to [the specification](#resources):
+On the other hand, it's our responsibility to meet the HTTP method properties according to the specification:
 
 * **Safe**: If the defined semantic is essentially read-only and a state change on the server is not expected. The GET, HEAD and OPTIONS methods are safe.
 * **Idempotent**: If the intended effect on the server of multiple identical requests is the same as the effect for a single request. The PUT, DELETE and safe request methods are idempotent.
@@ -137,17 +140,18 @@ Let's see some of them.
 
 **Successful operations (2xx status codes):**
 
-* **200 OK**
-* **201 Created**
+* **200 OK**: Nonspecific success.
+* **201 Created**: Successful resource creation.
 * **202 Accepted**: It's used for asynchronous operations. The server accepts the request and provides an URI to get the result later.
-* **204 No Content**: When the server has fulfilled the request but does not need to return a payload (PUT, POST o GET with an empty representation). It's also used to indicate a successful response for a DELETE request. If the response must indicate the final state of the deleted resource: **200 OK** and a full payload with the resource representation.
+* **204 No Content**: When the server has fulfilled the request but does not need to return a payload (PUT, POST or GET with an empty representation). It's also used to indicate a successful response for a DELETE request. If the response must indicate the final state of the deleted resource: **200 OK** and a full payload with the resource representation.
 
 **Errors on the client side (4xx status codes):**
 
 * **400 Bad Request**: It's used when returning the payload with the same received data plus a comment about the reason why it's a bad request.
-* **401 Unauthorized**
+* **401 Unauthorized**: If there is an issue with the client's credentials (wrong or missing).
+* **403 Forbidden**: When the access is not allowed regardless of the right credentials.
 * **404 Not Found**: When the client requests a resource that doesn't exist. It's also used in some responses in order not to give too many details to consumers when thinking about security.
-* **405 Method Not Allowed**: It's used with the `Allow` header in order to know which HTTP action or actions are allowed.
+* **405 Method Not Allowed**: The response must include the `Allow` header in order to know which HTTP action or actions are allowed.
 * **409 Conflict**: For example, a requested update cannot be executed.
 * **411 Length Required**: If `Content-Length` header in a request is missing, the service cannot determine if it's a huge payload to cause a DoS attack.
 
@@ -160,7 +164,7 @@ HTTP status codes are useful to manage situations as a change of a resource URI.
 
 ### Entity tag value for managing the changes of the state of a resource over its lifetime
 
-The server can associate a string token with a certain state of a resource (like a version number): an entity tag value which will appear in `ETag` header of a response.
+The server can associate a string token with a certain state of a resource (like a version number): an entity tag value which will appear in the `ETag` header of a response.
 
 Then, the client can indicate that entity tag value in a request header to condition the request to a particular state of the resource.
 
@@ -222,21 +226,21 @@ If we are using a JSON representation, an example of link could follow this form
 }
 ```
  
-The URI is together another link, `rel` attribute, where there is information about the meaning or purpose of the link.
+The URI is together with another link, `rel` attribute, where there is information about the meaning or purpose of the link.
 
 How could that information be understood by machines? How could computer-to-computer interactions be possible without the need of a human interaction to interpret and to consume it?
 
 That's one of the goals of Semantic Web Technology, machine learning, machine-processable formats, directed labeled graphs, ontontologies to represent knowledge, etc.
 
 <div class="note">
-<strong>Note</strong>: Links can also be used to split the resource representation in different parts. The decisions about which data to show in the representation and which data will be obtained when following a link are based on the size of the payload, performance and cacheability, among others.
+<strong>Note</strong>: Links can also be used to split the resource representation into different parts. The decisions about which data to show in the representation and which data will be obtained when following a link are based on the size of the payload, performance and cacheability, among others.
 </div>
 
 ## Other things
 
 ### Security
 
-HTTPS provides **confidentiality** and **integrity** on transport layer. Besides that, we need authentication and authorization management:
+HTTPS provides **confidentiality** and **integrity** on the transport layer. Besides that, we need authentication and authorization management:
 
 * **Authentication** to identify the consumer (for example, OpenID).
 * **Authorization** to control what a consumer can do (for example, OAuth).
@@ -257,6 +261,10 @@ I remember when my old colleague [Erik Torres](https://twitter.com/ertorser) tal
 
 Lots of thoughts...
 
+<div class="note">
+<strong>Update</strong>: I think my reflection here addressed a different personal concern with the lack of constraints. This law is useful for robustness when preventing breaking changes.
+</div>
+
 ## Resources
 
 ### Specifications
@@ -268,29 +276,34 @@ Lots of thoughts...
 
 ### API documentation
 
-* [OpenAPI Specification (OAS)](https://github.com/OAI/OpenAPI-Specification)
+* [OpenAPI Specification (OAS) based on the Swagger 2.0 specification](https://www.openapis.org)
 * [RESTful API Modeling Language (RAML)](https://raml.org)
 
 ### Initiatives
 
-* [OpenAPI Initiative](https://www.openapis.org)
-* [API Directory](https://www.programmableweb.com/category/all/apis)
 * [API Style Book](http://apistylebook.com)
+* [Richardson Maturity Model (RMM)](https://www.crummy.com/writing/speaking/2008-QCon/act3.html)
+* [API Directory](https://www.programmableweb.com/category/all/apis)
 * [The RESTful cookbook](http://restcookbook.com)
 
 ### Tools
 
-* [OpenAPI Specification (OAS) and Swagger](https://swagger.io/solutions/getting-started-with-oas/)
+* [OpenAPI Tools](https://openapi.tools/)
 * [Using curl to automate HTTP jobs](https://curl.haxx.se/docs/httpscripting.html)
 * [Postman API Development Environment](https://www.getpostman.com)
 * [Pact — Consumer-driven contract testing Tool](https://docs.pact.io)
 * [Dredd — HTTP API Testing Framework](https://dredd.org)
 
+<div class="note">
+<strong>Note</strong>: The use of API or Web API doesn't refer only to those which conform to the REST architectural style (RESTful APIs).
+</div>
+
 ## Further reading
 
-* [Website: Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com)
 * [Paper: Architectural Styles and the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm) by Roy Thomas Fielding
-* [Slides: What's the origin of REST architectural style?](https://www.slideshare.net/raquelmorenocarmena/whats-the-origin-of-rest-architectural-style) by me
+* [Book: Enterprise Integration Patterns](https://www.enterpriseintegrationpatterns.com) by Gregor Hohpe and Bobby Woolf
 * [Book: RESTful Web Services](http://shop.oreilly.com/product/9780596529260.do) by Sam Ruby and Leonard Richardson
 * [Book: REST in practice: Hypermedia and Systems Architecture](http://shop.oreilly.com/product/9780596805838.do) by Jim Webber, Savas Parastatidis and Ian Robinson
-
+* [Book: REST API Design Rulebook](https://www.oreilly.com/library/view/rest-api-design/9781449317904/) by Mark Massé
+* [Slides: What's the origin of REST architectural style?](https://www.slideshare.net/raquelmorenocarmena/whats-the-origin-of-rest-architectural-style)
+* [Post: Confused am I](/2021/08/10/confused-am-i.html)

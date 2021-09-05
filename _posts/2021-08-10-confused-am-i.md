@@ -4,6 +4,7 @@ asset-type: post
 title: Confused am I
 description: Things that can be prone to misunderstandings
 date: 2021-08-10 10:00:00 +00:00
+last_modified_at: 2021-09-05 12:00:00 +00:00
 category: [coding,reflections]
 image:
     src: /img/cards/posts/confused-am-i/cover.jpg
@@ -11,7 +12,7 @@ image:
 
 Some things can be prone to misunderstandings in this profession.
 
-I think I didn't realize until teaching them or receiving a question.
+I think I didn't realize about some of them until mentoring or receiving a question.
 
 ## Continuous delivery and continuous deployment
 
@@ -87,6 +88,40 @@ I like the second one when the number of bits is added together `int`.
 Let's see Rust: `i8`, `u8`, `i16`, `u16`, `i32`, `u32`, `i64`, `u64`, `i128`, and `u128`. I love it! There is no room for error. More details in [Rust: Integer types](https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types).
 
 It's also clear with Go: `int`, `int8`, `int16`, `int32`, `int64`, `uint`, `uint8`, `uint16`, `uint32`, and `uint64`. And `byte` is provided as an alias for `uint8`.
+
+## 401 and 403
+
+Let's see these HTTP status code that are used to represent errors on the client side:
+
+* 401 Unauthorized
+* 403 Forbidden
+
+According to [Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://datatracker.ietf.org/doc/html/rfc7235):
+
+> The 401 (Unauthorized) status code indicates that the request has not been applied because it lacks valid authentication credentials for the target resource.
+
+And [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://datatracker.ietf.org/doc/html/rfc7231) provides the description for the second one:
+
+> The 403 (Forbidden) status code indicates that the server understood the request but refuses to authorize it.
+
+The first one is related to authentication and the second one to authorization.
+
+So I would have preferred **401 Failed Authentication** and **403 Unauthorized**.
+
+## 406 and 415
+
+Another possible misunderstanding with HTTP status codes on the client side:
+
+* 406 Not Acceptable
+* 415 Unsupported Media Type
+
+According to [Hypertext Transfer Protocol (HTTP/1.1): Semantics and Content](https://datatracker.ietf.org/doc/html/rfc7231):
+
+> The 406 (Not Acceptable) status code indicates that the target resource does not have a current representation that would be acceptable to the user agent, according to the proactive negotiation header fields received in the request (Section 5.3), and the server is unwilling to supply a default representation.
+
+> The 415 (Unsupported Media Type) status code indicates that the origin server is refusing to service the request because the payload is in a format not supported by this method on the target resource.
+
+I would have preferred **406 Unsupported Requested Media Type** and **415 Unprocessable Request**.
 
 ## PUT and POST
 

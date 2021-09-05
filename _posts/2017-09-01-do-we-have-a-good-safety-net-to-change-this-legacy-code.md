@@ -5,6 +5,7 @@ title: '99% code coverage - Do we have a good safety net to change this legacy c
 cover-title: '99% code coverage'
 description: 'Do we have a good safety net to change this legacy code?'
 date: 2017-09-01 12:00:00 +00:00
+last_modified_at: 2021-09-05 12:00:00 +00:00
 image:
   src: /img/cards/posts/mutation-testing/cover.jpg
 ---
@@ -110,9 +111,12 @@ Regarding _verification_, [`refEq`](https://static.javadoc.io/org.mockito/mockit
 
 Take a look at [_Code quality cannot be measured_](https://codurance.com/2014/12/14/quality-cannot-be-measured) by [**Sandro Mancuso**](https://codurance.com/publications/author/sandro-mancuso).
 
+<div class="note">
+    <strong>Update</strong>: Mutation testing could be seen as a type of <a href="https://en.wikipedia.org/wiki/Fault_injection">fault injection</a>. Faults are injected into the source code to know how the tests respond. Faults could be injected into infrastructure, communications, integrations, etc. (also known as <a href="https://en.wikipedia.org/wiki/Chaos_engineering">chaos engineering</a>).
+</div>
+
 ## Acknowledgments
 
 My special thanks go to [**Halima Koundi**](https://codurance.com/publications/author/halima-koundi), my very good colleague, for her help in this post.
 
 [I published this article at Codurance website](https://codurance.com/2017/09/01/do-we-have-a-good-safety-net-to-change-this-legacy-code/).
-

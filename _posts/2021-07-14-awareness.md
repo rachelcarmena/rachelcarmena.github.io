@@ -4,7 +4,7 @@ asset-type: post
 title: Awareness
 description: List of resources
 date: 2021-07-14 10:00:00 +00:00
-last_modified_at: 2021-07-21 10:00:00 +00:00
+last_modified_at: 2021-09-05 12:00:00 +00:00
 category: reading
 image:
     src: /img/cards/posts/awareness/cover.jpg
@@ -69,6 +69,12 @@ Let's see some books that helped me in this profession.
 * [Don't make me think](https://www.goodreads.com/book/show/18197267-don-t-make-me-think-revisited) by Steve Krug
 
 * [Pretotype it. Make sure you are building the right it before you build it right](https://www.goodreads.com/book/show/13252534-pretotype-it) by Alberto Savoia
+
+## When releasing
+
+From my point of view, an interesting book for any technical profile in this profession:
+
+* [Release It!](https://pragprog.com/titles/mnee2/release-it-second-edition/) by Michael Nygard
 
 ## When working in a team
 
