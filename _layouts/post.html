@@ -12,18 +12,18 @@ layout: default
     {{ content }}
 </div>
 <div class="pagination">
-    <span class="previous_post">
+    <span class="next_post">
         {% if page.next %}
-            <a href="{{ page.next.url }}">&laquo; {{ page.next.title }}</a>
+            <a href="{{ page.next.url }}" aria-label="Next post: {{ page.next.title }}">&laquo; {{ page.next.title }}</a>
         {% else %}
-            <a href="/">&laquo; Home page</a>
+            <a href="/" aria-label="Go to home page">&laquo; Home page</a>
         {% endif %}
     </span>
-    <span class="next_post">
+    <span class="previous_post">
         {% if page.previous %}
-            <a href="{{ page.previous.url }}">{{ page.previous.title }} &raquo;</a>
+            <a href="{{ page.previous.url }}" aria-label="Previous post: {{ page.previous.title }}">{{ page.previous.title }} &raquo;</a>
         {% else %}
-            <a href="/">Home page &raquo;</a>
+            <a href="/" aria-label="Go to home page">Home page &raquo;</a>
         {% endif %}
     </span>
 </div>
