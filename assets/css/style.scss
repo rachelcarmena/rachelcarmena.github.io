@@ -36,7 +36,7 @@ header, footer {
 
 #main_content {
     max-width: 57em;
-    padding: 2.5em 1em;
+    padding: 1em 1em 2.5em 1em;
 }
 
 #footer_wrap {
@@ -197,17 +197,18 @@ img {
 }
 
 #post_image {
-    max-height: 260px;
+    max-height: 140px;
     width: 100%;
     object-fit: cover;
     object-position: 0 25%;
 }
 
 #under_cover {
-    padding: 0.6em 1em;
+    padding-top: 0.4em;
+    padding-left: 1em;
     background-color: #f0f0ff;
-    margin: 0.4em 0 2em 0;
-    font-size: 0.9em;
+    margin: 0.2em 0 2em 0;
+    font-size: 0.8em;
 }
 
 .js-line-number {
