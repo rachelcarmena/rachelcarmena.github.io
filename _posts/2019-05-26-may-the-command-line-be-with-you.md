@@ -4,7 +4,7 @@ asset-type: post
 title: "May the 'command line' be with you"
 description: Saving time when avoiding manual tasks
 date: 2019-05-26 12:00:00 +00:00
-last_modified_at: 2019-07-01 12:00:00 +00:00
+last_modified_at: 2021-09-12 12:00:00 +00:00
 category: [coding,tools]
 image:
     src: /img/cards/posts/may-the-command-line-be-with-you/cover.jpg
@@ -118,12 +118,17 @@ $ sed -i '/^\s*$/d' file.txt
 # Format for replacing a pattern for another one:
 # sed -i 's/pattern1/pattern2/g' FILE
 
-# Replace 'foo' by 'bar' in a file
+# Replace 'foo' by 'bar' in file.txt
 $ sed -i 's/foo/bar/g' file.txt
+
+# Replace 'foo' by 'bar' in file.txt from line 3 to line 7
+$ sed -i '3,7 s/foo/bar/g' file.txt
 
 # Replace 'foo' by 'bar' in all the TXT files in a second level
 $ sed -i 's/foo/bar/g' **/*.txt
 ```
+
+Without the final `g`, it would just replace the first occurrence for every line.
 
 For doing other types of massive replacements, take a look at the examples with `find ... -exec ...` or _Renaming files with the same pattern_ section.
 
@@ -138,8 +143,11 @@ You only need the emails which appear in the second column:
 # f = field (second field in this case)
 $ cut -d: -f2 my_file.csv
 
-# Or saving the output in a file
-$ cut -d: -f2 my_file.csv > second_column.txt
+# Skip lines without the delimiter
+$ cut -d: -f2 -s my_file.csv
+
+# Save the output into a file
+$ cut -d: -f2 -s my_file.csv > second_column.txt
 ``` 
 
 #### Looking at the end of a file
@@ -155,6 +163,13 @@ $ tail -n 20 file.txt
 
 # Get all the lines from the line number 20
 $ tail -n +20 file.txt
+```
+
+#### Adding line numbers
+
+```sh
+# Include line numbers for every line, using 2 columns and adding a whitespace afterwards
+$ nl -ba -w2 -s' ' file.txt
 ```
 
 ### File system
@@ -254,7 +269,7 @@ The `find` command can be expanded to execute a command for each file found:
 
 ```sh
 # Remove all the JPG files from the current directory
-#  {} is replaced by the name of the file found
+#  {} is replaced by the name of the found file
 #  ';' indicates the end of the value for the 'exec' option
 $ find . -name '*.jpg' -exec rm {} ';'
 ```
