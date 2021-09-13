@@ -15,39 +15,14 @@
     "url": "https://www.slideshare.net/raquelmorenocarmena/presentations"
   },
   {
-    "title": "Photo albums",
-    "image": "camera.svg",
-    "url": "https://www.flickr.com/photos/rachelcarmena/collections/72157690231747413/"
-  },
-  {
     "title": "YouTube profile",
     "image": "youtube.svg",
     "url": "https://www.youtube.com/channel/UCHPmRUkWp_sI4RpWd5X0nag/featured"
   },
   {
-    "title": "Meetup profile",
-    "image": "meetup.svg",
-    "url": "https://www.meetup.com/members/192375574"
-  },
-  {
-    "title": "Stack Overflow profile",
-    "image": "stackoverflow.svg",
-    "url": "https://stackoverflow.com/users/7298719/rachel-m-carmena"
-  },
-  {
-    "title": "Some contributions to Jenkins Community",
-    "image": "jenkins.svg",
-    "url": "https://issues.jenkins-ci.org/issues/?filter=15867"
-  },
-  {
-    "title": "Some contributions to Atlassian Community",
-    "image": "atlassian.svg",
-    "url": "https://community.atlassian.com/t5/user/v2/viewprofilepage/user-id/630548"
-  },
-  {
-    "title": "Instagram",
-    "image": "instagram.svg",
-    "url": "https://instagram.com/rachelcarmena"
+    "title": "Devtalk profile",
+    "image": "devtalk.svg",
+    "url": "https://forum.devtalk.com/u/rachelcarmena/activity"
   },
   {
     "title": "Mozilla profile",
@@ -55,9 +30,29 @@
     "url": "https://developer.mozilla.org/en-US/profiles/rachelcarmena"
   },
   {
+    "title": "Some contributions to Atlassian Community",
+    "image": "atlassian.svg",
+    "url": "https://community.atlassian.com/t5/user/v2/viewprofilepage/user-id/630548"
+  },
+  {
+    "title": "Some contributions to Jenkins Community",
+    "image": "jenkins.svg",
+    "url": "https://issues.jenkins-ci.org/issues/?filter=15867"
+  },
+  {
+    "title": "Stack Overflow profile",
+    "image": "stackoverflow.svg",
+    "url": "https://stackoverflow.com/users/7298719/rachel-m-carmena"
+  },
+  {
     "title": "Trello profile",
     "image": "trello.svg",
     "url": "https://trello.com/rachelmcarmena"
+  },
+  {
+    "title": "Meetup profile",
+    "image": "meetup.svg",
+    "url": "https://www.meetup.com/members/192375574"
   },
   {
     "title": "reddit profile",
@@ -75,13 +70,18 @@
     "url": "https://medium.com/@raquel.moreno.carmena"
   },
   {
+    "title": "Photo albums",
+    "image": "camera.svg",
+    "url": "https://www.flickr.com/photos/rachelcarmena/collections/72157690231747413/"
+  },
+  {
+    "title": "Instagram",
+    "image": "instagram.svg",
+    "url": "https://instagram.com/rachelcarmena"
+  },
+  {
     "title": "Personal space (Spanish)",
     "image": "clover.svg",
     "url": "/sigfredo"
-  },
-  {
-    "title": "Atom RSS feed",
-    "image": "rss.svg",
-    "url": "/feed.xml"
   }
 ]
