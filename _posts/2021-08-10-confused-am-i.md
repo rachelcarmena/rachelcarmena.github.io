@@ -4,7 +4,7 @@ asset-type: post
 title: Confused am I
 description: Things that can be prone to misunderstandings
 date: 2021-08-10 10:00:00 +00:00
-last_modified_at: 2021-09-12 12:00:00 +00:00
+last_modified_at: 2021-10-24 12:00:00 +00:00
 category: [coding,reflections]
 image:
     src: /img/cards/posts/confused-am-i/cover.jpg
@@ -134,8 +134,6 @@ fi
 
 ## int is not the only integer data type
 
-Both writing a good algorithm and choosing the most appropriate data types are really important when programming.
-
 If a programming language provides a data type named `int`, it can be thought as the only integer data type. I realized this when mentoring a friend.
 
 Let's see the integer data types for different programming languages.
@@ -164,6 +162,28 @@ I like the second one when the number of bits is added together `int`.
 Let's see Rust: `i8`, `u8`, `i16`, `u16`, `i32`, `u32`, `i64`, `u64`, `i128`, and `u128`. I love it! There is no room for error. More details in [Rust: Integer types](https://doc.rust-lang.org/book/ch03-02-data-types.html#integer-types).
 
 It's also clear with Go: `int`, `int8`, `int16`, `int32`, `int64`, `uint`, `uint8`, `uint16`, `uint32`, and `uint64`. And `byte` is provided as an alias for `uint8`.
+
+## Code Smell: Primitive obsession
+
+When I learned this code smell that appeared in [Refactoring](https://www.refactoring.com) book, I received an example of a function with several `String` parameters:
+
+- The code was "polluted" with the choice of `String` type for those cases. What if it was necessary to use a different type?
+- The compiler couldn't know if the arguments were being properly provided in a call. The meaning was just on the parameter names.
+- Those parameters had a related behavior that wasn't being encapsulated.
+
+The fix consisted on replacing `String` type with user-defined types for those parameters.
+
+However, the code smell is called **primitive obsession** and `String` is not a primitive type:
+
+> The String class is not technically a primitive data type, but considering the special support given to it by the language, you'll probably tend to think of it as such. [Java: Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+
+> The primitive types are Boolean, Byte, SByte, Int16, UInt16, Int32, UInt32, Int64, UInt64, IntPtr, UIntPtr, Char, Double, and Single. [C#: Type.IsPrimitive Property](https://docs.microsoft.com/en-us/dotnet/api/system.type.isprimitive)
+
+And this code smell is widely explained with `String` type. Even [WikiWikiWeb](https://wiki.c2.com) relates [primitive obsession](https://wiki.c2.com/?PrimitiveObsession) with [NoStrings](https://wiki.c2.com/?NoStrings).
+
+On the other hand, this code smell could apply to any built-in type of a programming language. For instance, it could happen with a built-in collection type.
+
+So I would have preferred the name **obsession with built-in types**, primitive or non-primitive.
 
 ## DB views
 
