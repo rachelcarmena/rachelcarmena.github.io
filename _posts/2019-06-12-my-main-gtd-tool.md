@@ -5,7 +5,7 @@ title: My main Getting Things Done (GTD) tool
 cover-title: My main GTD tool
 description: How to get things done with a simple notebook
 date: 2019-06-12 12:00:00 +00:00
-last_modified_at: 2019-06-14 12:00:00 +00:00
+last_modified_at: 2021-10-30 12:00:00 +00:00
 category: tools
 image:
     src: /img/cards/posts/my-main-gtd-tool/cover.jpg
@@ -113,3 +113,17 @@ Break down all the large tasks (not only development tasks).
 * [Pomodoro technique](http://www.pomodorotechnique.com) by Francesco Cirillo
 * [Pomodoro technique illustrated](https://pragprog.com/book/snfocus/pomodoro-technique-illustrated) by Staffan Nöteberg
 * [Poster: Monotasking in a Nutshell](https://dandypeople.com/blog/monotasking-in-a-nutshell-the-free-poster-stop-procrastination-and-get-shit-done/) by Staffan Nöteberg
+
+## Update
+
+I loved this [video about The sustainable future of developer productivity by Eirini Kalliamvakou](https://youtu.be/Iqw9vABeKpM).
+
+Why?
+
+* Productivity reports are not only interesting for managers but also developers.
+* Focus not only on activity.
+* The benefit of 2-minute reflection at the end of the day (related to what I explained at [Reflecting](/2019/06/12/my-main-gtd-tool.html#reflecting)).
+* Fewer meetings!
+* Mentorship is mentioned.
+
+Look at more details at [Octoverse Spotlight 2021: The Good Day Project - Personal analytics to make your work days better](https://github.blog/2021-05-25-octoverse-spotlight-good-day-project/).
